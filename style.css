@@ -63,10 +63,6 @@ em {
 
 /******* HEADER *******/
 
-.header a {
-  text-transform: uppercase;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -76,6 +72,7 @@ em {
 
 .header-nav > ul {
   display: flex;
+  transform: translate(0px, -2px);
 }
 
 .header-nav
@@ -95,6 +92,17 @@ em {
     border-radius: 5px;
   }
 
+.header-nav 
+  .is-hover
+    .header-nav-portfolio
+      li
+        a {
+          border-radius: 4px;
+          border: 1px solid #000;
+          background: #e2534b;
+          padding: 5px 22px;
+        }
+
 .is-hover::before {
   position: absolute;
   content: "\221F";
@@ -106,7 +114,7 @@ em {
 }
 
 .header .magnifier {
-  transform: translateY(12px);
+  transform: translate(-1px, 6px);
   margin-left: 26px;
 }
 
@@ -146,9 +154,29 @@ em {
 .header-nav-portfolio {
   position: absolute;
   top: 42px;
+  left: -2px;
   background: #e2534b;
   border-radius: 5px;
+  width: 200px;
+  padding: 4px 0px;
 }
+
+.header
+  .header-nav-portfolio li {
+    position: relative;
+    padding: 11px 4px;
+  }
+
+.header
+  .header-nav-portfolio li::before {
+    position: absolute;
+    content: "\221F";
+    color: #fff;
+    left: 6px;
+    top: 7px;
+    transform: rotate(-134deg) translate(-8px, 0px);
+    display: inline-block;
+  }
 
 .header-nav-portfolio::after {
   position: absolute;
@@ -157,7 +185,7 @@ em {
   transform: rotate(45deg);
   background: #e2534b;
   top: -5px;
-  left: 9px;
+  left: 12px;
 }
 
 .slider-description {
