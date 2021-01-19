@@ -93,16 +93,18 @@ button:hover {
     background: #62a29e;
     box-shadow: 0 3px 0 0 #528b86;
     border-radius: 5px;
-    padding: 8px 16px 4px;
+    padding: 8px 15px 4px;
+    font-size: 14px;
   }
 
 .header-nav 
   .is-hover {
     position: relative;
-    background: #e2534b;
+    background: #e5665d;
     box-shadow: 0 3px 0 0 #e2534b;
-    padding: 8px 28px;
+    padding: 8px 20px 8px 29px;
     border-radius: 5px;
+    margin-right: 10px;
   }
 
 .header-nav 
@@ -111,7 +113,7 @@ button:hover {
       li
         a {
           border-radius: 4px;
-          background: #e2534b;
+          background: #e5665d;
           padding: 5px 22px;
         }
 
@@ -119,9 +121,9 @@ button:hover {
   position: absolute;
   content: "\221F";
   color: #fff;
-  left: 6px;
+  left: 8px;
   top: 8px;
-  transform: rotate(-45deg) translate(7px, 0px);
+  transform: rotate(-45deg) translate(5px, 0px);
   display: inline-block;
 }
 
@@ -176,12 +178,12 @@ button:hover {
 
 .header-nav-portfolio {
   position: absolute;
-  top: 42px;
-  left: -2px;
+  top: 44px;
+  left: 0px;
   background: #e2534b;
   border-radius: 5px;
   width: 200px;
-  padding: 4px 0px;
+  padding: 2px 0px;
 }
 
 .header
@@ -216,17 +218,17 @@ button:hover {
   background: #000;
   width: 390px;
   margin: 0 auto;
-  padding: 6px 40px 11px;
+  padding: 7px 40px 12px;
   border-radius: 4px;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.65;
   opacity: .5;
 }
 
 /******* SECTION *******/
 
 .top-services {
-  background: rgb(212, 213, 213);
+  background: #f3f3f3;
   padding-bottom: 80px;
 }
 
@@ -242,8 +244,9 @@ button:hover {
     align-items: center;
     margin: 0 auto;
     border-radius: 6px;
-    margin-bottom: 44px;
-    padding: 22px 24px 0px;
+    margin-bottom: 50px;
+    padding: 30px 24px 0;
+    height: 70px;
   }
 
 .top-services
@@ -257,6 +260,7 @@ button:hover {
   .services-intro
     p {
       font-size: 13px;
+      letter-spacing: -0.1px;
     }
 
 .services-view 
@@ -268,16 +272,17 @@ button:hover {
   .services-categories {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
 .services-view a {
   background: #e8645a;
-  box-shadow: 0 3px 0 0 #e2534b;
+  box-shadow: 0 3px 0 0 #e1534b;
   font-size: 20px;
   margin-left: 11px;
-  padding: 15px 47px 18px 44px;
+  padding: 15px 45px 15px 45px;
   border-radius: 6px;
-  transform: translateY(-15px);
+  transform: translateY(-17px);
 }
 
 .services-intro
@@ -285,6 +290,7 @@ button:hover {
     color: #7f8c8c;
     margin-bottom: 9px;
     font-size: 30px;
+    letter-spacing: 0.5px;
   }
 
 .category-section
@@ -292,18 +298,22 @@ button:hover {
     font-weight: 700;
     color: #7f8c8c;
     text-align: center;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 
-.category-section
-  .category-box {
+.category-section {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  box-shadow: 0 4px 0 0 #e5e6e6;
+  border-radius: 8px;
+  background: #f8f8f8;
+  padding: 50px 0 62px;
+}
+
+.category-section.chosen-box {
     background: #fff;
-    border-radius: 6px;
-    padding: 50px 15px 0 15px;
-    height: 258px;
-    width: 242px;
-    position: relative;
-    box-shadow: 0 5px 0 0 #7f8c8c;
   }
 
 .category-section
@@ -328,6 +338,7 @@ button:hover {
     text-align: center;
     line-height: 1.6;
     font-size: 13px;
+    padding: 0 14px;
   }
 
 .category-section
@@ -337,15 +348,15 @@ button:hover {
     background: #76c7c0;
     border-radius: 6px;
     position: absolute;
-    padding: 18px 65px 17px;
-    transform: translate(34px, -25px);
+    padding: 18px 65px;
+    transform: translateY(233px);
     font-size: 14px;
     letter-spacing: .2px;
-    box-shadow: 0 5px 0 0 rgb(98, 184, 175);
+    box-shadow: 0 4px 0 0 rgb(98, 184, 175);
   }
 
 .product-summary {
-  background: rgb(236, 236, 236) url(img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
+  background: #f3f3f3 url(img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
   padding-top: 67px;
   padding-bottom: 50px;
 }
@@ -373,6 +384,7 @@ button:hover {
     .product-description {
       text-align: center;
       color: rgba(0, 0, 0, .5);
+      letter-spacing: -.1px;
     }
 
 .product-summary
@@ -414,6 +426,10 @@ button:hover {
     margin-bottom: 58px;
   }
 
+.product-sub-section {
+  font-weight: 800;
+}
+
 .product-summary
   .product-efficiency
     .product-goals {
@@ -432,10 +448,9 @@ button:hover {
     .clients-feedback
       .client-comment {
         color: #7f8c8c;
-        font-weight: 600;
         margin-bottom: 25px;
         font-size: 16px;
-        letter-spacing: 1px;
+        letter-spacing: -.2px;
       }
 
 .product-summary
@@ -443,11 +458,11 @@ button:hover {
     .clients-feedback 
       .client-opinion {
         color: #7f8c8c;
-        line-height: 2;
+        line-height: 1.98;
         border-radius: 6px;
         position: relative;
-        background: #fff;
-        padding: 7px 16px 8px;
+        background: #f8f8f8;
+        padding: 7px 16px 13px;
         margin-bottom: 10px;
       }
 
@@ -458,12 +473,12 @@ button:hover {
         content: "";
         display: inline-block;
         border-style: solid;
-        border-color: transparent #fff #fff transparent;
+        border-color: transparent #f8f8f8 #f8f8f8 transparent;
         transform: rotate(270deg);
         position: absolute;
-        border-width: 20px;
-        bottom: -37px;
-        left: 10px;
+        border-width: 14px;
+        bottom: -26px;
+        left: 14px;
       }
 
 .product-summary
@@ -474,14 +489,14 @@ button:hover {
         font-size: 16px;
         margin-left: 62px;
         letter-spacing: 0.2px;
+        font-weight: 600;
       }
 
 .product-summary
   .product-efficiency
     .product-testing {
       width: 610px;
-      /* margin: 0 20px; */
-      margin: 0 39px 0 6px;
+      margin: 0 40px 0 11px;
     }
 
 .product-summary
@@ -490,6 +505,8 @@ button:hover {
       margin-bottom: 51px;
       line-height: 1.9;
       transform: translateY(-6px);
+      padding: 0 14px;
+      letter-spacing: -0.17px;
     }
 
 .product-summary
@@ -526,10 +543,8 @@ button:hover {
   .product-goals 
     .product-goals-title {
       color: #7f8c8c;
-      font-weight: 600;
       margin-bottom: 30px;
       font-size: 16px;
-      letter-spacing: 1.2px;
     }
 
 .product-efficiency
@@ -538,6 +553,7 @@ button:hover {
     line-height: 2;
     position: relative;
     left: 17px;
+    letter-spacing: -.1px;
   }
 
 .product-efficiency
@@ -600,7 +616,7 @@ button:hover {
   .clients-satisfaction
     .client-section {
       color: #7f8c8c;
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 52px;
       font-size: 16px;
       position: relative;
@@ -614,7 +630,7 @@ button:hover {
   .clients-satisfaction
     .client-section::before {
       content: "";
-      background-color: #7f8c8c;
+      background-color: #e1e1e1;
       border-radius: 50%;
       order: 1;
       width: 7px;
@@ -627,7 +643,7 @@ button:hover {
     .client-section::after {
       content: "";
       flex: 1;
-      border-bottom: 1px solid #7f8c8c;
+      border-bottom: 1px solid #e1e1e1;
       order: 2;
     }
 
@@ -641,7 +657,7 @@ button:hover {
 .clients-satisfaction
   .client-list
     .list-icon {
-      background: #fff;
+      background: #f8f8f8;
       padding: 33px 36px;
       border-radius: 5px;
     }
@@ -665,20 +681,23 @@ button:hover {
       border: none;
       border-radius: 6px;
       width: 40px;
-      height: 40px;
+      height: 36px;
     }
 
 .product-summary
   .clients-satisfaction
     .button-left {
-      background: #7f8c8c;
-      margin-right: 19px;
+      background: #999;
+      margin-right: 15px;
+      box-shadow: 0 3px 0 0 #7f8c8c;
     }
 
 .product-summary
   .clients-satisfaction
     .button-right {
       background: #e1524b;
+      padding: 0 16px;
+      box-shadow: 0 3px 0 0 #e1524b;
     }
 
 /******* FOOTER *******/
@@ -744,7 +763,7 @@ footer ul {
 .company-summary
   .blog-highlights {
     width: 345px;
-    margin-left: 46px;
+    margin-left: 44px;
   }
 
 .company-phone {
@@ -787,6 +806,12 @@ footer ul {
     }
 
 .company-info
+  .company-contacts
+    .email-info {
+      margin-left: 14px;
+    }
+
+.company-info
   .company-contacts em {
     font-size: 36px;
   }
@@ -794,12 +819,14 @@ footer ul {
 .company-info
   .company-contacts strong {
     font-size: 20px;
+    font-weight: 600;
   }
 
 .company-info p {
   margin-bottom: 15px;
   line-height: 1.8;
   font-size: 13px;
+  letter-spacing: -0.12px;
 }
 
 .company-links p {
@@ -819,9 +846,9 @@ footer ul {
 .company-links ul li a::before {
   position: absolute;
   content: "\221F";
-  left: -22px;
+  left: -18px;
   transform: rotate(225deg);
-  top: 0px;
+  top: -1px;
 }
 
 .company-community p {
@@ -841,9 +868,9 @@ footer ul {
 .company-community ul li a::before {
   position: absolute;
   content: "\221F";
-  left: -22px;
+  left: -20px;
   transform: rotate(225deg);
-  top: 0px;
+  top: -2px;
 }
 
 .footer-nav {
@@ -861,7 +888,7 @@ footer ul {
 }
 
 .blog-highlights ul figure {
-  padding: 21px 17px;
+  padding: 21px 19px;
   background: rgba(0, 0, 0, .2);
   border-radius: 5px;
 }
