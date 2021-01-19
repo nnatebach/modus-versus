@@ -5,67 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modus-Versus</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <header>
-      <div class="header">
-        <a href="#" class="header-company-logo">
-          <h1 class="header-logo">
-            <img src="img/header_logo.png" alt="MOSDUSversus">
-          </h1>
+  <header>
+    <div class="header">
+      <a href="#" class="header-company-logo">
+        <h1 class="header-logo">
+          <img src="img/header_logo.png" alt="MOSDUSversus">
+        </h1>
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <li class="is-active">
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">SERVICES</a>
+          </li>
+          <li class="is-hover">
+            <a href="#">PORTFOLIO</a>
+            <ul class="header-nav-portfolio">
+              <li>
+                <a href="#">Portfolio 2 column page</a>
+              </li>
+              <li>
+                <a href="#" class="nav-selection">Portfolio 2 column page</a>
+              </li>
+              <li>
+                <a href="#">Portfolio 2 column page</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">BLOG</a>
+          </li>
+          <li>
+            <a href="#">FEATURES</a>
+          </li>
+          <li>
+            <a href="#">CONTACTS</a>
+          </li>
+        </ul>
+        <a href="#" class="magnifier">
+          <img src="img/common/icn_magnifier.png" alt="magnifier-search">
         </a>
-        <nav class="header-nav">
-          <ul>
-            <li class="is-active">
-              <a href="#">HOME</a>
-            </li>
-            <li>
-              <a href="#">ABOUT</a>
-            </li>
-            <li>
-              <a href="#">SERVICES</a>
-            </li>
-            <li class="is-hover">
-              <a href="#">PORTFOLIO</a>
-              <ul class="header-nav-portfolio">
-                <li>
-                  <a href="#">Portfolio 2 column page</a>
-                </li>
-                <li>
-                  <a href="#">Portfolio 2 column page</a>
-                </li>
-                <li>
-                  <a href="#">Portfolio 2 column page</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">BLOG</a>
-            </li>
-            <li>
-              <a href="#">FEATURES</a>
-            </li>
-            <li>
-              <a href="#">CONTACTS</a>
-            </li>
-          </ul>
-          <a href="#" class="magnifier">
-            <img src="img/common/icn_magnifier.png" alt="magnifier-search">
-          </a>
-        </nav>
-      </div>
-    </header>
-    <section>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="header-section-top">
       <div class="header-slider">
         <h2 class="slider-title">VESTIBULUM</h2>
         <p class="slider-description">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
       </div>
-      <ul class="slider-slidebar">
-        <li class="slidebar"></li>
-        <li class="slidebar-is-active"></li>
-        <li class="slidebar"></li>
-      </ul>
     </section>
     <section class="top-services">
       <div class="wrapper">
@@ -213,105 +210,105 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="wrapper">
-        <div class="company-summary">
-          <div class="company-info">
-            <a href="#" class="footer-logo">
-              <img src="img/footer_logo.png" alt="MODUSversus">
-            </a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.</p>
-            <ul class="company-contacts">
-              <li>Phone:&ensp;<a href="tel:18225695896">
-                <em><strong>182 2569 5896</strong></em></a>
-              </li>
-              <li>e-mail:&ensp;<a href="mailto:info@modu.versus"><em><strong>info@modu.versus</strong></em></a>
-              </li>
-            </ul>
-          </div>
-          <div class="company-links">
-            <p>Company</p>
-            <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">FAQ</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-              <li>
-                <a href="#">Terms</a>
-              </li>
-              <li>
-                <a href="#">Privacy</a>
-              </li>
-              <li>
-                <a href="#">Testimonials</a>
-              </li>
-            </ul>
-          </div>
-          <div class="company-community">
-            <p>Community</p>
-            <ul>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="#">Forum</a>
-              </li>
-              <li>
-                <a href="#">Support</a>
-              </li>
-              <li>
-                <a href="#">Newsletter</a>
-              </li>
-            </ul>
-          </div>
-          <div class="blog-highlights">
-            <p><em>from the</em> <strong>BLOG</strong></p>
-            <ul>
-              <li>
-                <figure>
-                  <img src="img/common/footer_img_blog.png" alt="">
-                </figure>
-                <div class="blog-description">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  <time datetime="2013-05-26">26 May, 2013</time>
-                </div>
-              </li>
-              <li>
-                <figure>
-                  <img src="img/common/footer_img_blog.png" alt="">
-                </figure>
-                <div class="blog-description">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  <time datetime="2013-05-26">26 May, 2013</time>
-                </div>
-              </li>
-            </ul>
-          </div>
+  </main>
+  <footer>
+    <div class="wrapper">
+      <div class="company-summary">
+        <div class="company-info">
+          <a href="#" class="footer-logo">
+            <img src="img/footer_logo.png" alt="MODUSversus">
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.</p>
+          <ul class="company-contacts">
+            <li>Phone:&ensp;<a href="tel:18225695896">
+              <em><strong>182 2569 5896</strong></em></a>
+            </li>
+            <li>e-mail:&ensp;<a href="mailto:info@modu.versus"><em><strong>info@modu.versus</strong></em></a>
+            </li>
+          </ul>
+        </div>
+        <div class="company-links">
+          <p>Company</p>
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Terms</a>
+            </li>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+            <li>
+              <a href="#">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+        <div class="company-community">
+          <p>Community</p>
+          <ul>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Forum</a>
+            </li>
+            <li>
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <a href="#">Newsletter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="blog-highlights">
+          <p><em>from the</em> <strong>BLOG</strong></p>
+          <ul>
+            <li>
+              <figure>
+                <img src="img/common/footer_img_blog.png" alt="">
+              </figure>
+              <div class="blog-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <time datetime="2013-05-26">26 May, 2013</time>
+              </div>
+            </li>
+            <li>
+              <figure>
+                <img src="img/common/footer_img_blog.png" alt="">
+              </figure>
+              <div class="blog-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <time datetime="2013-05-26">26 May, 2013</time>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="company-networks">
-        <small>2013 ModusVersus</small>
-        <ul class="company-sites">
-          <li>
-            <a href="#" class="facebook-site"></a>
-          </li>
-          <li>
-            <a href="#" class="googleplus-site"></a>
-          </li>
-          <li>
-            <a href="#" class="twitter-site"></a>
-          </li>
-          <li>
-            <a href="#" class="rss-site"></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </main>
+    </div>
+    <div class="company-networks">
+      <small>2013 ModusVersus</small>
+      <ul class="company-sites">
+        <li>
+          <a href="#" class="facebook-site"></a>
+        </li>
+        <li>
+          <a href="#" class="googleplus-site"></a>
+        </li>
+        <li>
+          <a href="#" class="twitter-site"></a>
+        </li>
+        <li>
+          <a href="#" class="rss-site"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>

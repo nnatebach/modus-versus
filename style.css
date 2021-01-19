@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -59,6 +59,19 @@ strong {
 
 em {
   font-style: italic;
+}
+
+main {
+  overflow: hidden;
+}
+
+main p {
+  color: #777;
+  font-size: 13px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /******* HEADER *******/
@@ -98,7 +111,6 @@ em {
       li
         a {
           border-radius: 4px;
-          border: 1px solid #000;
           background: #e2534b;
           padding: 5px 22px;
         }
@@ -113,10 +125,22 @@ em {
   display: inline-block;
 }
 
+.header-section-top {
+  margin-bottom: 50px;
+}
+
 .header .magnifier {
   transform: translate(-1px, 6px);
   margin-left: 26px;
 }
+
+.header-nav 
+  .is-hover
+    .header-nav-portfolio
+      li
+        .nav-selection {
+          background: #76c7c0;
+        }
 
 .header-nav ul li {
   padding: 8px 26px;
@@ -133,7 +157,7 @@ em {
 
 .header-slider {
   background-color: #7f8c8c;
-  padding: 162px 0 207px;
+  padding: 160px 0 207px;
   text-align: center;
 }
 
@@ -142,13 +166,12 @@ em {
     background: #e2534b;
     color: #fff;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     border-radius: 5px;
-    padding: 0px 13px;
+    padding: 0px 11px;
     font-size: 50px;
-    font-weight: 700;
-    margin-left: 10px;
-    letter-spacing: 1px;
+    font-weight: 800;
+    margin-left: 5px;
   }
 
 .header-nav-portfolio {
@@ -193,34 +216,12 @@ em {
   background: #000;
   width: 390px;
   margin: 0 auto;
-  padding: 4px 40px 11px;
+  padding: 6px 40px 11px;
   border-radius: 4px;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.7;
+  opacity: .5;
 }
-
-.slider-slidebar {
-  background: rgb(212, 213, 213);
-  padding: 21px 645px 26px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.slider-slidebar
-  .slidebar-is-active {
-    background: rgb(224, 10, 10);
-    display: block;
-    width: 60px;
-    height: 4px;
-  }
-
-.slider-slidebar
-  .slidebar {
-    background: #7f8c8c;
-    display: block;
-    width: 60px;
-    height: 4px;
-  }
 
 /******* SECTION *******/
 
@@ -241,15 +242,27 @@ em {
     align-items: center;
     margin: 0 auto;
     border-radius: 6px;
-    margin-bottom: 50px;
-    padding: 22px 24px 24px;
+    margin-bottom: 44px;
+    padding: 22px 24px 0px;
   }
 
 .top-services
   .services-view
     .services-intro {
       width: 80%;
+      margin-bottom: 2rem;
     }
+
+.services-view
+  .services-intro
+    p {
+      font-size: 13px;
+    }
+
+.services-view 
+  a {
+    margin: 0;
+  }
 
 .top-services
   .services-categories {
@@ -258,18 +271,14 @@ em {
   }
 
 .services-view a {
-  background: #e2534b;
+  background: #e8645a;
   box-shadow: 0 3px 0 0 #e2534b;
   font-size: 20px;
   margin-left: 11px;
   padding: 15px 47px 18px 44px;
   border-radius: 6px;
+  transform: translateY(-15px);
 }
-
-/* .services-view
-  .services-intro {
-    padding: 25px 0 25px 25px;
-  } */
 
 .services-intro
   .services-description {
@@ -299,7 +308,7 @@ em {
 
 .category-section
   .category-box-hover {
-    background: #e2534b;
+    background: #e8645a;
     box-shadow: 0 3px 0 0 #e2534b;
   }
 
@@ -318,6 +327,7 @@ em {
   .category-description {
     text-align: center;
     line-height: 1.6;
+    font-size: 13px;
   }
 
 .category-section
@@ -437,7 +447,7 @@ em {
         border-radius: 6px;
         position: relative;
         background: #fff;
-        padding: 7px 19px 8px;
+        padding: 7px 16px 8px;
         margin-bottom: 10px;
       }
 
@@ -481,6 +491,14 @@ em {
       line-height: 1.9;
       transform: translateY(-6px);
     }
+
+.product-summary
+  .product-efficiency
+    .product-testing
+      .testing-highlight {
+        text-decoration: underline;
+        color: #e1524b;
+      }
 
 .product-efficiency
   .product-testing
@@ -671,7 +689,7 @@ footer {
   color: #fff;
 }
 
-footer ul, p {
+footer ul {
   font-size: 13px;
   letter-spacing: -.1px;
 }
@@ -781,11 +799,12 @@ footer ul, p {
 .company-info p {
   margin-bottom: 15px;
   line-height: 1.8;
+  font-size: 13px;
 }
 
 .company-links p {
   margin-bottom: 28px;
-  color: rgba(0,0,0,.4);
+  color: #497e79;
   font-size: 20px;
   font-weight: 700;
   position: relative;
@@ -807,7 +826,7 @@ footer ul, p {
 
 .company-community p {
   margin-bottom: 29px;
-  color: rgba(0,0,0,.4);
+  color: #497e79;
   font-size: 20px;
   font-weight: 700;
   position: relative;
@@ -919,4 +938,114 @@ footer ul, p {
   height: 21px;
   content: "";
   position: absolute;
+}
+
+/********* RESPONSIVE *********/
+
+@media print, (min-width: 768px) {
+  main {
+    min-width: 78.125rem;
+  }
+
+  .wrapper {
+    width: 73.125rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+
+  .wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 43.8rem;
+  }
+
+  .top-services 
+    .services-categories {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+  .category-section 
+    .category-box {
+      width: auto;
+    }
+
+  .top-services 
+    .services-categories
+      .category-section {
+        margin-bottom: 4rem;
+      }
+
+  .top-services 
+    .services-view {
+      display: block;
+    }
+
+  .top-services
+    .services-view 
+      a {
+        width: 22%;
+      }
+
+  .category-section 
+    a {
+      transform: translate(76px, -25px);
+      font-size: 1rem;
+    }
+
+  .category-section 
+    .category-picture {
+      width: 100px;
+      height: auto;
+      margin: 0 auto 30px;
+    }
+
+  .category-section 
+    img {
+      width: 100%;
+    }
+
+  .category-section 
+    .category-title {
+      font-size: 1rem;
+    }
+
+  .category-section 
+    .category-description {
+      font-size: 1rem;
+    }
+
+  .category-section 
+    .category-box {
+      height: 350px;
+    }
+
+  .category-section  
+    .category-box-hover {
+      font-size: 16px;
+    }
+
+  .product-summary 
+    .product-slider 
+      .product-slider-left, .product-slider-right {
+        display: none;
+      }
+
+  .product-summary 
+    .product-efficiency {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+  footer ul, p {
+    font-size: 1.5rem;
+  }
 }
