@@ -79,13 +79,13 @@ button:hover {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 27px 172px 23px;
+  padding: 27px 172px 29px;
   background: #76c7c0 url(img/common/header_icn_bg_path.png) no-repeat center bottom/100% auto;
 }
 
 .header-nav > ul {
   display: flex;
-  transform: translate(0px, -2px);
+  transform: translateY(3px);
 }
 
 .header-nav
@@ -93,8 +93,9 @@ button:hover {
     background: #62a29e;
     box-shadow: 0 3px 0 0 #528b86;
     border-radius: 5px;
-    padding: 8px 15px 4px;
+    padding: 5px 16px 6px 12px;
     font-size: 14px;
+    margin-right: 2px;
   }
 
 .header-nav 
@@ -102,33 +103,38 @@ button:hover {
     position: relative;
     background: #e5665d;
     box-shadow: 0 3px 0 0 #e2534b;
-    padding: 8px 20px 8px 29px;
+    padding: 6px 20px 6px 29px;
     border-radius: 5px;
     margin-right: 10px;
   }
 
 .header-nav 
-  .is-hover
-    .header-nav-portfolio
-      li
-        a {
-          border-radius: 4px;
-          background: #e5665d;
-          padding: 5px 22px;
-        }
+  .header-nav-portfolio
+    li
+      a {
+        display: block;
+        padding: 6px 9px;
+        color: #fff;
+        background-color: #e5655d;
+        border-radius: 5px;
+        font-weight: 600;
+      }
 
 .is-hover::before {
-  position: absolute;
-  content: "\221F";
-  color: #fff;
-  left: 8px;
-  top: 8px;
-  transform: rotate(-45deg) translate(5px, 0px);
+  content: "";
   display: inline-block;
+  padding: 2px;
+  border: 1px solid;
+  border-color: transparent #fff #fff transparent;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 9px;
+  left: 16px;
 }
 
 .header-section-top {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background: #f3f3f3;
 }
 
 .header .magnifier {
@@ -136,15 +142,7 @@ button:hover {
   margin-left: 26px;
 }
 
-.header-nav 
-  .is-hover
-    .header-nav-portfolio
-      li
-        .nav-selection {
-          background: #76c7c0;
-        }
-
-.header-nav ul li {
+.header-nav ul li a {
   padding: 8px 26px;
   font-size: 13px;
 }
@@ -177,30 +175,29 @@ button:hover {
   }
 
 .header-nav-portfolio {
-  position: absolute;
-  top: 44px;
-  left: 0px;
-  background: #e2534b;
+  width: 190px;
+  padding: 2px 5px;
   border-radius: 5px;
-  width: 200px;
-  padding: 2px 0px;
+  top: calc(100% + 16px);
+  background-color: #e2534b;
+  transition: ease 0.25s;
+  position: absolute;
 }
 
-.header
-  .header-nav-portfolio li {
+.header .header-nav-portfolio li {
     position: relative;
-    padding: 11px 4px;
+    padding: 5px 0;
   }
 
 .header
-  .header-nav-portfolio li::before {
-    position: absolute;
-    content: "\221F";
-    color: #fff;
-    left: 6px;
-    top: 7px;
-    transform: rotate(-134deg) translate(-8px, 0px);
+  .header-nav .header-nav-portfolio li a::before {
+    content: "";
     display: inline-block;
+    margin-right: 9px;
+    padding: 2px;
+    border: 1px solid;
+    border-color: transparent #fff #fff transparent;
+    transform: rotate(-45deg);
   }
 
 .header-nav-portfolio::after {
@@ -209,20 +206,19 @@ button:hover {
   padding: 5px;
   transform: rotate(45deg);
   background: #e2534b;
-  top: -5px;
-  left: 12px;
+  top: -4px;
+  left: 13px; 
 }
 
 .slider-description {
-  color: #fff;
-  background: #000;
+  color: rgba(255,255,255, .8);
+  background: rgba(0,0,0,.5);
   width: 390px;
   margin: 0 auto;
   padding: 7px 40px 12px;
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.65;
-  opacity: .5;
 }
 
 /******* SECTION *******/
@@ -277,7 +273,7 @@ button:hover {
 
 .services-view a {
   background: #e8645a;
-  box-shadow: 0 3px 0 0 #e1534b;
+  box-shadow: 0 4px 0 0 #e1534b;
   font-size: 20px;
   margin-left: 11px;
   padding: 15px 45px 15px 45px;
@@ -290,7 +286,8 @@ button:hover {
     color: #7f8c8c;
     margin-bottom: 9px;
     font-size: 30px;
-    letter-spacing: 0.5px;
+    font-weight: 600;
+    margin-left: 1px;
   }
 
 .category-section
@@ -316,11 +313,11 @@ button:hover {
     background: #fff;
   }
 
-.category-section
+/* .category-section
   .category-box-hover {
     background: #e8645a;
     box-shadow: 0 3px 0 0 #e2534b;
-  }
+  } */
 
 .category-section
   .category-picture {
@@ -463,7 +460,7 @@ button:hover {
         position: relative;
         background: #f8f8f8;
         padding: 7px 16px 13px;
-        margin-bottom: 10px;
+        margin-bottom: 9px;
       }
 
 .product-summary
@@ -487,7 +484,7 @@ button:hover {
       .client-name {
         color: #7f8c8c;
         font-size: 16px;
-        margin-left: 62px;
+        margin-left: 60px;
         letter-spacing: 0.2px;
         font-weight: 600;
       }
@@ -535,7 +532,6 @@ button:hover {
     .testing-title {
       text-align: center;
       color: #7f8c8c;
-      font-weight: 700;
       font-size: 16px;
     }
 
@@ -558,10 +554,13 @@ button:hover {
 
 .product-efficiency
   .product-goals ul li::before {
-    content: "\2794";
-    color: #e1524b;
+    content: "";
+    background: url(img/common/section_arrow_right_icn.png) no-repeat top center/100% auto;
+    width: 10px;
+    height: 12px;
     position: absolute;
-    left: -17px;
+    top: 9px;
+    left: -16px;
   }
 
 .product-testing
@@ -570,8 +569,8 @@ button:hover {
       background: url(img/top/percent_img_01.png) no-repeat top center/100% auto;
       display: inline-block;
       width: 120px;
-      height: 26px;
-      margin-bottom: 23px;
+      height: 29px;
+      margin-bottom: 22px;
     }
 
 .product-testing
@@ -580,7 +579,7 @@ button:hover {
       background: url(img/top/percent_img_02.png) no-repeat top center/100% auto;
       display: inline-block;
       width: 120px;
-      height: 26px;
+      height: 29px;
       margin-bottom: 23px;
     }
 
@@ -590,7 +589,7 @@ button:hover {
       background: url(img/top/percent_img_03.png) no-repeat top center/100% auto;
       display: inline-block;
       width: 120px;
-      height: 26px;
+      height: 29px;
       margin-bottom: 23px;
     }
 
@@ -600,7 +599,7 @@ button:hover {
       background: url(img/top/percent_img_04.png) no-repeat top center/100% auto;
       display: inline-block;
       width: 120px;
-      height: 26px;
+      height: 29px;
       margin-bottom: 23px;
     }
 
@@ -609,21 +608,20 @@ button:hover {
     .result-suspendisse {
       font-size: 30px;
       text-align: center;
-      padding-top: 30px;
+      padding-top: 29px;
+      font-weight: 800;
     }
 
 .product-summary
   .clients-satisfaction
     .client-section {
       color: #7f8c8c;
-      font-weight: 700;
       margin-bottom: 52px;
       font-size: 16px;
       position: relative;
       align-items: center;
       display: flex;
       padding-right: 110px;
-      letter-spacing: 0.4px;
     }
 
 .product-summary
@@ -682,22 +680,20 @@ button:hover {
       border-radius: 6px;
       width: 40px;
       height: 36px;
-    }
-
-.product-summary
-  .clients-satisfaction
-    .button-left {
       background: #999;
-      margin-right: 15px;
       box-shadow: 0 3px 0 0 #7f8c8c;
     }
 
 .product-summary
   .clients-satisfaction
+    .button-left {
+      margin-right: 15px;
+    }
+
+.product-summary
+  .clients-satisfaction
     .button-right {
-      background: #e1524b;
       padding: 0 16px;
-      box-shadow: 0 3px 0 0 #e1524b;
     }
 
 /******* FOOTER *******/
@@ -705,12 +701,13 @@ button:hover {
 footer {
   background: #76c7c0 url(img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
   padding-top: 48px;
-  color: #fff;
+  color: rgba(255, 255, 255, .8);
 }
 
 footer ul {
   font-size: 13px;
   letter-spacing: -.1px;
+  margin-left: -3px;
 }
 
 .footer-logo {
@@ -750,6 +747,14 @@ footer ul {
 }
 
 .company-summary
+  .company-community
+    ul {
+      font-size: 13px;
+      letter-spacing: -.1px;
+      margin-left: -1px;
+    }
+
+.company-summary
   .company-links {
     margin-right: 102px;
   }
@@ -765,6 +770,12 @@ footer ul {
     width: 345px;
     margin-left: 44px;
   }
+
+.company-summary
+  .blog-highlights
+    strong {
+      margin-left: -1px;
+    }
 
 .company-phone {
   display: flex;
@@ -803,6 +814,7 @@ footer ul {
   .company-contacts
     li a {
       margin-left: 9px;
+      color: rgba(255, 255, 255, .8);
     }
 
 .company-info
@@ -841,6 +853,7 @@ footer ul {
 .company-links ul li a {
   line-height: 1.8;
   position: relative;
+  color: rgba(255, 255, 255, .8);
 }
 
 .company-links ul li a::before {
@@ -863,12 +876,13 @@ footer ul {
 .company-community ul li a {
   line-height: 1.8;
   position: relative;
+  color: rgba(255, 255, 255, .8);
 }
 
 .company-community ul li a::before {
   position: absolute;
   content: "\221F";
-  left: -20px;
+  left: -18px;
   transform: rotate(225deg);
   top: -2px;
 }
@@ -888,13 +902,13 @@ footer ul {
 }
 
 .blog-highlights ul figure {
-  padding: 21px 19px;
+  padding: 21px 20px;
   background: rgba(0, 0, 0, .2);
   border-radius: 5px;
 }
 
 .blog-highlights .blog-description {
-  padding: 0 10px 0 18px;
+  padding: 0 10px 0 16px;
   transform: translateY(-4px);
 }
 
@@ -916,7 +930,7 @@ footer ul {
 }
 
 .blog-highlights .blog-description time {
-  color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, 0.28);
 }
 
 .facebook-site {
