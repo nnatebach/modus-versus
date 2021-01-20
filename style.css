@@ -186,6 +186,16 @@ button:hover {
 }
 
 .top-services
+  .services-view {
+    background-color: #ececec;
+    margin: 0 auto;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    padding: 30px 24px 0;
+    height: 70px;
+  }
+
+.top-services
   .services-view
     .services-intro {
       width: 80%;
@@ -208,10 +218,9 @@ button:hover {
   background: #e8645a;
   box-shadow: 0 4px 0 0 #e1534b;
   font-size: 20px;
-  margin-left: 11px;
-  padding: 15px 45px 15px 45px;
   border-radius: 6px;
-  transform: translateY(-17px);
+  height: 20px;
+  padding: 15px 46px;
 }
 
 .services-intro
@@ -225,10 +234,11 @@ button:hover {
 
 .category-section
   .category-title {
-    font-weight: 700;
+    font-weight: 800;
     color: #7f8c8c;
     text-align: center;
     margin-bottom: 30px;
+    transform: translateX(-4px);
   }
 
 .category-section {
@@ -239,7 +249,7 @@ button:hover {
   box-shadow: 0 4px 0 0 #e5e6e6;
   border-radius: 8px;
   background: #f8f8f8;
-  padding: 50px 0 62px;
+  padding: 53px 0 62px;
 }
 
 .category-section.chosen-box {
@@ -248,7 +258,8 @@ button:hover {
 
 .category-section
   .category-picture {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    margin-right: 7px;
   }
 
 .category-section
@@ -273,7 +284,7 @@ button:hover {
     border-radius: 6px;
     position: absolute;
     padding: 18px 65px;
-    transform: translateY(233px);
+    transform: translate(-2px,231px);
     font-size: 14px;
     letter-spacing: .2px;
     box-shadow: 0 4px 0 0 rgb(98, 184, 175);
@@ -447,6 +458,7 @@ button:hover {
       text-align: center;
       color: #7f8c8c;
       font-size: 16px;
+      font-weight: 800;
     }
 
 .product-efficiency
@@ -589,14 +601,21 @@ button:hover {
 
 .product-summary
   .clients-satisfaction
+    button:hover {
+      background: #e1524b;
+    }
+
+.product-summary
+  .clients-satisfaction
     .button-left {
-      margin-right: 15px;
+      margin-right: 17px;
+      padding-top: 4px;
     }
 
 .product-summary
   .clients-satisfaction
     .button-right {
-      padding: 0 16px;
+      padding: 3px 16px 0;
     }
 
 /******* FOOTER *******/
@@ -699,6 +718,8 @@ footer ul {
   .company-contacts
     li {
       line-height: .8;
+      margin-left: 3px;
+      margin-bottom: 2px;
     }
 
 .company-info
@@ -723,6 +744,7 @@ footer ul {
   .company-contacts strong {
     font-size: 20px;
     font-weight: 600;
+    /* margin-left: 3px; */
   }
 
 .company-info p {
@@ -793,13 +815,13 @@ footer ul {
 }
 
 .blog-highlights ul figure {
-  padding: 21px 20px;
+  padding: 21px 19px;
   background: rgba(0, 0, 0, .2);
   border-radius: 5px;
 }
 
 .blog-highlights .blog-description {
-  padding: 0 10px 0 16px;
+  padding: 0 10px 0 18px;
   transform: translateY(-4px);
 }
 
@@ -875,6 +897,12 @@ footer ul {
 /********* RESPONSIVE *********/
 
 /****** PC ******/
+
+@media print, (min-width: 768px) {
+  .container {
+    min-width: 1250px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -952,14 +980,20 @@ footer ul {
   .top-services
     .services-view {
       display: flex;
-      background-color: #ececec;
-      align-items: center;
-      margin: 0 auto;
-      border-radius: 6px;
+      /* background-color: #ececec; */
+      /* align-items: center; */
+      /* margin: 0 auto; */
+      /* border-radius: 6px; */
       margin-bottom: 50px;
-      padding: 30px 24px 0;
-      height: 70px;
+      padding: 23px 24px 0;
+      height: 77px;
     }
+
+  .top-services
+    .services-view
+      a {
+        margin-left: 10px;
+      }
 
   .top-services
     .services-categories {
@@ -991,7 +1025,7 @@ footer ul {
         position: relative;
         align-items: center;
         display: flex;
-        padding-right: 110px;
+        padding-right: 120px;
       }
 
   .company-summary {
@@ -1029,6 +1063,8 @@ footer ul {
     width: 43.8rem;
   }
 
+  /******** SECTION ********/
+
   .top-services 
     .services-categories {
       display: block;
@@ -1049,8 +1085,14 @@ footer ul {
 
   .top-services 
     .services-view {
-      display: block;
+      height: 10rem;
     }
+
+  .top-services 
+    .services-view 
+      .services-intro {
+        width: 100%;
+      }
 
   .top-services
     .services-view 
@@ -1086,10 +1128,9 @@ footer ul {
       font-size: 1rem;
     }
 
-  .category-section 
-    .category-box {
-      height: 350px;
-    }
+  .category-section a {
+    position: static;
+  }
 
   .category-section  
     .category-box-hover {
