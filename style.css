@@ -65,11 +65,6 @@ main {
   overflow: hidden;
 }
 
-main p {
-  color: #777;
-  font-size: 13px;
-}
-
 button:hover {
   cursor: pointer;
 }
@@ -117,9 +112,9 @@ button:hover {
     background: #e2534b;
     color: #fff;
     display: inline-block;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     border-radius: 5px;
-    padding: 0px 11px;
+    padding: 0px 11px 2px;
     font-size: 50px;
     font-weight: 800;
     margin-left: 5px;
@@ -245,6 +240,7 @@ button:hover {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   width: 270px;
   box-shadow: 0 4px 0 0 #e5e6e6;
   border-radius: 8px;
@@ -272,7 +268,6 @@ button:hover {
   .category-description {
     text-align: center;
     line-height: 1.6;
-    font-size: 13px;
     padding: 0 14px;
   }
 
@@ -909,6 +904,11 @@ footer ul {
     min-width: 1250px;
   }
 
+  main p {
+    color: #777;
+    font-size: 13px;
+  }
+
   .wrapper {
     width: 73.125rem;
     margin-left: auto;
@@ -1049,14 +1049,11 @@ footer ul {
     min-width: 320px;
   }
 
-  .header {
-    padding: 27px 100px 29px;
+  main p {
+    color: #777;
+    font-size: 1.4rem;
   }
-
-  .header-nav {
-    display: none;
-  }
-
+  
   .wrapper {
     display: block;
     margin: 0 auto;
@@ -1065,27 +1062,50 @@ footer ul {
 
   /******** SECTION ********/
 
+  .header {
+    padding: 27px 100px 29px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-section-top
+    .header-slider
+      .slider-description {
+        font-size: 1.5rem;
+      }
+
+  /******** SECTION ********/
+
+  .services-intro 
+    .services-description {
+      font-size: 2.2rem;
+    }
+
   .top-services 
     .services-categories {
       display: block;
-      width: 50%;
+      width: 80%;
       margin: 0 auto;
     }
 
   .category-section 
     .category-box {
-      width: auto;
+      font-size: 1.7rem;
     }
 
   .top-services 
     .services-categories
       .category-section {
-        margin-bottom: 4rem;
+        margin-bottom: 8rem;
+        width: 100%;
       }
 
   .top-services 
     .services-view {
-      height: 10rem;
+      height: 17rem;
+      width: 40rem;
     }
 
   .top-services 
@@ -1094,17 +1114,19 @@ footer ul {
         width: 100%;
       }
 
+  .top-services 
+    .services-view 
+      .services-intro
+        p {
+          font-size: 1.6rem;
+          line-height: 1.5;
+          }
+
   .top-services
     .services-view 
       a {
         width: 22%;
       }
-
-  .category-section 
-    a {
-      transform: translate(76px, -25px);
-      font-size: 1rem;
-    }
 
   .category-section 
     .category-picture {
@@ -1120,16 +1142,15 @@ footer ul {
 
   .category-section 
     .category-title {
-      font-size: 1rem;
-    }
-
-  .category-section 
-    .category-description {
-      font-size: 1rem;
+      font-size: 2rem;
     }
 
   .category-section a {
-    position: static;
+    bottom: -50px;
+    right: 40%;
+    margin: 0 auto;
+    transform: translate(76px, -25px);
+    font-size: 1.7rem;
   }
 
   .category-section  
@@ -1147,10 +1168,142 @@ footer ul {
     .product-efficiency {
       display: block;
       width: 80%;
+      margin: 0 auto 4rem;
+    }
+
+  .modus-versus-slider
+    .modus-versus-product {
+      width: 80%;
       margin: 0 auto;
     }
+
+  .product-summary 
+    .modus-versus-slider 
+      .product-slider 
+        .product-slider-center {
+          width: 100%;
+        }
+
+  .product-summary 
+    .modus-versus-slider 
+      .product-description {
+        font-size: 1.5rem;
+        line-height: 1.5
+      }
+
+  .product-efficiency 
+    .product-goals 
+      .product-goals-title {
+        font-size: 2.2rem;
+      }
+
+  .product-summary 
+    .product-efficiency 
+      .product-goals {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+  .product-summary 
+    .product-efficiency 
+      .product-testing {
+        margin: 0 0 4rem;
+      }
+
+  .product-summary 
+    .product-efficiency 
+      .clients-feedback {
+        width: 100%;
+      }
+
+  .product-summary 
+    .product-efficiency 
+      .clients-feedback 
+        .client-comment {
+          font-size: 2rem;
+        }
+
+  .product-summary 
+    .product-efficiency 
+      .clients-feedback 
+        .client-name {
+          font-size: 1.8rem;
+        }
+
+  .product-efficiency 
+    .product-goals 
+      ul 
+        li {
+          font-size: 1.8rem;
+          margin-left: 30px;
+        }
+
+  .product-efficiency 
+    .product-goals 
+      ul 
+        li::before {
+          width: 30px;
+          height: 100%;
+          left: -44px;
+        }
+
+  .product-summary 
+    .clients-satisfaction
+      .client-section {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #7f8c8c;
+      }
+
+  .product-testing 
+    .testing-result 
+      .result-suspendisse {
+        font-size: 4rem;
+        padding-top: 4rem;
+      }
+
+  .product-testing 
+    .testing-result 
+      .fifty-percent {
+        width: 16rem;
+        height: 26%;
+      }
+
+  .product-testing 
+    .testing-result 
+      .seventy-percent {
+        width: 16rem;
+        height: 26%;
+      }
+
+  .product-testing 
+    .testing-result 
+      .eighty-percent {
+        width: 16rem;
+        height: 26%;
+      }
+
+  .product-testing 
+    .testing-result 
+      .hundred-percent {
+        width: 16rem;
+        height: 26%;
+      }
+
+  .product-efficiency 
+    .product-testing 
+      .testing-title {
+        font-size: 2rem;
+        margin-bottom: 5rem;
+      }
+
+  .top-services {
+    padding-bottom: 0;
+  }
+
 
   footer ul, p {
     font-size: 1.5rem;
   }
+
 }
