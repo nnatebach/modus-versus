@@ -79,57 +79,7 @@ button:hover {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 27px 172px 29px;
   background: #76c7c0 url(img/common/header_icn_bg_path.png) no-repeat center bottom/100% auto;
-}
-
-.header-nav > ul {
-  display: flex;
-  transform: translateY(3px);
-}
-
-.header-nav
-  .is-active {
-    background: #62a29e;
-    box-shadow: 0 3px 0 0 #528b86;
-    border-radius: 5px;
-    padding: 5px 16px 6px 12px;
-    font-size: 14px;
-    margin-right: 2px;
-  }
-
-.header-nav 
-  .is-hover {
-    position: relative;
-    background: #e5665d;
-    box-shadow: 0 3px 0 0 #e2534b;
-    padding: 6px 20px 6px 29px;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-
-.header-nav 
-  .header-nav-portfolio
-    li
-      a {
-        display: block;
-        padding: 6px 9px;
-        color: #fff;
-        background-color: #e5655d;
-        border-radius: 5px;
-        font-weight: 600;
-      }
-
-.is-hover::before {
-  content: "";
-  display: inline-block;
-  padding: 2px;
-  border: 1px solid;
-  border-color: transparent #fff #fff transparent;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 9px;
-  left: 16px;
 }
 
 .header-section-top {
@@ -145,6 +95,7 @@ button:hover {
 .header-nav ul li a {
   padding: 8px 26px;
   font-size: 13px;
+  margin-right: 1px;
 }
 
 .header-company-logo {
@@ -175,6 +126,7 @@ button:hover {
   }
 
 .header-nav-portfolio {
+  display: none;
   width: 190px;
   padding: 2px 5px;
   border-radius: 5px;
@@ -234,18 +186,6 @@ button:hover {
 }
 
 .top-services
-  .services-view {
-    display: flex;
-    background-color: #ececec;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 6px;
-    margin-bottom: 50px;
-    padding: 30px 24px 0;
-    height: 70px;
-  }
-
-.top-services
   .services-view
     .services-intro {
       width: 80%;
@@ -262,13 +202,6 @@ button:hover {
 .services-view 
   a {
     margin: 0;
-  }
-
-.top-services
-  .services-categories {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
 
 .services-view a {
@@ -312,12 +245,6 @@ button:hover {
 .category-section.chosen-box {
     background: #fff;
   }
-
-/* .category-section
-  .category-box-hover {
-    background: #e8645a;
-    box-shadow: 0 3px 0 0 #e2534b;
-  } */
 
 .category-section
   .category-picture {
@@ -365,13 +292,6 @@ button:hover {
 
 .product-summary
   .modus-versus-slider
-    .product-slider {
-      display: flex;
-      justify-content: center;
-    }
-
-.product-summary
-  .modus-versus-slider
     .modus-versus-heading {
       margin-bottom: 68px;
     }
@@ -415,13 +335,6 @@ button:hover {
   text-align: center;
   margin-bottom: 8px;
 }
-
-.product-summary
-  .product-efficiency {
-    font-size: 13px;
-    display: flex;
-    margin-bottom: 58px;
-  }
 
 .product-sub-section {
   font-weight: 800;
@@ -518,6 +431,7 @@ button:hover {
   .product-testing
     .testing-result {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
     }
 
@@ -614,18 +528,6 @@ button:hover {
 
 .product-summary
   .clients-satisfaction
-    .client-section {
-      color: #7f8c8c;
-      margin-bottom: 52px;
-      font-size: 16px;
-      position: relative;
-      align-items: center;
-      display: flex;
-      padding-right: 110px;
-    }
-
-.product-summary
-  .clients-satisfaction
     .client-section::before {
       content: "";
       background-color: #e1e1e1;
@@ -649,6 +551,7 @@ button:hover {
   .clients-satisfaction
     .client-list {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
     }
 
@@ -715,13 +618,6 @@ footer ul {
   margin-bottom: 25px;
 }
 
-.company-networks {
-  background: rgba(0,0,0,.1);
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 166px 20px 168px;
-}
-
 .company-networks
   small {
     font-size: 12px;
@@ -739,11 +635,6 @@ footer ul {
 
 .company-sites li {
   margin: 0 22px;
-}
-
-.company-summary {
-  display: flex;
-  padding-bottom: 23px;
 }
 
 .company-summary
@@ -983,9 +874,11 @@ footer ul {
 
 /********* RESPONSIVE *********/
 
-@media print, (min-width: 768px) {
-  main {
-    min-width: 78.125rem;
+/****** PC ******/
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 1250px;
   }
 
   .wrapper {
@@ -993,9 +886,139 @@ footer ul {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .header {
+    padding: 27px 172px 29px;
+  }
+
+  .header-nav > ul {
+    display: flex;
+    transform: translateY(3px);
+  }
+  
+  .header-nav
+    .is-active {
+      background: #62a29e;
+      box-shadow: 0 3px 0 0 #528b86;
+      border-radius: 5px;
+      padding: 5px 16px 6px 12px;
+      font-size: 14px;
+      margin-right: 3px;
+    }
+  
+  .header-nav ul li a:hover {
+    background: #e5665d;
+    box-shadow: 0 3px 0 0 #e2534b;
+    /* padding: 6px 20px 6px 29px; */
+    border-radius: 5px;
+    /* margin-right: 10px; */
+  }
+
+  .header-nav 
+    .portfolio-sub-menu {
+      position: relative;
+    }
+
+  .header-nav .portfolio-sub-menu:hover + .header-nav-portfolio {
+    display: block;
+  }
+  
+  .header-nav 
+    .header-nav-portfolio
+      li
+        a {
+          display: block;
+          padding: 6px 9px;
+          color: #fff;
+          background-color: #e5655d;
+          border-radius: 5px;
+          font-weight: 600;
+        }
+  
+  .portfolio-sub-menu::before {
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid;
+    border-color: transparent #fff #fff transparent;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 12px;
+    left: 9px;
+  }
+
+  /******* SECTION *******/
+
+  .top-services
+    .services-view {
+      display: flex;
+      background-color: #ececec;
+      align-items: center;
+      margin: 0 auto;
+      border-radius: 6px;
+      margin-bottom: 50px;
+      padding: 30px 24px 0;
+      height: 70px;
+    }
+
+  .top-services
+    .services-categories {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+  .product-summary
+    .modus-versus-slider
+      .product-slider {
+        display: flex;
+        justify-content: center;
+      }
+
+  .product-summary
+    .product-efficiency {
+      font-size: 13px;
+      display: flex;
+      margin-bottom: 58px;
+    }
+  
+  .product-summary
+    .clients-satisfaction
+      .client-section {
+        color: #7f8c8c;
+        margin-bottom: 52px;
+        font-size: 16px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        padding-right: 110px;
+      }
+
+  .company-summary {
+    display: flex;
+    padding-bottom: 23px;
+  }
+
+  .company-networks {
+    background: rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 166px 20px 168px;
+  }
 }
 
-@media only screen and (max-width: 767px) {
+/****** SP ******/
+
+@media screen and (max-width: 767px) {
+
+  .container {
+    min-width: 320px;
+  }
+
+  .header {
+    padding: 27px 100px 29px;
+  }
+
   .header-nav {
     display: none;
   }
