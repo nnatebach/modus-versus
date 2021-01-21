@@ -103,7 +103,6 @@ button:hover {
 
 .header-slider {
   background-color: #7f8c8c;
-  padding: 160px 0 207px;
   text-align: center;
 }
 
@@ -112,12 +111,12 @@ button:hover {
     background: #e2534b;
     color: #fff;
     display: inline-block;
-    margin-bottom: 10px;
     border-radius: 5px;
     padding: 0px 11px 2px;
     font-size: 50px;
     font-weight: 800;
     margin-left: 5px;
+    margin-bottom: 10px;
   }
 
 .header-nav-portfolio {
@@ -912,15 +911,15 @@ footer ul {
 /****** PC ******/
 
 @media print, (min-width: 768px) {
-  .container {
-    min-width: 1250px;
-  }
-}
 
-@media screen and (min-width: 768px) {
   .container {
     min-width: 1250px;
   }
+
+  .header-slider {
+    padding: 160px 0 207px;
+  }
+
 
   main p {
     color: #777;
@@ -1061,7 +1060,11 @@ footer ul {
 
 /****** SP ******/
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+
+  html {
+    font-size: calc(100vw / 3.75);
+  }
 
   .container {
     min-width: 320px;
@@ -1078,21 +1081,40 @@ footer ul {
     width: 43.8rem;
   }
 
-  /******** SECTION ********/
+  /******** HEADER ********/
 
   .header {
-    padding: 27px 100px 29px;
+    padding: 1.68rem 6.25rem 1.81rem;
   }
 
   .header-nav {
     display: none;
   }
 
+  .header-section-top {
+    padding-bottom: 3.125rem;
+  }
+
   .header-section-top
     .header-slider
       .slider-description {
         font-size: 1.5rem;
+        width: 37.38rem;
+        padding: .47rem 2.5rem .86rem;
+        border-radius: .05rem;
       }
+
+  .header-slider {
+    padding: 10rem 0 12.93rem;
+  }
+
+  .header-slider
+    .slider-title {
+      padding: 0 .69rem .125rem;
+      font-size: 2.4rem;
+      margin-left: .313rem;
+      margin-bottom: .63rem;
+    }
 
   /******** SECTION ********/
 
@@ -1118,12 +1140,15 @@ footer ul {
       .category-section {
         margin-bottom: 8rem;
         width: 100%;
+        border-radius: .5rem;
+        background: #f8f8f8;
+        padding: 3.31rem 0 3.87rem;
       }
 
   .top-services 
     .services-view {
       height: 17rem;
-      width: 40rem;
+      width: 30rem;
     }
 
   .top-services 
@@ -1143,14 +1168,23 @@ footer ul {
   .top-services
     .services-view 
       a {
-        width: 22%;
+        box-shadow: 0 0.25rem 0 0 #e1534b;
+        font-size: 1.25rem;
+        border-radius: .375rem;
+        height: 1.25rem;
+        padding: .94rem 2.87rem;
       }
 
   .category-section 
+    .category-description {
+      padding: 0 .875rem;
+    }
+
+  .category-section 
     .category-picture {
-      width: 100px;
+      width: 6.25rem;
       height: auto;
-      margin: 0 auto 30px;
+      margin: 0 auto 1.87rem;
     }
 
   .category-section 
@@ -1188,6 +1222,11 @@ footer ul {
       width: 80%;
       margin: 0 auto 4rem;
     }
+
+  .product-summary {
+    padding-top: 4.19rem;
+    padding-bottom: 3.125rem;
+  }
 
   .modus-versus-slider
     .modus-versus-product {
@@ -1273,6 +1312,14 @@ footer ul {
         color: #7f8c8c;
       }
 
+  .product-summary 
+    .product-efficiency 
+      .product-testing p {
+        margin-bottom: 3.18rem;
+        transform: translateY(-.375rem);
+        padding: 0 .87rem;
+      }
+
   .product-testing 
     .testing-result 
       .result-suspendisse {
@@ -1319,9 +1366,37 @@ footer ul {
     padding-bottom: 0;
   }
 
+  footer {
+    padding-top: 3rem;
+  }
 
   footer ul, p {
     font-size: 1.5rem;
   }
+
+  .company-summary
+    .company-info {
+      width: 100%;
+    }
+
+  .company-summary
+    .company-info
+      .footer-logo {
+        width: 22rem;
+        margin-bottom: 1.56rem;
+      }
+
+  .company-summary
+    .company-info
+      .footer-logo
+        img {
+          width: 100%;
+        }
+
+  .company-summary
+    .company-info p {
+      margin-bottom: .93rem;
+      font-size: 1.4rem;
+    }
 
 }
