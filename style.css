@@ -901,6 +901,12 @@ footer ul {
   position: absolute;
 }
 
+.the-slider {
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+}
+
 /********* RESPONSIVE *********/
 
 /****** PC ******/
