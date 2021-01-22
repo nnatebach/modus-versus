@@ -702,6 +702,26 @@ footer {
   position: absolute;
 }
 
+.facebook-site::after {
+  width: 28px;
+  height: 22px;
+}
+
+.googleplus-site::after {
+  width: 26px;
+  height: 23px;
+}
+
+.twitter-site::after {
+  width: 23px;
+  height: 22px;
+}
+
+.rss-site::after {
+  width: 24px;
+  height: 21px;
+}
+
 /********* RESPONSIVE *********/
 
 /*********************************  PC  /*********************************/
@@ -763,6 +783,10 @@ footer {
   .header .magnifier {
     transform: translate(-1px, 6px);
     margin-left: 26px;
+  }
+
+  .hamburger-sidebar {
+    display: none;
   }
 
   .header-nav ul li a {
@@ -1037,7 +1061,8 @@ footer {
     background: rgba(0,0,0,.1);
     display: flex;
     justify-content: space-between;
-    padding: 22px 201px 20px 169px;
+    padding: 22px 165px 16px 169px;
+    margin: 0 auto;
   }
 
   .product-summary {
@@ -1212,26 +1237,6 @@ footer {
   .blog-highlights .blog-description p {
     margin-bottom: 5px;
   }
-
-  .facebook-site::after {
-    width: 28px;
-    height: 22px;
-  }
-  
-  .googleplus-site::after {
-    width: 26px;
-    height: 23px;
-  }
-  
-  .twitter-site::after {
-    width: 23px;
-    height: 22px;
-  }
-  
-  .rss-site::after {
-    width: 24px;
-    height: 21px;
-  }
 }
 
 /****** SP ******/
@@ -1270,11 +1275,36 @@ footer {
     padding: .27rem 0.4rem .29rem;
   }
 
+  .hamburger-sidebar {
+    display: block;
+  }
+
   .header
     .header-company-logo
       .header-logo {
         width: 1.8rem;
       }
+
+  .hamburger-sidebar
+    span {
+      height: 7px;
+      right: 0.23rem;
+      left: 3.2rem;
+      background: #fff;
+      box-shadow: 0 0 0.07rem rgb(5 5 73 / 50%);
+      display: block;
+      position: absolute;
+    }
+
+  .hamburger-sidebar
+    span:nth-child(2) {
+      top: .34rem;
+    }
+
+  .hamburger-sidebar
+    span:nth-child(3) {
+      top: .42rem;
+    }
 
   .header
     .header-company-logo
@@ -1809,6 +1839,8 @@ footer {
     .company-networks {
       padding: 0 .2rem;
       background: rgba(0,0,0,.1);
+      display: flex;
+      justify-content: space-between;
     }
 
   .company-networks 
