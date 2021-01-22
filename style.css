@@ -126,10 +126,19 @@ button:hover {
   }
 
 .header-nav-portfolio::after {
-  position: absolute;
+  /* position: absolute;
   content: "";
   transform: rotate(45deg);
+  background: #e2534b; */
+
+  content: "";
+  position: absolute;
+  display: inline-block;
+  padding: 2px;
+  border: 1px solid;
+  border-color: transparent #e2534b #e2534b transparent;
   background: #e2534b;
+  transform: rotate(45deg);
 }
 
 .slider-description {
@@ -266,6 +275,7 @@ button:hover {
   font-weight: 600;
   text-align: center;
   margin-bottom: 8px;
+  margin-left: -2px;
 }
 
 .product-sub-section {
@@ -292,7 +302,8 @@ button:hover {
         color: #7f8c8c;
         margin-bottom: 25px;
         font-size: 16px;
-        letter-spacing: -.2px;
+        letter-spacing: -.1px;
+        margin-left: -3px;
       }
 
 .product-summary
@@ -330,7 +341,7 @@ button:hover {
         color: #7f8c8c;
         font-size: 16px;
         margin-left: 60px;
-        letter-spacing: 0.2px;
+        /* letter-spacing: 0.2px; */
         font-weight: 600;
       }
 
@@ -338,7 +349,8 @@ button:hover {
   .product-efficiency
     .product-testing {
       width: 610px;
-      margin: 0 40px 0 11px;
+      /* margin: 0 40px 0 11px; */
+      margin: -8px 40px 0 11px;
     }
 
 /* .product-summary
@@ -387,6 +399,7 @@ button:hover {
       color: #7f8c8c;
       margin-bottom: 30px;
       font-size: 16px;
+      margin-left: -1px;
     }
 
 .product-efficiency
@@ -467,7 +480,8 @@ button:hover {
       order: 1;
       width: 7px;
       height: 7px;
-      margin-left: 17px;
+      margin-left: 15px;
+      margin-top: 3px;
     }
 
 .product-summary
@@ -724,6 +738,17 @@ footer {
 
 @media print, (min-width: 768px) {
 
+  .product-summary
+    .clients-satisfaction
+      button {
+        border: none;
+        border-radius: 6px;
+        width: 40px;
+        height: 37px;
+        background: #999;
+        box-shadow: 0 3px 0 0 #7f8c8c;
+      }
+
   .container {
     min-width: 1250px;
   }
@@ -801,7 +826,7 @@ footer {
   .header-nav-portfolio::after {
     padding: 5px;
     top: -4px;
-    left: 13px; 
+    left: 9px; 
   }
 
   .slider-description {
@@ -998,6 +1023,13 @@ footer {
       display: flex;
       margin-bottom: 58px;
     }
+
+  .product-summary 
+    .product-efficiency
+      .product-testing p {
+        margin-bottom: 55px;
+        line-height: 2;
+      }
   
   .product-summary
     .clients-satisfaction
@@ -1020,7 +1052,7 @@ footer {
     background: rgba(0,0,0,.1);
     display: flex;
     justify-content: space-between;
-    padding: 20px 166px 20px 168px;
+    padding: 22px 165px 20px 169px;
   }
 
   .product-summary {
@@ -1051,11 +1083,14 @@ footer {
     }
   
   .company-sites {
-    transform: translateY(-6px);
+    /* transform: translate(1px, -8px); */
+    transform: translate(-21px, -8px);
   }
 
   .company-sites li {
-    margin: 0 22px;
+    /* margin: 0 22px; */
+    margin-left: 40px;
+    margin-right: 2px;
   }
 
   .company-summary
@@ -1080,7 +1115,7 @@ footer {
   .company-summary
     .blog-highlights {
       width: 345px;
-      margin-left: 44px;
+      margin-left: 45px;
     }
 
   .company-summary
@@ -1154,7 +1189,7 @@ footer {
 
   .company-links ul li a::before {
     left: -17px;
-    top: 8px;
+    top: 6px;
   }
   
   .company-community p {
@@ -1165,7 +1200,7 @@ footer {
   
   .company-community ul li a::before {
     left: -17px;
-    top: 6px;
+    top: 5px;
   }
 
   .blog-highlights ul li {
@@ -1178,7 +1213,7 @@ footer {
   } */
   
   .blog-highlights .blog-description {
-    padding: 0 10px 0 19px;
+    padding: 0 10px 0 18px;
     transform: translateY(-4px);
   }
   
@@ -1273,8 +1308,8 @@ footer {
     .header-slider
       .slider-description {
         font-size: .16rem;
-        width: 2.9rem;
-        padding: .07rem .4rem .12rem;
+        width: 2.1rem;
+        padding: .07rem .1rem .12rem;
         border-radius: .04rem;
         margin: 0 auto;
       }
@@ -1286,9 +1321,9 @@ footer {
   .header-slider
     .slider-title {
       padding: 0 .04rem 0;
-      font-size: .2rem;
+      font-size: .5rem;
       /* margin-left: .313rem; */
-      margin-bottom: .03rem;
+      margin-bottom: .3rem;
       border-radius: .02rem;
     }
 
@@ -1309,48 +1344,55 @@ footer {
         width: 80%;
       }
 
+  .top-services 
+    .services-view 
+      .services-intro
+        .services-description {
+          font-size: .3rem;
+          margin-bottom: .3rem;
+        }
+
   .services-view 
     a {
       border-radius: .06rem;
       padding: 0 .1rem;
+      font-size: .2rem;
     }
 
   .product-summary 
     .modus-versus-slider 
-      .product-slider 
-        .product-slider-center {
+      .product-slider {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+  .product-summary 
+    .modus-versus-slider
+      .product-summary-title {
+        font-size: .4rem;
+      }
+
+  .product-summary 
+    .modus-versus-slider 
+      .product-slider li {
           display: block;
           width: 3.5rem;
-          margin: 0 auto;
+          margin: 0 auto .2rem;
+          transform: translate(0, 0)!important;
         }
 
   .product-summary 
     .modus-versus-slider 
-      .product-slider 
-        .product-slider-center 
-          img {
+      .product-slider li
+        img {
           width: 100%;
-        }
-
-  .product-summary 
-    .modus-versus-slider 
-      .product-slider 
-        .product-slider-left {
-          display: none;
-        }
-
-  .product-summary 
-    .modus-versus-slider 
-      .product-slider 
-        .product-slider-right {
-          display: none;
         }
   
   .top-services
     .services-categories
       .category-section {
         position: relative;
-        width: 2rem;
+        /* width: 2rem; */
         padding: .4rem .2rem;
         margin-bottom: 0.5rem;
         border-radius: .06rem;
@@ -1389,6 +1431,11 @@ footer {
           width: 100%;
         }
 
+  .category-section 
+    .category-title {
+      font-size: .16rem;
+    }
+
   .category-section
     .category-box
       .category-picture {
@@ -1398,7 +1445,7 @@ footer {
 
   .top-services
     .services-categories {
-      width: 2.4rem;
+      width: 100%;
       margin: 0 auto;
     }
 
@@ -1415,11 +1462,18 @@ footer {
         margin-bottom: .1rem;
       }
 
-  .product-efficiency 
+  .product-summary 
+    .product-efficiency 
+      .product-goals
+        .product-sub-section {
+          font-size: .16rem
+        }
+
+  /* .product-efficiency 
     .product-goals 
       .product-goals-title {
         font-size: .24rem;
-      }
+      } */
 
   .product-efficiency 
     .product-goals 
@@ -1583,6 +1637,21 @@ footer {
     .client-list
       .list-icon {
         margin-bottom: .1rem;
+        width: 1.3rem;
+      }
+
+  .clients-satisfaction
+    .client-list
+      .list-icon img {
+        width: 100%;
+      }
+
+  .product-summary 
+    .clients-satisfaction 
+      .client-list {
+        width: 3.4rem;
+        margin: 0 auto;
+        justify-content: space-around;
       }
   
   /******************** FOOTER *********************/
