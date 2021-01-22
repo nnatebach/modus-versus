@@ -1272,9 +1272,8 @@ footer {
   }
   
   .wrapper {
-    display: block;
     margin: 0 auto;
-    width: 3.7rem;
+    padding: 0 .4rem;
   }
 
   /******** HEADER ********/
@@ -1331,7 +1330,6 @@ footer {
 
   .top-services
     .services-view {
-      width: 3.4rem;
       border-radius: 0.1rem;
       margin: 0 auto .3rem;
       padding: .2rem 0.1rem;
@@ -1376,7 +1374,6 @@ footer {
     .modus-versus-slider 
       .product-slider li {
           display: block;
-          width: 3.5rem;
           margin: 0 auto .2rem;
           transform: translate(0, 0)!important;
         }
@@ -1451,14 +1448,12 @@ footer {
 
   .product-summary
     .product-efficiency {
-      width: 3.5rem;
       margin: 0 auto;
     }
 
   .product-summary 
     .product-efficiency 
       .product-goals {
-        width: 3.5rem;
         margin-bottom: .1rem;
       }
 
@@ -1497,9 +1492,17 @@ footer {
   .product-summary 
     .product-efficiency 
       .product-testing {
-        width: 100%;
         margin: 0;
+        width: 3.2rem;
       }
+
+  .product-summary 
+    .product-efficiency 
+      .product-testing
+        p {
+          line-height: .2rem;
+          margin-bottom: .2rem;
+        }
 
   .product-summary 
     .modus-versus-slider 
@@ -1596,7 +1599,6 @@ footer {
   .product-summary 
     .product-efficiency 
       .clients-feedback {
-        width: 3.5rem;
         margin-bottom: .4rem;
       }
 
@@ -1617,7 +1619,6 @@ footer {
   .product-summary
     .clients-satisfaction {
       color: #7f8c8c;
-      width: 3.7rem;
       margin: 0 auto;
     }
 
@@ -1649,7 +1650,6 @@ footer {
   .product-summary 
     .clients-satisfaction 
       .client-list {
-        width: 3.4rem;
         margin: 0 auto;
         justify-content: space-around;
       }
