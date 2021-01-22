@@ -61,10 +61,6 @@ em {
   font-style: italic;
 }
 
-/* main {
-  overflow: hidden;
-} */
-
 button:hover {
   cursor: pointer;
 }
@@ -111,11 +107,6 @@ button:hover {
 
 .header
   .header-nav .header-nav-portfolio li a::before {
-    /* content: "";
-    display: inline-block;
-    border-color: transparent #fff #fff transparent;
-    transform: rotate(-45deg); */
-
     content: "";
     position: absolute;
     display: inline-block;
@@ -126,11 +117,6 @@ button:hover {
   }
 
 .header-nav-portfolio::after {
-  /* position: absolute;
-  content: "";
-  transform: rotate(45deg);
-  background: #e2534b; */
-
   content: "";
   position: absolute;
   display: inline-block;
@@ -352,16 +338,6 @@ button:hover {
       /* margin: 0 40px 0 11px; */
       margin: -8px 40px 0 11px;
     }
-
-/* .product-summary
-  .product-efficiency
-    .product-testing p {
-      margin-bottom: 51px;
-      line-height: 1.9;
-      transform: translateY(-6px);
-      padding: 0 14px;
-      letter-spacing: -0.17px;
-    } */
 
 .product-summary
   .product-efficiency
@@ -691,7 +667,7 @@ footer {
 }
 
 .facebook-site::after {
-  background: url(img/common/icn_facebook.png) no-repeat center/100% auto;
+  background: url(img/common/footer_facebook_icon.png) no-repeat center/100% auto;
   content: "";
   position: absolute;
 }
@@ -701,7 +677,7 @@ footer {
 }
 
 .googleplus-site::after {
-  background: url(img/common/icn_googleplus.png) no-repeat center/100% auto;
+  background: url(img/common/footer_googleplus_icn.png) no-repeat center/100% auto;
   content: "";
   position: absolute;
 }
@@ -711,7 +687,7 @@ footer {
 }
 
 .twitter-site::after {
-  background: url(img/common/icn_twitter.png) no-repeat center/100% auto;
+  background: url(img/common/footer_twitter_icn.png) no-repeat center/100% auto;
   content: "";
   position: absolute;
 }
@@ -721,16 +697,10 @@ footer {
 }
 
 .rss-site::after {
-  background: url(img/common/icn_rss.png) no-repeat center/100% auto;
+  background: url(img/common/footer_rss_icn.png) no-repeat center/100% auto;
   content: "";
   position: absolute;
 }
-
-/* .the-slider {
-  width: 500px;
-  height: 100px;
-  margin: 0 auto;
-} */
 
 /********* RESPONSIVE *********/
 
@@ -747,6 +717,21 @@ footer {
         height: 37px;
         background: #999;
         box-shadow: 0 3px 0 0 #7f8c8c;
+      }
+
+  .product-summary
+    .clients-satisfaction
+      button:hover {
+        background: #e1524b;
+        box-shadow: 0 3px 0 0 #e1524b;;
+      }
+
+  .product-summary
+    .clients-satisfaction
+      .button-left {
+        margin-right: 15px;
+        padding-top: 4px;
+        padding-right: 10px;
       }
 
   .container {
@@ -1052,10 +1037,11 @@ footer {
     background: rgba(0,0,0,.1);
     display: flex;
     justify-content: space-between;
-    padding: 22px 165px 20px 169px;
+    padding: 22px 201px 20px 169px;
   }
 
   .product-summary {
+    background: #e9e8e9;
     padding-top: 67px;
     padding-bottom: 49px;
   }
@@ -1083,14 +1069,12 @@ footer {
     }
   
   .company-sites {
-    /* transform: translate(1px, -8px); */
-    transform: translate(-21px, -8px);
+    margin-right: -22px;
   }
 
   .company-sites li {
-    /* margin: 0 22px; */
-    margin-left: 40px;
-    margin-right: 2px;
+    margin-right: 46px;
+    margin-top: -8px;
   }
 
   .company-summary
@@ -1230,22 +1214,22 @@ footer {
   }
 
   .facebook-site::after {
-    width: 10px;
+    width: 28px;
     height: 22px;
   }
   
   .googleplus-site::after {
-    width: 22px;
+    width: 26px;
     height: 23px;
   }
   
   .twitter-site::after {
-    width: 17px;
+    width: 23px;
     height: 22px;
   }
   
   .rss-site::after {
-    width: 22px;
+    width: 24px;
     height: 21px;
   }
 }
@@ -1307,10 +1291,9 @@ footer {
     .header-slider
       .slider-description {
         font-size: .16rem;
-        width: 2.1rem;
         padding: .07rem .1rem .12rem;
         border-radius: .04rem;
-        margin: 0 auto;
+        margin: 0 .2rem;
       }
 
   .header-slider {
@@ -1368,6 +1351,8 @@ footer {
     .modus-versus-slider
       .product-summary-title {
         font-size: .4rem;
+        margin-bottom: .08rem;
+        margin-left: -.02rem;
       }
 
   .product-summary 
@@ -1408,7 +1393,7 @@ footer {
     .category-section
       a {
         position: absolute;
-        font-size: .09rem;
+        font-size: .14rem;
         transform: translateY(2.05rem);
         padding: 0.1rem .5rem;
       }
@@ -1431,13 +1416,14 @@ footer {
   .category-section 
     .category-title {
       font-size: .16rem;
+      margin-bottom: .2rem;
     }
 
   .category-section
     .category-box
       .category-picture {
-        margin: 0 auto .08rem;
-        width: .4rem;
+        margin: 0 auto .3rem;
+        width: .6rem;
       }
 
   .top-services
@@ -1455,6 +1441,7 @@ footer {
     .product-efficiency 
       .product-goals {
         margin-bottom: .1rem;
+        width: 100%;
       }
 
   .product-summary 
@@ -1463,6 +1450,7 @@ footer {
         .product-sub-section {
           font-size: .16rem
         }
+        
 
   /* .product-efficiency 
     .product-goals 
@@ -1492,8 +1480,8 @@ footer {
   .product-summary 
     .product-efficiency 
       .product-testing {
+        width: 100%;
         margin: 0;
-        width: 3.2rem;
       }
 
   .product-summary 
@@ -1513,61 +1501,61 @@ footer {
   .product-testing 
     .testing-result 
       .result-suspendisse {
-        font-size: .4rem;
-        padding-top: .37rem;
+        font-size: .3rem;
+        padding-top: .36rem;
       }
 
   .product-testing 
     .testing-result 
       .result-maecenas {
-        font-size: .4rem;
-        padding-top: .37rem;
+        font-size: .3rem;
+        padding-top: .36rem;
       }
 
   .product-testing 
     .testing-result 
       .result-aliquam {
-        font-size: .4rem;
-        padding-top: .37rem;
+        font-size: .3rem;
+        padding-top: .36rem;
       }
 
   .product-testing 
     .testing-result 
       .result-habitasse {
-        font-size: .4rem;
-        padding-top: .37rem;
+        font-size: .3rem;
+        padding-top: .36rem;
       }
 
   .product-testing 
     .testing-result 
       .fifty-percent {
-        width: 1.5rem;
-        height: .7rem;
-        margin-bottom: -.2rem;
+        width: 1.3rem;
+        height: auto;
+        margin-bottom: .1rem;
       }
 
   .product-testing 
     .testing-result 
       .seventy-percent {
-        width: 1.5rem;
-        height: .7rem;
-        margin-bottom: -.2rem;
+        width: 1.3rem;
+        height: auto;
+        margin-bottom: .1rem;
       }
 
   .product-testing 
     .testing-result 
       .eighty-percent {
-        width: 1.5rem;
-        height: .7rem;
-        margin-bottom: -.2rem;
+        width: 1.3rem;
+        height: auto;
+        margin-bottom: .1rem;
       }
 
   .product-testing 
     .testing-result 
       .hundred-percent {
-        width: 1.5rem;
-        height: .7rem;
-        margin-bottom: -.2rem;
+        width: 1.3rem;
+        height: auto;
+        margin-bottom: .1rem;
       }
 
   .product-efficiency 
@@ -1593,12 +1581,13 @@ footer {
     .product-efficiency 
       .clients-feedback 
         .client-comment {
-          font-size: .24rem;
+          font-size: .16rem;
         }
 
   .product-summary 
     .product-efficiency 
       .clients-feedback {
+        width: 100%;
         margin-bottom: .4rem;
       }
 
@@ -1606,14 +1595,14 @@ footer {
     .product-efficiency 
       .clients-feedback 
         .client-opinion {
-          font-size: .17rem;
+          font-size: .13rem;
         }
 
   .product-summary 
     .product-efficiency 
       .clients-feedback 
         .client-name {
-          font-size: .2rem;
+          font-size: .16rem;
         }
 
   .product-summary
@@ -1626,6 +1615,7 @@ footer {
     .clients-satisfaction 
       .client-section {
       margin-bottom: .2rem;
+      font-size: .16rem;
     }
 
   .product-summary 
@@ -1657,7 +1647,7 @@ footer {
   /******************** FOOTER *********************/
 
   footer {
-    padding: .7rem 0;
+    padding-top: .2rem;
   }
 
   footer
@@ -1670,6 +1660,7 @@ footer {
       .company-info p {
       line-height: 1.2;
       margin-bottom: .2rem;
+      font-size: .13rem;
     }
 
   footer
@@ -1682,7 +1673,8 @@ footer {
     .company-summary
       .company-info
         .footer-logo {
-          width: 1.8rem;
+          width: 2rem;
+          margin-bottom: .2rem;
         }
 
   footer
@@ -1696,6 +1688,7 @@ footer {
     .company-contacts 
       li {
         line-height: 1.4;
+        font-size: .13rem;
       }
 
   footer
@@ -1708,22 +1701,48 @@ footer {
       margin-bottom: .2rem;
     }
 
+  .product-summary 
+    .clients-satisfaction 
+      button {
+        border-radius: .06rem;
+        width: .4rem;
+        height: .3rem;
+      }
+
+  .product-summary 
+    .clients-satisfaction 
+      .button-left {
+        margin-right: .15rem;
+        padding-top: .04rem;
+        padding-right: .10rem;
+      }
+
+  .product-summary 
+    .clients-satisfaction 
+      .button-right {
+        padding: .03rem .16rem 0;
+      }
+
   .company-links ul li a::before {
-    left: -.25rem;
-    top: -.02rem;
+    left: -.18rem;
+    top: .067rem;
+    padding: .02rem;
   }
 
   .company-links ul li a {
     left: 0.2rem;
+    font-size: .13rem;
   }
 
   .company-community ul li a::before {
-    left: -.25rem;
-    top: -.02rem;
+    left: -.18rem;
+    top: .067rem;
+    padding: .02rem;
   }
 
   .company-community ul li a {
     left: 0.2rem;
+    font-size: .13rem;
   }
 
   footer
@@ -1731,18 +1750,15 @@ footer {
       ul
         li
           figure {
-            padding: .27rem;
-            border-radius: .06rem;
-            width: .6rem;
-            height: .35rem;
+            width: 1.2rem;
           }
 
   footer
     .blog-highlights
       ul
         .blog-description {
-          font-size: .15rem;
           margin-left: .1rem;
+          padding-top: .02rem;
         }
 
   .blog-highlights ul li {
@@ -1753,10 +1769,50 @@ footer {
     margin-bottom: .2rem;
   }
 
+  .blog-highlights
+    .blog-description
+      p {
+        font-size: .13rem;
+        margin-bottom: .02rem;
+      }
+
+  .blog-highlights 
+    .blog-description 
+      time {
+        font-size: .13rem;
+      }
+
+  .company-links 
+    p {
+      font-size: .2rem;
+    }
+
+  .company-community 
+    p {
+      font-size: .2rem;
+    }
+
+  .company-info 
+    .company-contacts 
+      strong {
+        font-size: .2rem;
+      }
+
   footer
     .blog-highlights
       figure
         img {
           width: 100%;
         }
+
+  footer
+    .company-networks {
+      padding: 0 .2rem;
+      background: rgba(0,0,0,.1);
+    }
+
+  .company-networks 
+    small {
+      font-size: .12rem;
+    }
 }
