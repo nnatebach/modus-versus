@@ -497,6 +497,7 @@ button:hover {
       position: absolute;
       right: 3px;
       top: -10px;
+      display: flex;
     }
 
 .product-summary
@@ -702,32 +703,32 @@ footer {
   position: absolute;
 }
 
-.facebook-site::after {
-  width: 28px;
-  height: 22px;
-}
-
-.googleplus-site::after {
-  width: 26px;
-  height: 23px;
-}
-
-.twitter-site::after {
-  width: 23px;
-  height: 22px;
-}
-
-.rss-site::after {
-  width: 24px;
-  height: 21px;
-}
 
 /********* RESPONSIVE *********/
 
 /*********************************  PC  /*********************************/
 
 @media print, (min-width: 768px) {
-
+  .facebook-site::after {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .googleplus-site::after {
+    width: 26px;
+    height: 23px;
+  }
+  
+  .twitter-site::after {
+    width: 23px;
+    height: 22px;
+  }
+  
+  .rss-site::after {
+    width: 24px;
+    height: 21px;
+  }
+  
   .product-summary
     .clients-satisfaction
       button {
@@ -1098,7 +1099,7 @@ footer {
   }
 
   .company-sites li {
-    margin-right: 46px;
+    margin-right: 45px;
     margin-top: -8px;
   }
 
@@ -1262,7 +1263,7 @@ footer {
   
   .wrapper {
     margin: 0 auto;
-    padding: 0 .4rem;
+    padding: 0.2rem .4rem;
   }
 
   /******** HEADER ********/
@@ -1287,7 +1288,7 @@ footer {
 
   .hamburger-sidebar
     span {
-      height: 7px;
+      height: .03rem;
       right: 0.23rem;
       left: 3.2rem;
       background: #fff;
@@ -1652,6 +1653,7 @@ footer {
     .clients-satisfaction 
       .client-section-button {
         right: .1rem;
+        top: -.01rem;
       }
 
   .clients-satisfaction
@@ -1736,15 +1738,12 @@ footer {
       button {
         border-radius: .06rem;
         width: .4rem;
-        height: .3rem;
       }
 
   .product-summary 
     .clients-satisfaction 
       .button-left {
         margin-right: .15rem;
-        padding-top: .04rem;
-        padding-right: .10rem;
       }
 
   .product-summary 
@@ -1837,7 +1836,7 @@ footer {
 
   footer
     .company-networks {
-      padding: 0 .2rem;
+      padding: .1rem 0;
       background: rgba(0,0,0,.1);
       display: flex;
       justify-content: space-between;
@@ -1846,5 +1845,30 @@ footer {
   .company-networks 
     small {
       font-size: .12rem;
+      margin-left: .1rem;
     }
+
+  .company-sites li {
+    margin-right: .2rem;
+  }
+
+  .facebook-site::after {
+    width: .11rem;
+    height: .11rem;
+  }
+  
+  .googleplus-site::after {
+    width: .12rem;
+    height: .12rem;
+  }
+  
+  .twitter-site::after {
+    width: .12rem;
+    height: .12rem;
+  }
+  
+  .rss-site::after {
+    width: .12rem;
+    height: .12rem;
+  }
 }
