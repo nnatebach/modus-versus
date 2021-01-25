@@ -82,7 +82,6 @@ button:hover {
 }
 
 .header-slider {
-  background-color: #7f8c8c;
   text-align: center;
 }
 
@@ -480,14 +479,6 @@ button:hover {
       justify-content: space-between;
     }
 
-/* .clients-satisfaction
-  .client-list
-    .list-icon {
-      background: #f8f8f8;
-      padding: 33px 36px;
-      border-radius: 5px;
-    } */
-
 .product-summary
   .clients-satisfaction {
     position: relative;
@@ -649,10 +640,6 @@ footer {
   display: flex;
 }
 
-/* .blog-highlights ul figure {
-  background: rgba(0, 0, 0, .2);
-} */
-
 .blog-highlights p em {
   font-style: italic;
 }
@@ -762,7 +749,7 @@ footer {
   }
 
   .header-slider {
-    padding: 160px 0 207px;
+    transform: translateY(-345px);
   }
 
 
@@ -777,11 +764,53 @@ footer {
     margin-right: auto;
   }
 
-  /********************** HEADER ************************/
+  /********************** START OF HEADER ************************/
 
-  .header-section-top {
-    padding-bottom: 50px;
+
+  /********************** START OF SLICK SLIDER ************************/
+
+
+  /* .slick-list
+    .slick-track {
+      margin: 0 auto;
+      transform: translate(0)!important;
+      width: 1500px!important;
+    } */
+
+  .slider-item {
+    width: 1500px;
+    height: 500px;
   }
+
+  .slider-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .keyvisual-slider
+    .slick-dots
+      li {
+        width: 60px;
+        height: 6px;
+        background: #afb8b9;
+        margin: 0 2px;
+      }
+
+  .keyvisual-slider
+    .slick-dots
+      .slick-active {
+        background-color: #e1534b;
+      }
+
+  .keyvisual-slider
+    .slick-dots
+      button {
+        display: none;
+      }
+
+  /* .header-section-top {
+    padding-bottom: 50px;
+  } */
 
   .header .magnifier {
     transform: translate(-1px, 6px);
@@ -802,9 +831,9 @@ footer {
     margin-right: 40px;
   }
 
-  .header-slider {
-    background-color: #7f8c8c;
-    text-align: center;
+  .slick-dots {
+    display: flex;
+    justify-content: center;
   }
 
   .header-slider
@@ -815,6 +844,60 @@ footer {
       margin-left: 5px;
       margin-bottom: 10px;
     }
+
+  /* .header-keyvisual-slider
+    .keyvisual-slider
+      button {
+        display: none!important;
+      } */
+
+  .header-keyvisual-slider
+    .keyvisual-slider
+      .slick-arrow::before {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: url(img/top/icn_double_arrow.png) center center/auto no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+
+  .keyvisual-slider 
+  .slick-arrow {
+      display: inline-block;
+      background-color: #98a3a3;
+      cursor: pointer;                          
+      position: absolute;
+      text-indent: -999px;
+      overflow: hidden;
+    }
+
+  .keyvisual-slider 
+    .slick-arrow::before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background: url(../img/common/previous_icn.png) center center/auto no-repeat;
+      position: absolute;
+      top: 0;   
+      left: 0;
+    }
+
+  .keyvisual-slider 
+    .slick-arrow:hover {
+      background-color: #e2534b;
+    }
+
+  .keyvisual-slider 
+    .slick-next::before {
+      transform: rotate(180deg);
+    }
+
+  /********************** END OF SLICK SLIDER ************************/
 
   .header-nav-portfolio {
     width: 190px;
@@ -843,13 +926,14 @@ footer {
     left: 9px; 
   }
 
-  .slider-description {
-    width: 390px;
-    margin: 0 auto;
-    padding: 7px 40px 12px;
-    border-radius: 4px;
-    font-size: 16px;
-  }
+  .header-section-top
+    .slider-description {
+      width: 390px!important;
+      margin: 0 auto;
+      padding: 7px 40px 12px;
+      border-radius: 4px;
+      font-size: 16px;
+    }
 
   .header {
     padding: 27px 172px 23px;
@@ -1227,11 +1311,6 @@ footer {
     margin-bottom: 18px;
   }
   
-  /* .blog-highlights ul figure {
-    padding: 21px 19px;
-    border-radius: 5px;
-  } */
-  
   .blog-highlights .blog-description {
     padding: 0 10px 0 18px;
     transform: translateY(-4px);
@@ -1260,6 +1339,10 @@ footer {
 
   body {
     font-size: .24rem;
+  }
+
+  .slick-dots {
+    display: none;
   }
 
   .container {

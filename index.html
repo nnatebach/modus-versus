@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modus-Versus</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <!-- Add the new slick-theme.css if you want the default styling -->
   
-  <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
-  <!-- <script type="text/javascript" src="script.js"></script> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
   <div class="container">
@@ -43,7 +42,7 @@
                   <a href="#">Portfolio 2 column page</a>
                 </li>
                 <li>
-                  <a href="#">Portfolio 2 column page</a>
+                  <a href="#">Portfolio 2 column page</a> 
                 </li>
               </ul>
             </li>
@@ -70,6 +69,19 @@
     </header>
     <main>
       <section class="header-section-top">
+        <div class="header-keyvisual-slider">
+          <div class="keyvisual-slider">
+            <div class="slider-item">
+              <img src="img/top/keyvisual_img.jpg" alt="VESTIBULUM">
+            </div>
+            <div class="slider-item">
+              <img src="img/top/keyvisual_img.jpg" alt="VESTIBULUM">
+            </div>
+            <div class="slider-item">
+              <img src="img/top/keyvisual_img.jpg" alt="VESTIBULUM">
+            </div>
+          </div>
+        </div>
         <div class="header-slider">
           <h2 class="slider-title">VESTIBULUM</h2>
           <p class="slider-description">Maecenas tincidunt, augue et rutrum condimentum, <br>libero lectus mattis orci, ut commodo.</p>
@@ -320,19 +332,18 @@
           </li>
         </ul>
       </div>
-      
 
-      <!-- <div class="the-slider">
-        <div class="slider-image">
-          <img src="img/footer_logo.png" alt="footer-slider">
-        </div>
-      </div>
+      <!-- IMPORTING JQUERY FROM CDN LINK -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+      <!-- IMPORTING SLICK -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+
+      <script type="text/javascript" src="script.js"></script>
     </footer>
-  </div> -->
-   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  </div>
 </body>
 </html>

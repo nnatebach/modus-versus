@@ -1,10 +1,20 @@
-// var $ = jQuery
 $(document).ready(function(){
-  $('.header-slider').slick({
-    slidesToShow: 3,
+  $('.keyvisual-slider').slick({
+    infinite: true,
+    speed: 500,
+    // centerMode: true,
+    arrows: true,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          // centerMode: false
+        }
+      }
+    ]
   })
 })
