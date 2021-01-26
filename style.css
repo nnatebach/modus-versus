@@ -61,6 +61,10 @@ em {
   font-style: italic;
 }
 
+button {
+  outline: none;
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -83,13 +87,29 @@ button:hover {
   .header-company-logo
     .header-logo:hover {
       opacity: .8;
-      /* transition: 2s; */
-      transition: opacity 0.26s ease;
     }
 
 .header-section-top {
   background: #f3f3f3;;
 }
+
+.header-keyvisual-slider
+  .keyvisual-slider
+    .slick-arrow::before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background: url(img/top/icn_double_arrow.png) center center/auto no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+.keyvisual-slider 
+  .slick-prev::before {
+    transform: rotate(-180deg);
+  }
 
 .header-nav {
   display: flex;
@@ -145,6 +165,32 @@ button:hover {
 
 /***************************** SECTION *****************************/
 
+.category-section:hover
+    .hover-category {
+      display: block;
+    }
+
+.category-section:hover
+  .static-category {
+    display: none;
+  }
+
+.category-section
+  .category-picture {
+    margin-bottom: 12px;
+    margin-right: 7px;
+  }
+
+.category-picture
+  .hover-category {
+    display: none;
+  }
+
+.category-section
+  img {
+    margin: 0 auto;
+  }
+
 .top-services {
   background: #f3f3f3;
 }
@@ -153,12 +199,6 @@ button:hover {
   .services-view {
     background-color: #ececec;
   }
-
-/* .top-services
-  .services-view
-    .services-intro {
-      width: 80%;
-    } */
 
 .services-view a {
   background: #e8645a;
@@ -184,14 +224,11 @@ button:hover {
   position: relative;
   box-shadow: 0 4px 0 0 #e5e6e6;
   background: #f8f8f8;
-}
-
-.category-section:hover {
-  transition: opacity 0.26s ease;
+  transition: 0.25s ease;
 }
 
 .category-section:hover .category-box {
-  transition: opacity 0.26s ease;
+  transition: 0.25s ease;
   cursor: pointer;
 }
 
@@ -223,8 +260,6 @@ button:hover {
 
 .product-summary {
   background: #f3f3f3 url(img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
-  /* padding-top: 67px;
-  padding-bottom: 50px; */
 }
 
 .product-summary
@@ -342,7 +377,6 @@ button:hover {
         color: #7f8c8c;
         font-size: 16px;
         margin-left: 60px;
-        /* letter-spacing: 0.2px; */
         font-weight: 600;
       }
 
@@ -350,7 +384,6 @@ button:hover {
   .product-efficiency
     .product-testing {
       width: 610px;
-      /* margin: 0 40px 0 11px; */
       margin: -8px 40px 0 11px;
     }
 
@@ -780,6 +813,13 @@ footer {
         height: 37px;
         background: #999;
         box-shadow: 0 3px 0 0 #7f8c8c;
+        transition: 0.25s ease;
+      }
+
+  .product-summary
+    .clients-satisfaction
+      button:hover {
+        opacity: .8;
       }
 
   .product-summary
@@ -823,7 +863,7 @@ footer {
   /********************** START OF SLICK SLIDER ************************/
 
   .slider-item {
-    width: 1500px;
+    width: 100%;
     height: 500px;
   }
 
@@ -834,6 +874,7 @@ footer {
         height: 6px;
         background: #afb8b9;
         margin: 0 5px;
+        transition: 0.25s ease;
       }
 
   .keyvisual-slider
@@ -873,10 +914,16 @@ footer {
     padding: 8px 26px;
     font-size: 13px;
     margin-right: 1px;
+    transition: 0.25s ease;
   }
 
   .header-company-logo {
     margin-right: 40px;
+    transition: opacity .25s ease;
+  }
+
+  .header-company-logo:hover {
+    opacity: .8;
   }
 
   .header-keyvisual-slider
@@ -898,19 +945,6 @@ footer {
       margin-left: 5px;
       margin-bottom: 10px;
     }
-
-  .header-keyvisual-slider
-    .keyvisual-slider
-      .slick-arrow::before {
-        content: "";
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        background: url(img/top/icn_double_arrow.png) center center/auto no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
   
   .header-keyvisual-slider
     .keyvisual-slider 
@@ -925,7 +959,7 @@ footer {
         height: 53px;
         background-color: #e76459;
         box-shadow: 0 3px 0 0 #e1534b;
-        outline: none;
+        transition: 0.26s ease;
       }
 
   .keyvisual-slider 
@@ -936,11 +970,6 @@ footer {
   .keyvisual-slider 
     .slick-next::before {
       transform: rotate(0);
-    }
-
-  .keyvisual-slider 
-    .slick-prev::before {
-      transform: rotate(-180deg);
     }
 
   /********************** END OF SLICK SLIDER ************************/
@@ -958,12 +987,16 @@ footer {
     padding: 5px 1px;
   }
 
+  /* .header .header-nav-portfolio li */
+
   .header
     .header-nav .header-nav-portfolio li a::before {
       margin-right: 9px;
       padding: 2px;
       top: 15px;
       left: 6px;
+      border: 1px solid;
+      border-color: transparent #fff #fff transparent;
     }
 
   .header-nav-portfolio::after {
@@ -994,6 +1027,7 @@ footer {
 
   .header-nav ul li {
     display: flex;
+    transition: 0.25s ease;
   }
   
   .header-nav
@@ -1116,6 +1150,11 @@ footer {
     border-radius: 6px;
     height: 20px;
     padding: 15px 46px;
+    transition: 0.25s ease;
+  }
+
+  .services-view a:hover {
+    opacity: .8;
   }
   
   .services-intro
@@ -1136,20 +1175,25 @@ footer {
     box-shadow: 0 4px 0 0 #e5e6e6;
     border-radius: 8px;
     padding: 53px 0 62px;
+    transition: 0.25s ease;
   }
 
   .category-section:hover {
     background-color: #fff;
-    transition: opacity 0.26s ease;
-  }
-
-  .category-section:hover .category-box {
-    background-color: #e2534b;
-    box-shadow: 0 4px 0 0 #e76459;
-    transition: opacity 0.26s ease;
   }
 
   .category-section:hover
+    .category-box {
+      background-color: #e2534b;
+      box-shadow: 0 4px 0 0 #e76459;
+    }
+
+  .category-section
+    .category-box {
+      transition: .25s ease;
+    }
+
+  /* .category-section:hover
     .hover-category {
       display: block;
     }
@@ -1173,7 +1217,7 @@ footer {
   .category-section
     img {
       margin: 0 auto;
-    }
+    } */
   
   .category-section
     .category-description {
@@ -1188,18 +1232,13 @@ footer {
       font-size: 14px;
       letter-spacing: .2px;
       box-shadow: 0 4px 0 0 rgb(98, 184, 175);
+      transition: 0.25s ease;
     }
-
-  /* .category-section
-    a:hover {
-      background-color: #e1534b;
-    } */
 
   .top-services
     .services-view {
       display: flex;
       padding: 23px 24px 0;
-      /* height: 77px; */
       margin: 0 auto 56px;
       border-radius: 6px;
     }
@@ -1266,7 +1305,7 @@ footer {
   .product-summary {
     background: #e9e8e9;
     padding-top: 67px;
-    padding-bottom: 49px;
+    padding-bottom: 45px;
   }
 
   /********* FOOTER *********/
@@ -1283,6 +1322,11 @@ footer {
   
   .footer-logo {
     margin-bottom: 25px;
+    transition: opacity .28s ease;
+  }
+
+  .footer-logo:hover {
+    opacity: .8;
   }
   
   .company-networks
@@ -1300,6 +1344,14 @@ footer {
     margin-top: -8px;
   }
 
+  .company-sites li a {
+    transition: opacity 0.25s ease;
+  }
+
+  .company-sites li a:hover {
+    opacity: .8;
+  }
+
   .company-summary
     .company-community
       ul {
@@ -1311,6 +1363,16 @@ footer {
   .company-summary
     .company-links {
       margin-right: 102px;
+    }
+
+  .company-summary 
+    .footer-link:hover {
+      opacity: .8;
+    }
+
+  .company-summary
+    .footer-link {
+      transition: opacity .25s ease;
     }
 
   .company-summary
@@ -1366,17 +1428,35 @@ footer {
           margin-left: 12px;
           display: inline-block;
           pointer-events: none;
+          transition: opacity .28s ease;
+          cursor: pointer;
         }
   
   .company-info
     .company-contacts
+      li
+        .phone-number:hover {
+          opacity: .8;
+        }
+
+  .company-info
+    .company-contacts
       .email-info {
         margin-left: 14px;
+        transition: opacity .28s ease;
+      }
+
+  .company-info
+    .company-contacts
+      .email-info:hover {
+        opacity: .8;
       }
   
   .company-info
     .company-contacts em {
       font-size: 36px;
+      height: 100%;
+      display: inline-block;
     }
   
   .company-info
@@ -1414,8 +1494,13 @@ footer {
 
   .blog-highlights ul li {
     margin-bottom: 18px;
+    transition: opacity 0.25s ease;
   }
   
+  .blog-highlights ul a:hover {
+    opacity: .8
+  }
+
   .blog-highlights .blog-description {
     padding: 0 10px 0 18px;
     transform: translateY(-4px);
@@ -1437,6 +1522,35 @@ footer {
 /****** SP ******/
 
 @media only screen and (max-width: 767px) {
+
+  /******************************** SLICK *********************************/
+
+  .keyvisual-slider .slick-arrow {
+    width: .3rem;
+    height: .3rem;
+  }
+
+  .slider-item {
+    height: 4rem;
+  }
+
+  .slider-item img {
+    height: 100%;
+  }
+
+  .header-section-top {
+    position: relative;
+  }
+
+  .header-section-top
+    .header-slider {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+  /******************************** SLICK *********************************/
 
   html {
     font-size: calc(100vw / 3.75);
@@ -1482,6 +1596,7 @@ footer {
     .header-company-logo
       .header-logo {
         width: 1.8rem;
+        transition: 0.25s ease;
       }
 
   .hamburger-sidebar
@@ -1519,21 +1634,16 @@ footer {
   .header-section-top
     .header-slider
       .slider-description {
-        font-size: .16rem;
+        font-size: .14rem;
         padding: .07rem .1rem .12rem;
         border-radius: .04rem;
-        margin: 0 .2rem;
+        margin: 0 .6rem;
       }
-
-  .header-slider {
-    padding: 1rem 0;
-  }
 
   .header-slider
     .slider-title {
       padding: 0 .04rem 0;
-      font-size: .5rem;
-      /* margin-left: .313rem; */
+      font-size: .26rem;
       margin-bottom: .3rem;
       border-radius: .02rem;
     }
@@ -1603,7 +1713,6 @@ footer {
     .services-categories
       .category-section {
         position: relative;
-        /* width: 2rem; */
         padding: .4rem .2rem;
         margin-bottom: 0.5rem;
         border-radius: .06rem;
@@ -1676,13 +1785,6 @@ footer {
         .product-sub-section {
           font-size: .16rem
         }
-        
-
-  /* .product-efficiency 
-    .product-goals 
-      .product-goals-title {
-        font-size: .24rem;
-      } */
 
   .product-efficiency 
     .product-goals 
@@ -1876,11 +1978,6 @@ footer {
   footer {
     padding-top: .2rem;
   }
-
-  footer
-    .company-summary {
-      /* padding: .2rem .1rem 0; */
-    }
 
   footer
     .company-summary 
