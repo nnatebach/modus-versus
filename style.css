@@ -74,7 +74,7 @@ button:hover {
 }
 
 .header-section-top {
-  background: #f3f3f3;
+  background: #f3f3f3;;
 }
 
 .header-nav {
@@ -692,12 +692,44 @@ footer {
   position: absolute;
 }
 
+.keyvisual-slider
+  .slick-arrow {
+    display: inline-block;
+    background-color: #e8645a;
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -999px;
+    overflow: hidden;
+    border: none;
+  }
+
+.keyvisual-slider
+  .slick-prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+  }
+
+.keyvisual-slider
+  .slick-next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+  }
+
 
 /********* RESPONSIVE *********/
 
 /*********************************  PC  /*********************************/
 
 @media print, (min-width: 768px) {
+
+  .header-section-top {
+    height: 551px;
+  }
+
   .facebook-site::after {
     width: 22px;
     height: 22px;
@@ -769,14 +801,6 @@ footer {
 
   /********************** START OF SLICK SLIDER ************************/
 
-
-  /* .slick-list
-    .slick-track {
-      margin: 0 auto;
-      transform: translate(0)!important;
-      width: 1500px!important;
-    } */
-
   .slider-item {
     width: 1500px;
     height: 500px;
@@ -793,7 +817,7 @@ footer {
         width: 60px;
         height: 6px;
         background: #afb8b9;
-        margin: 0 2px;
+        margin: 0 5px;
       }
 
   .keyvisual-slider
@@ -808,9 +832,10 @@ footer {
         display: none;
       }
 
-  /* .header-section-top {
-    padding-bottom: 50px;
-  } */
+  .keyvisual-slider
+    button {
+      display: none;
+    }
 
   .header .magnifier {
     transform: translate(-1px, 6px);
@@ -834,6 +859,10 @@ footer {
   .slick-dots {
     display: flex;
     justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -26px;
   }
 
   .header-slider
@@ -844,12 +873,6 @@ footer {
       margin-left: 5px;
       margin-bottom: 10px;
     }
-
-  /* .header-keyvisual-slider
-    .keyvisual-slider
-      button {
-        display: none!important;
-      } */
 
   .header-keyvisual-slider
     .keyvisual-slider
@@ -862,30 +885,21 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 2;
       }
-
-  .keyvisual-slider 
-  .slick-arrow {
-      display: inline-block;
-      background-color: #98a3a3;
-      cursor: pointer;                          
-      position: absolute;
-      text-indent: -999px;
-      overflow: hidden;
-    }
-
-  .keyvisual-slider 
-    .slick-arrow::before {
-      content: "";
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      background: url(../img/common/previous_icn.png) center center/auto no-repeat;
-      position: absolute;
-      top: 0;   
-      left: 0;
-    }
+  
+  .header-keyvisual-slider
+    .keyvisual-slider 
+      .slick-arrow {
+        display: inline-block;
+        background-color: #98a3a3;
+        cursor: pointer;                          
+        position: absolute;
+        text-indent: -999px;
+        overflow: hidden;
+        width: 50px;
+        height: 53px;
+        background-color: #e1524b;
+      }
 
   .keyvisual-slider 
     .slick-arrow:hover {
@@ -894,7 +908,12 @@ footer {
 
   .keyvisual-slider 
     .slick-next::before {
-      transform: rotate(180deg);
+      transform: rotate(0);
+    }
+
+  .keyvisual-slider 
+    .slick-prev::before {
+      transform: rotate(-180deg);
     }
 
   /********************** END OF SLICK SLIDER ************************/
