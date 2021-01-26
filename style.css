@@ -77,10 +77,17 @@ button:hover {
   background: #76c7c0 url(img/common/header_icn_bg_path.png) no-repeat center bottom/100% auto;
 }
 
-.slick-slide 
+.keyvisual-slider
   img {
     display: block;
     width: 100%;
+  }
+
+.client-list
+  img {
+    display: block;
+    width: auto;
+    margin: 0 auto;
   }
 
 .header
@@ -547,23 +554,11 @@ button:hover {
       display: flex;
     }
 
-.product-summary
-  .clients-satisfaction
-    button {
-      border: none;
-      border-radius: 6px;
-      width: 40px;
-      height: 37px;
-      background: #999;
-      box-shadow: 0 3px 0 0 #7f8c8c;
-    }
-
-.product-summary
+/* .product-summary
   .clients-satisfaction
     button:hover {
       background: #e1524b;
-      box-shadow: 0 3px 0 0 #e1524b;;
-    }
+    } */
 
 .product-summary
   .clients-satisfaction
@@ -773,6 +768,46 @@ footer {
     border-radius: 5px 0 0 5px;
   }
 
+/********************** START OF SLICK SLIDER ************************/
+
+.client-list
+  button {
+    right: 0;
+    text-indent: -99999px;
+    overflow: hidden;
+    border: none;
+  }
+
+.client-list
+  .slick-next::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+    width: 100%;
+    height: 100%;
+  }
+
+.client-list
+  .slick-arrow {
+    position: absolute;
+    background: #999;
+    transition: .25s ease
+  }
+
+.client-list
+  .slick-prev::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    background: #999 url(img/top/btn_arrow_left.png) no-repeat center;
+    width: 100%;
+    height: 100%;
+  }
+
+/********************** END OF SLICK SLIDER ************************/
 
 /********* RESPONSIVE *********/
 
@@ -803,39 +838,6 @@ footer {
     width: 24px;
     height: 21px;
   }
-  
-  .product-summary
-    .clients-satisfaction
-      button {
-        border: none;
-        border-radius: 6px;
-        width: 40px;
-        height: 37px;
-        background: #999;
-        box-shadow: 0 3px 0 0 #7f8c8c;
-        transition: 0.25s ease;
-      }
-
-  .product-summary
-    .clients-satisfaction
-      button:hover {
-        opacity: .8;
-      }
-
-  .product-summary
-    .clients-satisfaction
-      button:hover {
-        background: #e1524b;
-        box-shadow: 0 3px 0 0 #e1524b;;
-      }
-
-  .product-summary
-    .clients-satisfaction
-      .button-left {
-        margin-right: 15px;
-        padding-top: 4px;
-        padding-right: 10px;
-      }
 
   .container {
     min-width: 1250px;
@@ -973,6 +975,58 @@ footer {
     }
 
   /********************** END OF SLICK SLIDER ************************/
+
+
+
+  /********************** START OF SLICK SLIDER ************************/
+
+  .client-list
+    button {
+      top: -80px;
+      border: none;
+      border-radius: 6px;
+      width: 40px;
+      height: 37px;
+      box-shadow: 0 3px 0 0 #7f8c8c;
+    }
+
+  .client-list
+    .slick-next::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: rotate(180deg);
+      background: url(img/top/btn_arrow_left.png) no-repeat center;
+      width: 100%;
+      height: 100%;
+    }
+
+  .client-list
+    .slick-arrow:hover {
+      background: #e8645a;
+      box-shadow: 0 3px 0 0 #e8645a
+    }
+    
+  .client-list
+    .slick-prev::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      background: url(img/top/btn_arrow_left.png) no-repeat center;
+      width: 100%;
+      height: 100%;
+    }
+    
+  .client-list
+    .slick-prev {
+      right: 70px;
+    }
+
+  /********************** END OF SLICK SLIDER ************************/
+
+
 
   .header-nav-portfolio {
     width: 190px;
@@ -1960,12 +2014,6 @@ footer {
         width: 1.3rem;
       }
 
-  .clients-satisfaction
-    .client-list
-      .list-icon img {
-        width: 100%;
-      }
-
   .product-summary 
     .clients-satisfaction 
       .client-list {
@@ -1973,6 +2021,28 @@ footer {
         justify-content: space-around;
       }
   
+  /********************** START OF SLICK SLIDER ************************/
+
+  .client-list
+    button {
+      top: -.36rem;
+      border-radius: .07rem;
+      width: .3rem;
+      height: 0.12rem;
+    }
+
+  .client-list
+    .slick-prev {
+      right: .4rem;
+    }
+
+  .client-list 
+    .slick-next::after {
+      background: url(img/top/btn_arrow_left.png) no-repeat center;
+    }
+
+  /********************** END OF SLICK SLIDER ************************/
+
   /******************** FOOTER *********************/
 
   footer {
@@ -2025,12 +2095,13 @@ footer {
       margin-bottom: .2rem;
     }
 
-  .product-summary 
+  /* .product-summary 
     .clients-satisfaction 
       button {
         border-radius: .06rem;
-        width: .4rem;
-      }
+        width: .3rem;
+        height: 0.15rem;
+      } */
 
   .product-summary 
     .clients-satisfaction 
