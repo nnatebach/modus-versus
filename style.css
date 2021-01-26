@@ -73,6 +73,20 @@ button:hover {
   background: #76c7c0 url(img/common/header_icn_bg_path.png) no-repeat center bottom/100% auto;
 }
 
+.slick-slide 
+  img {
+    display: block;
+    width: 100%;
+  }
+
+.header
+  .header-company-logo
+    .header-logo:hover {
+      opacity: .8;
+      /* transition: 2s; */
+      transition: opacity 0.26s ease;
+    }
+
 .header-section-top {
   background: #f3f3f3;;
 }
@@ -341,6 +355,13 @@ button:hover {
       .testing-highlight {
         text-decoration: underline;
         color: #e1524b;
+      }
+
+.product-summary
+  .product-efficiency
+    .product-testing
+      .testing-highlight:hover {
+        text-decoration: none;
       }
 
 .product-efficiency
@@ -631,7 +652,7 @@ footer {
   text-transform: uppercase;
 }
 
-.blog-highlights ul li {
+.blog-highlights ul a {
   display: flex;
 }
 
@@ -801,11 +822,6 @@ footer {
     height: 500px;
   }
 
-  /* .slider-item img {
-    width: 100%;
-    height: auto;
-  } */
-
   .keyvisual-slider
     .slick-dots
       li {
@@ -813,6 +829,13 @@ footer {
         height: 6px;
         background: #afb8b9;
         margin: 0 5px;
+      }
+
+  .keyvisual-slider
+    .slick-dots
+      li:hover {
+        background-color: #e1534b;
+        cursor: pointer;
       }
 
   .keyvisual-slider
@@ -851,14 +874,16 @@ footer {
     margin-right: 40px;
   }
 
-  .slick-dots {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -26px;
-  }
+  .header-keyvisual-slider
+    .keyvisual-slider
+      .slick-dots {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -26px;
+      }
 
   .header-slider
     .slider-title {
@@ -895,6 +920,7 @@ footer {
         height: 53px;
         background-color: #e76459;
         box-shadow: 0 3px 0 0 #e1534b;
+        outline: none;
       }
 
   .keyvisual-slider 
@@ -1105,6 +1131,17 @@ footer {
     border-radius: 8px;
     padding: 53px 0 62px;
   }
+
+  .category-section:hover {
+    background-color: #fff;
+    transition: opacity 0.26s ease;
+  }
+
+  .category-section:hover .category-box {
+    background-color: #e2534b;
+    box-shadow: 0 4px 0 0 #e76459;
+    transition: opacity 0.26s ease;
+  }
   
   .category-section
     .category-picture {
@@ -1131,6 +1168,11 @@ footer {
       letter-spacing: .2px;
       box-shadow: 0 4px 0 0 rgb(98, 184, 175);
     }
+
+  /* .category-section
+    a:hover {
+      background-color: #e1534b;
+    } */
 
   .top-services
     .services-view {
@@ -1300,8 +1342,10 @@ footer {
     .company-contacts
       li
         .phone-number {
-        margin-left: 12px;
-      }
+          margin-left: 12px;
+          display: inline-block;
+          pointer-events: none;
+        }
   
   .company-info
     .company-contacts
@@ -1562,20 +1606,17 @@ footer {
         padding: 0.1rem .5rem;
       }
   
-  .top-services > ul
-    .category-section
-      .category-box
-        .category-picture {
-          margin: 0 auto .08rem;
-          width: .4rem;
-        }
+  .category-section
+    .category-picture {
+      margin: 0 auto .08rem;
+      width: .4rem;
+    }
 
   .category-section
-    .category-box
-      .category-picture
-        img {
-          width: 100%;
-        }
+    .category-picture
+      img {
+        width: 100%;
+      }
 
   .category-section 
     .category-title {
