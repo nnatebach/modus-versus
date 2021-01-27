@@ -143,17 +143,11 @@ button:hover {
       position: absolute;
     }
 
-.header .header-nav-portfolio li {
-    position: relative;
-  }
-
-.header
-  .header-nav .header-nav-portfolio li a::before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    transform: rotate(-45deg);
-  }
+.header 
+  .header-nav-portfolio 
+    li {
+      position: relative;
+    }
 
 .header-nav-portfolio::after {
   content: "";
@@ -290,25 +284,22 @@ button:hover {
 
 .product-summary
   .modus-versus-slider
-    .product-slider
-      .product-slider-center {
-        z-index: 2;
-        transform: translateX(-2px);
-      }
+    .product-slider-center {
+      z-index: 2;
+      transform: translateX(-2px);
+    }
 
 .product-summary
-  .modus-versus-slider
-    .product-slider
-      .product-slider-left {
-        transform: translate(68px, 60px);
-      }
+  .product-slider
+    .product-slider-left {
+      transform: translate(68px, 60px);
+    }
 
 .product-summary
-  .modus-versus-slider
-    .product-slider
-      .product-slider-right {
-        transform: translate(-72px, 59px);
-      }
+  .product-slider
+    .product-slider-right {
+      transform: translate(-72px, 59px);
+    }
 
 /******* SECTION 2 *******/
 
@@ -339,53 +330,49 @@ button:hover {
     }
 
 .product-summary
-  .product-efficiency
-    .clients-feedback
-      .client-comment {
-        color: #7f8c8c;
-        margin-bottom: 25px;
-        font-size: 16px;
-        letter-spacing: -.1px;
-        margin-left: -3px;
-      }
+  .clients-feedback
+    .client-comment {
+      color: #7f8c8c;
+      margin-bottom: 25px;
+      font-size: 16px;
+      letter-spacing: -.1px;
+      margin-left: -3px;
+    }
 
 .product-summary
-  .product-efficiency
-    .clients-feedback 
-      .client-opinion {
-        color: #7f8c8c;
-        line-height: 1.98;
-        border-radius: 6px;
-        position: relative;
-        background: #f8f8f8;
-        padding: 7px 16px 13px;
-        margin-bottom: 9px;
-      }
+  .clients-feedback 
+    .client-opinion {
+      color: #7f8c8c;
+      line-height: 1.98;
+      border-radius: 6px;
+      position: relative;
+      background: #f8f8f8;
+      padding: 7px 16px 13px;
+      margin-bottom: 9px;
+    }
 
 .product-summary
-  .product-efficiency
-    .clients-feedback 
-      .client-opinion::after {
-        content: "";
-        display: inline-block;
-        border-style: solid;
-        border-color: transparent #f8f8f8 #f8f8f8 transparent;
-        transform: rotate(270deg);
-        position: absolute;
-        border-width: 14px;
-        bottom: -26px;
-        left: 14px;
-      }
+  .clients-feedback 
+    .client-opinion::after {
+      content: "";
+      display: inline-block;
+      border-style: solid;
+      border-color: transparent #f8f8f8 #f8f8f8 transparent;
+      transform: rotate(270deg);
+      position: absolute;
+      border-width: 14px;
+      bottom: -26px;
+      left: 14px;
+    }
 
 .product-summary
-  .product-efficiency
-    .clients-feedback 
-      .client-name {
-        color: #7f8c8c;
-        font-size: 16px;
-        margin-left: 60px;
-        font-weight: 600;
-      }
+  .clients-feedback 
+    .client-name {
+      color: #7f8c8c;
+      font-size: 16px;
+      margin-left: 60px;
+      font-weight: 600;
+    }
 
 .product-summary
   .product-efficiency
@@ -396,18 +383,16 @@ button:hover {
 
 .product-summary
   .product-efficiency
-    .product-testing
-      .testing-highlight {
-        text-decoration: underline;
-        color: #e1524b;
-      }
+    .testing-highlight {
+      text-decoration: underline;
+      color: #e1524b;
+    }
 
 .product-summary
   .product-efficiency
-    .product-testing
-      .testing-highlight:hover {
-        text-decoration: none;
-      }
+    .testing-highlight:hover {
+      text-decoration: none;
+    }
 
 .product-efficiency
   .product-testing
@@ -417,11 +402,11 @@ button:hover {
       justify-content: space-between;
     }
 
-.product-efficiency
-  .product-testing li span {
+/* .product-efficiency
+  .product-testing span {
     color: #7f8c8c;
     font-weight: 700;
-  }
+  } */
 
 .product-efficiency
   .product-testing
@@ -450,15 +435,16 @@ button:hover {
   }
 
 .product-efficiency
-  .product-goals ul li::before {
-    content: "";
-    background: url(img/common/section_arrow_right_icn.png) no-repeat top center/100% auto;
-    width: 10px;
-    height: 12px;
-    position: absolute;
-    top: 9px;
-    left: -16px;
-  }
+  .product-goals 
+    .product-goals-list::before {
+      content: "";
+      background: url(img/common/section_arrow_right_icn.png) no-repeat top center/100% auto;
+      width: 10px;
+      height: 12px;
+      position: absolute;
+      top: 9px;
+      left: -16px;
+    }
 
 .product-testing
   .testing-result
@@ -502,11 +488,13 @@ button:hover {
 
 .product-testing
   .testing-result
-    .result-suspendisse {
+    span {
       font-size: 30px;
       text-align: center;
       padding-top: 29px;
       font-weight: 800;
+      color: #7f8c8c;
+      /* font-weight: 700; */
     }
 
 .product-summary
@@ -554,12 +542,6 @@ button:hover {
       display: flex;
     }
 
-/* .product-summary
-  .clients-satisfaction
-    button:hover {
-      background: #e1524b;
-    } */
-
 .product-summary
   .clients-satisfaction
     .button-left {
@@ -576,7 +558,7 @@ button:hover {
 
 /******* FOOTER *******/
 
-footer {
+.footer {
   background: #76c7c0 url(img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
   color: rgba(255, 255, 255, .8);
 }
@@ -612,12 +594,12 @@ footer {
       line-height: .8;
     }
 
-.company-info
+/* .company-info
   .company-contacts
     li a {
       display: inline-block;
       color: rgba(255, 255, 255, .8);
-    }
+    } */
 
 .company-info
   .company-contacts strong {
@@ -634,13 +616,13 @@ footer {
   position: relative;
 }
 
-.company-links ul li a {
+.company-links .footer-link {
   line-height: 1.8;
   position: relative;
   color: rgba(255, 255, 255, .8);
 }
 
-.company-links ul li a::before {
+.company-links .footer-link::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -658,13 +640,13 @@ footer {
   position: relative;
 }
 
-.company-community ul li a {
+.company-community .footer-link {
   line-height: 1.8;
   position: relative;
   color: rgba(255, 255, 255, .8);
 }
 
-.company-community ul li a::before {
+.company-community .footer-link::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -1041,16 +1023,20 @@ footer {
     padding: 5px 1px;
   }
 
-  /* .header .header-nav-portfolio li */
-
-  .header
-    .header-nav .header-nav-portfolio li a::before {
+  
+  .header-nav 
+    .header-nav-portfolio 
+      a::before {
       margin-right: 9px;
       padding: 2px;
       top: 15px;
       left: 6px;
       border: 1px solid;
       border-color: transparent #fff #fff transparent;
+      content: "";
+      position: absolute;
+      display: inline-block;
+      transform: rotate(-45deg);
     }
 
   .header-nav-portfolio::after {
@@ -1094,7 +1080,7 @@ footer {
       margin-right: 3px;
     }
   
-  .header-nav ul li a:hover {
+  .header-nav a:hover {
     background: #e5665d;
     box-shadow: 0 3px 0 0 #e2534b;
     border-radius: 5px;
@@ -1123,22 +1109,20 @@ footer {
   
   .header-nav 
     .header-nav-portfolio
-      li
-        a {
-          display: block;
-          padding: 6px 16px 6px 21px;
-          color: #fff;
-          background-color: #e5655d;
-          border-radius: 5px;
-          font-weight: 600;
-        }
+      a {
+        display: block;
+        padding: 6px 16px 6px 21px;
+        color: #fff;
+        background-color: #e5655d;
+        border-radius: 5px;
+        font-weight: 600;
+      }
 
   .header-nav 
     .header-nav-portfolio
-      li
-        a:hover {
-          background: #76c7c0
-        }
+      a:hover {
+        background: #76c7c0
+      }
   
   .portfolio-nav-section::before {
     content: "";
@@ -1246,32 +1230,6 @@ footer {
     .category-box {
       transition: .25s ease;
     }
-
-  /* .category-section:hover
-    .hover-category {
-      display: block;
-    }
-
-  .category-section:hover
-    .static-category {
-      display: none;
-    }
-  
-  .category-section
-    .category-picture {
-      margin-bottom: 12px;
-      margin-right: 7px;
-    }
-
-  .category-picture
-    .hover-category {
-      display: none;
-    }
-  
-  .category-section
-    img {
-      margin: 0 auto;
-    } */
   
   .category-section
     .category-description {
@@ -1364,11 +1322,11 @@ footer {
 
   /********* FOOTER *********/
 
-  footer {
+  .footer {
     padding-top: 48px;
   }
   
-  footer ul {
+  .footer ul {
     font-size: 13px;
     letter-spacing: -.1px;
     margin-left: -3px;
@@ -1470,40 +1428,31 @@ footer {
   
   .company-info
     .company-contacts
-      li a {
+      a {
         margin-left: 9px;
         transform: translateY(2px);
+        transition: opacity .28s ease;
+        cursor: pointer;
       }
   
   .company-info
     .company-contacts
-      li
-        .phone-number {
-          margin-left: 12px;
-          display: inline-block;
-          pointer-events: none;
-          transition: opacity .28s ease;
-          cursor: pointer;
-        }
-  
+      .phone-number {
+        margin-left: 12px;
+        display: inline-block;
+      }
+
   .company-info
     .company-contacts
-      li
-        .phone-number:hover {
-          opacity: .8;
-        }
+      a:hover {
+        opacity: .8;
+      }
 
   .company-info
     .company-contacts
       .email-info {
         margin-left: 14px;
         transition: opacity .28s ease;
-      }
-
-  .company-info
-    .company-contacts
-      .email-info:hover {
-        opacity: .8;
       }
   
   .company-info
@@ -1530,7 +1479,7 @@ footer {
     left: -44px;
   }
 
-  .company-links ul li a::before {
+  .company-links .footer-link::before {
     left: -17px;
     top: 6px;
   }
@@ -1541,12 +1490,12 @@ footer {
     left: -39px;
   }
   
-  .company-community ul li a::before {
+  .company-community .footer-link::before {
     left: -17px;
     top: 5px;
   }
 
-  .blog-highlights ul li {
+  .blog-highlights .blog-highlights-item {
     margin-bottom: 18px;
     transition: opacity 0.25s ease;
   }
@@ -1632,7 +1581,8 @@ footer {
     padding: 0.2rem .4rem;
   }
 
-  /******** HEADER ********/
+  /**************** HEADER ****************/
+
   .header
     .header-nav {
       display: none;
@@ -1652,6 +1602,8 @@ footer {
         width: 1.8rem;
         transition: 0.25s ease;
       }
+
+  /**************** START OF HAMBURGER SIDEBAR ****************/
 
   .hamburger-sidebar
     span {
@@ -1673,6 +1625,8 @@ footer {
     span:nth-child(3) {
       top: .42rem;
     }
+
+  /**************** END OF HAMBURGER SIDEBAR ****************/
 
   .header
     .header-company-logo
@@ -1718,13 +1672,12 @@ footer {
         width: 80%;
       }
 
-  .top-services 
-    .services-view 
-      .services-intro
-        .services-description {
-          font-size: .3rem;
-          margin-bottom: .3rem;
-        }
+  .top-services
+    .services-intro
+      .services-description {
+        font-size: .3rem;
+        margin-bottom: .3rem;
+      }
 
   .services-view 
     a {
@@ -1749,19 +1702,18 @@ footer {
       }
 
   .product-summary 
-    .modus-versus-slider 
-      .product-slider li {
+    .product-slider 
+      li {
           display: block;
           margin: 0 auto .2rem;
           transform: translate(0, 0)!important;
         }
 
   .product-summary 
-    .modus-versus-slider 
-      .product-slider li
-        img {
-          width: 100%;
-        }
+    .modus-versus-product
+      img {
+        width: 100%;
+      }
   
   .top-services
     .services-categories
@@ -1773,17 +1725,17 @@ footer {
         height: 1.8rem;
       }
 
-  .services-categories
+  /* .services-categories
     .category-section
       .category-box a {
         top: .95rem;
         width: .5rem;
         font-size: .09rem;
-      }
+      } */
     
   .services-categories
     .category-section
-      a {
+      .category-box {
         position: absolute;
         font-size: .14rem;
         transform: translateY(2.05rem);
@@ -1834,26 +1786,23 @@ footer {
       }
 
   .product-summary 
-    .product-efficiency 
-      .product-goals
-        .product-sub-section {
-          font-size: .16rem
-        }
+    .product-goals
+      .product-sub-section {
+        font-size: .16rem
+      }
 
   .product-efficiency 
     .product-goals 
-      ul 
-        li::before {
-          width: .15rem;
-          height: .52rem;
-          top: .06rem;
-          left: -.2rem;
-        }
+      .product-goals-list::before {
+        width: .15rem;
+        height: .52rem;
+        top: .06rem;
+        left: -.2rem;
+      }
 
   .product-efficiency 
     .product-goals 
-      ul 
-        li {
+      .product-goals-list {
           left: .3rem;
           font-size: .15rem;
           width: 3rem;
@@ -1866,13 +1815,12 @@ footer {
         margin: 0;
       }
 
-  .product-summary 
-    .product-efficiency 
-      .product-testing
-        p {
-          line-height: .2rem;
-          margin-bottom: .2rem;
-        }
+  .product-efficiency 
+    .product-testing
+      p {
+        line-height: .2rem;
+        margin-bottom: .2rem;
+      }
 
   .product-summary 
     .modus-versus-slider 
@@ -1882,59 +1830,14 @@ footer {
 
   .product-testing 
     .testing-result 
-      .result-suspendisse {
+      span {
         font-size: .3rem;
         padding-top: .36rem;
       }
 
   .product-testing 
-    .testing-result 
-      .result-maecenas {
-        font-size: .3rem;
-        padding-top: .36rem;
-      }
-
-  .product-testing 
-    .testing-result 
-      .result-aliquam {
-        font-size: .3rem;
-        padding-top: .36rem;
-      }
-
-  .product-testing 
-    .testing-result 
-      .result-habitasse {
-        font-size: .3rem;
-        padding-top: .36rem;
-      }
-
-  .product-testing 
-    .testing-result 
-      .fifty-percent {
-        width: 1.3rem;
-        height: auto;
-        margin-bottom: .1rem;
-      }
-
-  .product-testing 
-    .testing-result 
-      .seventy-percent {
-        width: 1.3rem;
-        height: auto;
-        margin-bottom: .1rem;
-      }
-
-  .product-testing 
-    .testing-result 
-      .eighty-percent {
-        width: 1.3rem;
-        height: auto;
-        margin-bottom: .1rem;
-      }
-
-  .product-testing 
-    .testing-result 
-      .hundred-percent {
+    .testing-result
+      .result-percentage {
         width: 1.3rem;
         height: auto;
         margin-bottom: .1rem;
@@ -1946,12 +1849,29 @@ footer {
         font-size: .17rem;
       }
 
-  .product-summary
-    .product-efficiency
-      .product-testing
-        li {
-          margin-bottom: .4rem;
-        }
+  .product-efficiency
+    .product-testing
+      li {
+        margin-bottom: .4rem;
+      }
+      
+  .product-efficiency 
+    .clients-feedback 
+      .client-comment {
+        font-size: .16rem;
+      }
+
+  .product-efficiency 
+    .clients-feedback 
+      .client-opinion {
+        font-size: .13rem;
+      }
+
+  .product-efficiency 
+    .clients-feedback 
+      .client-name {
+        font-size: .16rem;
+      }
 
   .product-summary 
     .modus-versus-slider 
@@ -1961,31 +1881,11 @@ footer {
 
   .product-summary 
     .product-efficiency 
-      .clients-feedback 
-        .client-comment {
-          font-size: .16rem;
-        }
-
-  .product-summary 
-    .product-efficiency 
       .clients-feedback {
         width: 100%;
         margin-bottom: .4rem;
       }
 
-  .product-summary 
-    .product-efficiency 
-      .clients-feedback 
-        .client-opinion {
-          font-size: .13rem;
-        }
-
-  .product-summary 
-    .product-efficiency 
-      .clients-feedback 
-        .client-name {
-          font-size: .16rem;
-        }
 
   .product-summary
     .clients-satisfaction {
@@ -2045,38 +1945,34 @@ footer {
 
   /******************** FOOTER *********************/
 
-  footer {
+  .footer {
     padding-top: .2rem;
   }
 
-  footer
-    .company-summary 
-      .company-info p {
+  .footer 
+    .company-info p {
       line-height: 1.2;
       margin-bottom: .2rem;
       font-size: .13rem;
-    }
+      }
 
-  footer
+  .footer
     .company-summary 
       .company-info {
         margin-bottom: .3rem;
       }
 
-  footer
-    .company-summary
-      .company-info
-        .footer-logo {
-          width: 2rem;
-          margin-bottom: .2rem;
-        }
+  .footer
+    .company-info
+      .footer-logo {
+        width: 2rem;
+        margin-bottom: .2rem;
+      }
 
-  footer
-    .company-summary
-      .company-info
-        .footer-logo img {
-          width: 100%;
-        }
+  .footer
+    .footer-logo img {
+      width: 100%;
+    }
 
   .company-info 
     .company-contacts 
@@ -2085,23 +1981,15 @@ footer {
         font-size: .13rem;
       }
 
-  footer
+  .footer
     .company-links {
       margin-bottom: .2rem;
     }
 
-  footer
+  .footer
     .company-community {
       margin-bottom: .2rem;
     }
-
-  /* .product-summary 
-    .clients-satisfaction 
-      button {
-        border-radius: .06rem;
-        width: .3rem;
-        height: 0.15rem;
-      } */
 
   .product-summary 
     .clients-satisfaction 
@@ -2115,29 +2003,29 @@ footer {
         padding: .03rem .16rem 0;
       }
 
-  .company-links ul li a::before {
+  .company-links .footer-link::before {
     left: -.18rem;
     top: .067rem;
     padding: .02rem;
   }
 
-  .company-links ul li a {
+  .company-links .footer-link {
     left: 0.2rem;
     font-size: .13rem;
   }
 
-  .company-community ul li a::before {
+  .company-community .footer-link::before {
     left: -.18rem;
     top: .067rem;
     padding: .02rem;
   }
 
-  .company-community ul li a {
+  .company-community .footer-link {
     left: 0.2rem;
     font-size: .13rem;
   }
 
-  footer
+  .footer
     .blog-highlights
       ul
         li
@@ -2145,7 +2033,7 @@ footer {
             width: 1.2rem;
           }
 
-  footer
+  .footer
     .blog-highlights
       ul
         .blog-description {
@@ -2190,14 +2078,14 @@ footer {
         font-size: .2rem;
       }
 
-  footer
+  .footer
     .blog-highlights
       figure
         img {
           width: 100%;
         }
 
-  footer
+  .footer
     .company-networks {
       padding: .1rem 0;
       background: rgba(0,0,0,.1);
