@@ -1700,14 +1700,17 @@ button:hover {
     .category-section
       .category-box {
         font-size: .14rem;
-        transform: translateY(2.05rem);
-        padding: 0.1rem .5rem;
+        padding: 0.1rem;
+        bottom: -29px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1rem;
       }
   
   .category-section
     .category-picture {
       margin: 0 auto .08rem;
-      width: .4rem;
+      width: .7rem;
     }
 
   .category-section
@@ -1874,7 +1877,7 @@ button:hover {
   .client-list
     button {
       top: -.36rem;
-      border-radius: .07rem;
+      border-radius: .02rem;
       width: .3rem;
       height: 0.12rem;
     }
