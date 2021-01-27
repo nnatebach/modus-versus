@@ -801,24 +801,9 @@ button:hover {
     height: 551px;
   }
 
-  .facebook-site::after {
+  .company-sites a::after {
     width: 22px;
     height: 22px;
-  }
-  
-  .googleplus-site::after {
-    width: 26px;
-    height: 23px;
-  }
-  
-  .twitter-site::after {
-    width: 23px;
-    height: 22px;
-  }
-  
-  .rss-site::after {
-    width: 24px;
-    height: 21px;
   }
 
   .container {
@@ -2027,23 +2012,21 @@ button:hover {
 
   .footer
     .blog-highlights
-      ul
-        li
-          figure {
-            width: 1.2rem;
-          }
+      figure {
+        width: 1.2rem;
+      }
 
-  .footer
-    .blog-highlights
-      ul
-        .blog-description {
-          margin-left: .1rem;
-          padding-top: .02rem;
-        }
+  .blog-highlights
+    .blog-highlights-item
+      .blog-description {
+        margin-left: .1rem;
+        padding-top: .02rem;
+      }
 
-  .blog-highlights ul li {
-    margin-bottom: .1rem;
-  }
+  .blog-highlights 
+    .blog-highlights-item {
+      margin-bottom: .1rem;
+    }
 
   .blog-highlights p {
     margin-bottom: .2rem;
@@ -2078,12 +2061,10 @@ button:hover {
         font-size: .2rem;
       }
 
-  .footer
-    .blog-highlights
-      figure
-        img {
-          width: 100%;
-        }
+  .blog-highlights
+    img {
+      width: 100%;
+    }
 
   .footer
     .company-networks {
@@ -2102,23 +2083,8 @@ button:hover {
   .company-sites li {
     margin-right: .2rem;
   }
-
-  .facebook-site::after {
-    width: .11rem;
-    height: .11rem;
-  }
   
-  .googleplus-site::after {
-    width: .12rem;
-    height: .12rem;
-  }
-  
-  .twitter-site::after {
-    width: .12rem;
-    height: .12rem;
-  }
-  
-  .rss-site::after {
+  .company-sites a::after {
     width: .12rem;
     height: .12rem;
   }
