@@ -72,9 +72,7 @@ button:hover {
 /******* HEADER *******/
 
 .header {
-  /* display: flex;
-  justify-content: space-between; */
-  background: #76c7c0 url(img/common/header_icn_bg_path.png) no-repeat center bottom/100% auto;
+  background: #76c7c0 url(img/common/up_divider_bg.png) no-repeat center bottom/100% auto
 }
 
 .header .wrapper {
@@ -114,7 +112,7 @@ button:hover {
       height: 100%;
       background: url(img/top/icn_double_arrow.png) center center/auto no-repeat;
       position: absolute;
-      top: 0;
+      top: 4px;
       left: 0;
     }
 
@@ -122,10 +120,6 @@ button:hover {
   .slick-prev::before {
     transform: rotate(-180deg);
   }
-
-.header-nav {
-  display: flex;
-}
 
 .header-slider {
   text-align: center;
@@ -172,9 +166,9 @@ button:hover {
 /***************************** SECTION *****************************/
 
 .category-section:hover
-    .hover-category {
-      display: block;
-    }
+  .hover-category {
+    display: block;
+  }
 
 .category-section:hover
   .static-category {
@@ -264,20 +258,7 @@ button:hover {
     box-shadow: 0 4px 0 0 rgb(98, 184, 175);
   }
 
-.product-summary {
-  background: #f3f3f3 url(img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
-}
 
-.product-summary
-  .modus-versus-slider {
-    margin-bottom: 55px;
-  }
-
-.product-summary
-  .modus-versus-slider
-    .modus-versus-heading {
-      margin-bottom: 68px;
-    }
 
 .product-summary
   .modus-versus-slider
@@ -407,12 +388,6 @@ button:hover {
       justify-content: space-between;
     }
 
-/* .product-efficiency
-  .product-testing span {
-    color: #7f8c8c;
-    font-weight: 700;
-  } */
-
 .product-efficiency
   .product-testing
     .testing-title {
@@ -538,7 +513,7 @@ button:hover {
 /******* FOOTER *******/
 
 .footer {
-  background: #76c7c0 url(img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
+  background: #76c7c0 url(img/common/down_divider_bg.png) no-repeat top center/100% auto;
   color: rgba(255, 255, 255, .8);
 }
 
@@ -552,10 +527,6 @@ button:hover {
 }
 
 .company-copyright {
-  display: flex;
-}
-
-.company-sites {
   display: flex;
 }
 
@@ -577,13 +548,6 @@ button:hover {
     li {
       line-height: .8;
     }
-
-/* .company-info
-  .company-contacts
-    li a {
-      display: inline-block;
-      color: rgba(255, 255, 255, .8);
-    } */
 
 .company-info
   .company-contacts strong {
@@ -715,7 +679,7 @@ button:hover {
     z-index: 1;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 49%;
     transform: translateY(-50%);
     text-indent: -999px;
     overflow: hidden;
@@ -798,6 +762,10 @@ button:hover {
     transform: translateY(-340px);
   }
 
+  .header-nav {
+    display: flex;
+    margin-right: 16px;
+  }
 
   main p {
     color: #777;
@@ -817,7 +785,7 @@ button:hover {
 
   .slider-item {
     width: 100%;
-    height: 500px;
+    height: auto;
   }
 
   .keyvisual-slider
@@ -909,7 +877,7 @@ button:hover {
         text-indent: -999px;
         overflow: hidden;
         width: 50px;
-        height: 53px;
+        height: 55px;
         background-color: #e76459;
         box-shadow: 0 3px 0 0 #e1534b;
         transition: 0.26s ease;
@@ -957,7 +925,7 @@ button:hover {
   .client-list
     .slick-arrow:hover {
       background: #e8645a;
-      box-shadow: 0 3px 0 0 #e8645a
+      box-shadow: 0 3px 0 0 #e1534b;
     }
     
   .client-list
@@ -982,7 +950,7 @@ button:hover {
 
   .header-nav-portfolio {
     width: 190px;
-    padding: 2px 5px;
+    padding: 2px 3px;
     border-radius: 5px;
     top: calc(100% + 16px);
     visibility: hidden;
@@ -990,10 +958,9 @@ button:hover {
   }
 
   .header .header-nav-portfolio li {
-    padding: 5px 1px;
+    padding: 3px 1px;
   }
 
-  
   .header-nav 
     .header-nav-portfolio 
       a::before {
@@ -1025,7 +992,7 @@ button:hover {
     }
 
   .header {
-    padding: 27px 172px 23px;
+    padding: 27px 0 23px;
     position: relative;
     z-index: 9;
   }
@@ -1050,8 +1017,8 @@ button:hover {
       margin-right: 3px;
     }
   
-  .header-nav a:hover {
-    background: #e5665d;
+  .header-nav ul a:hover {
+    background-color: #e5665d;
     box-shadow: 0 3px 0 0 #e2534b;
     border-radius: 5px;
   }
@@ -1080,10 +1047,10 @@ button:hover {
   .header-nav 
     .header-nav-portfolio a {
       display: block;
-      padding: 6px 16px 6px 21px;
+      padding: 8px 16px 7px 21px;
       color: #fff;
       background-color: #e5655d;
-      border-radius: 5px;
+      border-radius: 3px;
       font-weight: 600;
       transition: .28s ease;
     }
@@ -1137,14 +1104,14 @@ button:hover {
     .services-view
       .services-intro {
         margin-bottom: 32px;
-        margin-right: 65px;
+        width: 890px;
+        margin-right: 8px;
       }
   
   .services-view
     .services-intro
       p {
         font-size: 13px;
-        letter-spacing: -0.1px;
       }
   
   .services-view 
@@ -1162,6 +1129,8 @@ button:hover {
   }
 
   .services-view a:hover {
+    background: #76c7c0;
+    box-shadow: 0 4px 0 0 rgb(98 184 175);
     opacity: .8;
   }
   
@@ -1180,11 +1149,22 @@ button:hover {
   
   .category-section {
     width: 270px;
+    position: relative;
     box-shadow: 0 4px 0 0 #e5e6e6;
     border-radius: 8px;
     padding: 50px 0 62px;
     transition: 0.25s ease;
   }
+
+  .category-section
+    .category-box {
+      position: absolute;
+      transition: .25s ease;
+      bottom: -26px;
+      left: 50%;
+      transform: translateX(-51%);
+      width: 73px;
+    }
 
   .category-section:hover {
     background-color: #fff;
@@ -1192,13 +1172,8 @@ button:hover {
 
   .category-section:hover
     .category-box {
-      background-color: #e2534b;
-      box-shadow: 0 4px 0 0 #e76459;
-    }
-
-  .category-section
-    .category-box {
-      transition: .25s ease;
+      background: #e8645a;
+      box-shadow: 0 4px 0 0 #e1534b;
     }
   
   .category-section
@@ -1220,9 +1195,10 @@ button:hover {
   .top-services
     .services-view {
       display: flex;
-      padding: 23px 24px 0;
-      margin: 0 auto 56px;
+      padding: 21px 24px 0;
+      margin: 0 auto 42px;
       border-radius: 6px;
+      height: auto;
     }
 
   .top-services
@@ -1237,6 +1213,20 @@ button:hover {
       justify-content: space-between;
       flex-wrap: wrap;
     }
+
+  .product-summary 
+    .modus-versus-slider {
+      margin-bottom: 55px;
+      margin-top: 67px;
+    }
+
+  .product-summary
+    .modus-versus-slider
+      .modus-versus-heading {
+        margin-bottom: 68px;
+        z-index: 9999;
+        position: relative;
+      }
 
   .product-summary
     .modus-versus-slider
@@ -1259,6 +1249,7 @@ button:hover {
       .product-testing p {
         margin-bottom: 55px;
         line-height: 2;
+        width: 540px;
       }
   
   .product-summary
@@ -1272,9 +1263,18 @@ button:hover {
       }
 
   .product-summary {
-    background: #e9e8e9;
-    padding-top: 67px;
-    padding-bottom: 51px;
+    position: relative;
+    background: #f3f3f3 url(img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
+    padding-top: 1px;
+    padding-bottom: 52px;
+  }
+
+  .product-summary::before {
+    position: absolute;
+    content: "";
+    background: #ecebec url(/img/common/down_divider_bg.png) no-repeat top center/100% auto;
+    width: 100%;
+    height: 400px;
   }
 
   /********* FOOTER *********/
@@ -1310,12 +1310,17 @@ button:hover {
   }
 
   .company-networks
+    .copyright-time {
+      margin-right: 2px;
+    }
+
+  .company-networks
     small {
       font-size: 12px;
-      letter-spacing: .4px;
     }
   
   .company-sites {
+    display: flex;
     margin-right: -22px;
   }
 
@@ -1518,6 +1523,14 @@ button:hover {
     position: relative;
   }
 
+  .top-services {
+    padding-top: .7rem;
+  }
+
+  .product-summary {
+    padding-bottom: .5rem;
+  }
+
   .header-section-top
     .header-slider {
       position: absolute;
@@ -1548,11 +1561,12 @@ button:hover {
   main p {
     color: #777;
     font-size: .16rem;
+    line-height: .3rem;
   }
   
   .wrapper {
     margin: 0 auto;
-    padding: 0.2rem .4rem;
+    padding: 0 .2rem;
   }
 
   /**************** HEADER ****************/
@@ -1564,10 +1578,6 @@ button:hover {
 
   .header {
     padding: .27rem 0.4rem .29rem;
-  }
-
-  .hamburger-sidebar {
-    display: block;
   }
 
   .header
@@ -1584,6 +1594,7 @@ button:hover {
       height: .03rem;
       right: 0.23rem;
       left: 3.2rem;
+      top: .45rem;
       background: #fff;
       box-shadow: 0 0 0.07rem rgb(5 5 73 / 50%);
       display: block;
@@ -1592,12 +1603,12 @@ button:hover {
 
   .hamburger-sidebar
     span:nth-child(2) {
-      top: .34rem;
+      top: .25rem;
     }
 
   .hamburger-sidebar
     span:nth-child(3) {
-      top: .42rem;
+      top: .35rem;
     }
 
   /**************** END OF HAMBURGER SIDEBAR ****************/
@@ -1635,7 +1646,7 @@ button:hover {
   .top-services
     .services-view {
       border-radius: 0.1rem;
-      margin: 0 auto .3rem;
+      margin: 0 auto .8rem;
       padding: .2rem 0.1rem;
     }
 
@@ -1656,7 +1667,7 @@ button:hover {
   .services-view 
     a {
       border-radius: .06rem;
-      padding: 0 .1rem;
+      padding: .06rem .3rem;
       font-size: .2rem;
     }
 
@@ -1694,7 +1705,7 @@ button:hover {
       .category-section {
         position: relative;
         padding: .4rem .2rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
         border-radius: .06rem;
       }
     
@@ -1703,7 +1714,7 @@ button:hover {
       .category-box {
         font-size: .14rem;
         padding: 0.1rem;
-        bottom: -29px;
+        bottom: -.14rem;
         left: 50%;
         transform: translateX(-50%);
         width: 1rem;
@@ -1785,14 +1796,14 @@ button:hover {
   .product-efficiency 
     .product-testing
       p {
-        line-height: .2rem;
+        line-height: .3rem;
         margin-bottom: .2rem;
       }
 
   .product-summary 
     .modus-versus-slider 
       .product-description {
-        line-height: 1.5;
+        line-height: .3rem;
       }
 
   .product-testing 
@@ -1910,7 +1921,6 @@ button:hover {
 
   .footer 
     .company-info p {
-      line-height: 1.2;
       margin-bottom: .2rem;
       font-size: .13rem;
       }
@@ -1948,6 +1958,11 @@ button:hover {
   .footer
     .company-community {
       margin-bottom: .2rem;
+    }
+
+  .footer
+    .blog-highlights {
+      margin-bottom: 40px;
     }
 
   .company-info
@@ -2035,24 +2050,19 @@ button:hover {
 
   .footer
     .company-networks {
-      padding: .1rem 0;
+      padding: .1rem 0 .4rem;
       background: rgba(0,0,0,.1);
-      display: flex;
-      justify-content: space-between;
     }
 
   .company-networks 
     small {
+      display: block;
       font-size: .12rem;
-      margin-left: .1rem;
+      margin-bottom: .2rem;
     }
-
-  .company-sites li {
-    margin-right: .2rem;
-  }
   
   .company-sites a::after {
-    width: .12rem;
-    height: .12rem;
+    width: .25rem;
+    height: .3rem;
   }
 }
