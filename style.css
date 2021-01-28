@@ -100,7 +100,8 @@ button:hover {
     }
 
 .header-section-top {
-  background: #f3f3f3;;
+  background: #f3f3f3;
+  position: relative;
 }
 
 .header-keyvisual-slider
@@ -522,7 +523,7 @@ button:hover {
 }
 
 .company-networks {
-  padding: 22px 165px 16px 169px;
+  padding: 22px 0 16px 0;
   margin: 0 auto;
 }
 
@@ -745,9 +746,9 @@ button:hover {
 
 @media print, (min-width: 768px) {
 
-  .header-section-top {
-    height: 551px;
-  }
+  /* .header-section-top {
+    height: 551px;  
+  } */
 
   .company-sites a::after {
     width: 22px;
@@ -759,7 +760,21 @@ button:hover {
   }
 
   .header-slider {
-    transform: translateY(-340px);
+    position: absolute;
+    top: -47px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+
+
+  .header-slider-bar {
+    visibility: visible;
   }
 
   .header-nav {
@@ -1083,7 +1098,7 @@ button:hover {
   /******* SECTION *******/
 
   .top-services {
-    padding-bottom: 80px;
+    padding: 52px 0 80px;
   }
   
   .wrapper {
@@ -1305,9 +1320,13 @@ button:hover {
 
   .company-networks {
     background: rgba(0,0,0,.1);
-    display: flex;
-    justify-content: space-between;
   }
+
+  .company-networks
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
 
   .company-networks
     .copyright-time {
@@ -2054,6 +2073,13 @@ button:hover {
       background: rgba(0,0,0,.1);
     }
 
+  .footer
+    .company-networks
+      .company-sites {
+        display: flex;
+        justify-content: space-around;
+      }
+
   .company-networks 
     small {
       display: block;
@@ -2066,3 +2092,18 @@ button:hover {
     height: .3rem;
   }
 }
+
+/* .slick-slide {
+  float: none;
+  display: block;
+  height: auto;
+}
+.slick-slide img {
+  width: 170px;
+  display: block;
+  height: auto;
+}
+
+.slick-list {
+  display: flex;
+} */
