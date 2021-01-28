@@ -72,9 +72,14 @@ button:hover {
 /******* HEADER *******/
 
 .header {
+  /* display: flex;
+  justify-content: space-between; */
+  background: #76c7c0 url(img/common/header_icn_bg_path.png) no-repeat center bottom/100% auto;
+}
+
+.header .wrapper {
   display: flex;
   justify-content: space-between;
-  background: #76c7c0 url(img/common/header_icn_bg_path.png) no-repeat center bottom/100% auto;
 }
 
 .keyvisual-slider
@@ -286,19 +291,19 @@ button:hover {
   .modus-versus-slider
     .product-slider-center {
       z-index: 2;
-      transform: translateX(-2px);
+      /* transform: translateX(-2px); */
     }
 
 .product-summary
   .product-slider
     .product-slider-left {
-      transform: translate(68px, 60px);
+      transform: translateX(68px);
     }
 
 .product-summary
   .product-slider
     .product-slider-right {
-      transform: translate(-72px, 59px);
+      transform: translateX(-72px);
     }
 
 /******* SECTION 2 *******/
@@ -314,6 +319,8 @@ button:hover {
 
 .product-sub-section {
   font-weight: 800;
+  font-size: 16px;
+  color: #7f8c8c;
 }
 
 .product-summary
@@ -332,9 +339,7 @@ button:hover {
 .product-summary
   .clients-feedback
     .client-comment {
-      color: #7f8c8c;
       margin-bottom: 25px;
-      font-size: 16px;
       letter-spacing: -.1px;
       margin-left: -3px;
     }
@@ -419,9 +424,7 @@ button:hover {
 .product-efficiency
   .product-goals 
     .product-goals-title {
-      color: #7f8c8c;
       margin-bottom: 30px;
-      font-size: 16px;
       margin-left: -1px;
     }
 
@@ -1075,20 +1078,20 @@ button:hover {
       }
   
   .header-nav 
-    .header-nav-portfolio
-      a {
-        display: block;
-        padding: 6px 16px 6px 21px;
-        color: #fff;
-        background-color: #e5655d;
-        border-radius: 5px;
-        font-weight: 600;
-      }
+    .header-nav-portfolio a {
+      display: block;
+      padding: 6px 16px 6px 21px;
+      color: #fff;
+      background-color: #e5655d;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: .28s ease;
+    }
 
   .header-nav 
     .header-nav-portfolio
       a:hover {
-        background: #76c7c0
+        background-color: #76c7c0
       }
   
   .portfolio-nav-section::before {
@@ -1241,6 +1244,7 @@ button:hover {
         display: flex;
         justify-content: center;
         margin-left: -2px;
+        align-items: center;
       }
 
   .product-summary
@@ -1260,9 +1264,7 @@ button:hover {
   .product-summary
     .clients-satisfaction
       .client-section {
-        color: #7f8c8c;
         margin-bottom: 52px;
-        font-size: 16px;
         position: relative;
         align-items: center;
         display: flex;
