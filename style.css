@@ -273,7 +273,7 @@ button:hover {
   .modus-versus-slider
     .product-slider-center {
       z-index: 2;
-      /* transform: translateX(-2px); */
+      transform: translateY(-8px);
     }
 
 .product-summary
@@ -386,7 +386,6 @@ button:hover {
     .testing-result {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
     }
 
 .product-efficiency
@@ -779,7 +778,7 @@ button:hover {
 
   .header-nav {
     display: flex;
-    margin-right: 16px;
+    margin-right: 8px;
   }
 
   main p {
@@ -854,8 +853,8 @@ button:hover {
   }
 
   .header-company-logo {
-    margin-right: 40px;
     transition: opacity .25s ease;
+    margin-left: 7px;
   }
 
   .header-company-logo:hover {
@@ -1219,7 +1218,7 @@ button:hover {
   .top-services
     .services-view
       a {
-        margin-left: 10px;
+        margin: 1px 0 0 10px;
       }
 
   .top-services
@@ -1231,14 +1230,13 @@ button:hover {
 
   .product-summary 
     .modus-versus-slider {
-      margin-bottom: 55px;
-      margin-top: 67px;
+      margin: 67px 0 47px 0;
     }
 
   .product-summary
     .modus-versus-slider
       .modus-versus-heading {
-        margin-bottom: 68px;
+        margin-bottom: 76px;
         z-index: 9999;
         position: relative;
       }
@@ -1259,10 +1257,16 @@ button:hover {
       margin-bottom: 58px;
     }
 
+  .product-efficiency
+    .product-testing
+      .testing-result {
+        justify-content: space-between;
+      }
+
   .product-summary 
     .product-efficiency
       .product-testing p {
-        margin-bottom: 55px;
+        margin: 0 0 55px 11px;
         line-height: 2;
         width: 540px;
       }
@@ -1281,7 +1285,7 @@ button:hover {
     position: relative;
     background: #f3f3f3 url(img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
     padding-top: 1px;
-    padding-bottom: 52px;
+    padding-bottom: 51px;
   }
 
   .product-summary::before {
@@ -1336,6 +1340,7 @@ button:hover {
   .company-networks
     small {
       font-size: 12px;
+      margin-left: 5px;
     }
   
   .company-sites {
@@ -1817,6 +1822,12 @@ button:hover {
       p {
         line-height: .3rem;
         margin-bottom: .2rem;
+      }
+
+  .product-efficiency
+    .product-testing
+      .testing-result {
+        justify-content: space-around;
       }
 
   .product-summary 
