@@ -94,8 +94,8 @@ button:hover {
   }
 
 .header
-  .header-company-logo
-    .header-logo:hover {
+  .header-logo
+    .header-logo-picture:hover {
       opacity: .8;
     }
 
@@ -836,12 +836,30 @@ button:hover {
       display: none;
     }
 
-  .header .magnifier {
-    transform: translate(-1px, 6px);
-    margin-left: 26px;
-  }
+  .header 
+    .link-search {
+      transform: translate(-1px, 6px);
+      margin-left: 26px;
+      position: relative;
+      transition: opacity .28s ease;
+    }
 
-  .hamburger-sidebar {
+  .header 
+    .link-search:hover {
+      opacity: .8;
+    }
+
+  .header
+    .link-search::before {
+      content: "";
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: -50%;
+      transform: translateX(-35%);
+    }
+
+  .button-menu {
     display: none;
   }
 
@@ -852,12 +870,12 @@ button:hover {
     transition: 0.25s ease;
   }
 
-  .header-company-logo {
+  .header-logo {
     transition: opacity .25s ease;
     margin-left: 7px;
   }
 
-  .header-company-logo:hover {
+  .header-logo:hover {
     opacity: .8;
   }
 
@@ -1532,8 +1550,15 @@ button:hover {
 
   .keyvisual-slider .slick-arrow {
     width: .3rem;
-    height: .3rem;
+    height: .4rem;
+    box-shadow: 0 3px 0 0 #e1534b;
   }
+
+  .header-keyvisual-slider
+  .keyvisual-slider
+    .slick-arrow::before {
+      top: 0;
+    }
 
   .slider-item {
     height: 4rem;
@@ -1605,15 +1630,15 @@ button:hover {
   }
 
   .header
-    .header-company-logo
-      .header-logo {
+    .header-logo
+      .header-logo-picture {
         width: 1.8rem;
         transition: 0.25s ease;
       }
 
   /**************** START OF HAMBURGER SIDEBAR ****************/
 
-  .hamburger-sidebar
+  .button-menu
     span {
       height: .03rem;
       right: 0.23rem;
@@ -1625,12 +1650,12 @@ button:hover {
       position: absolute;
     }
 
-  .hamburger-sidebar
+  .button-menu
     span:nth-child(2) {
       top: .25rem;
     }
 
-  .hamburger-sidebar
+  .button-menu
     span:nth-child(3) {
       top: .35rem;
     }
@@ -1638,8 +1663,8 @@ button:hover {
   /**************** END OF HAMBURGER SIDEBAR ****************/
 
   .header
-    .header-company-logo
-      .header-logo
+    .header-logo
+      .header-logo-picture
         img {
         width: 100%;
       }
@@ -1919,10 +1944,10 @@ button:hover {
 
   .client-list
     button {
-      top: -.36rem;
-      border-radius: .02rem;
-      width: .3rem;
-      height: 0.12rem;
+      top: -.42rem;
+      border-radius: .06rem;
+      width: 0.3rem;
+      height: 0.3rem;
     }
 
   .client-list

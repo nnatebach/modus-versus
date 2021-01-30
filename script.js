@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.keyvisual-slider').slick({
+  $('.js-header-slider').slick({
     infinite: true,
     speed: 500,
     arrows: true,
@@ -15,7 +15,7 @@ $(document).ready(function(){
       }
     ]
   })
-  $('.client-list').slick({
+  $('.js-client-slider').slick({
     infinite: true,
     speed: 500,
     arrows: true,
