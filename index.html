@@ -13,14 +13,14 @@
 <body>
   <div class="container">
     <header>
-      <div class="header">
+      <div class="header-wrapper">
         <div class="wrapper">
           <a href="/" class="header-logo">
             <h1 class="header-logo-picture">
               <img src="img/header_logo.png" alt="MOSDUSversus">
             </h1>
           </a>
-          <nav class="header-nav">
+          <nav class="header-navigation">
             <ul>
               <li>
                 <a href="#" class="is-active">HOME</a>
@@ -31,9 +31,9 @@
               <li>
                 <a href="#">SERVICES</a>
               </li>
-              <li class="portfolio-nav-section">
+              <li class="portfolio-navigation-section">
                 <a href="#" class="portfolio-sub-menu">PORTFOLIO</a>
-                <ul class="header-nav-portfolio">
+                <ul class="header-navigation-portfolio">
                   <li>
                     <a href="#">Portfolio 2 column page</a>
                   </li>
@@ -68,13 +68,11 @@
       </div>
     </header>
     <main>
-      <section class="header-section-top">
-        <div class="header-keyvisual-slider">
+      <section class="keyvisual-section-top">
+        <div class="keyvisual-slider-wrapper">
           <div class="keyvisual-slider js-header-slider">
-            <div class="keyvisual-head-slider">
-              <div class="slider-item">
-                <img src="img/top/keyvisual_img.jpg" alt="VESTIBULUM">
-              </div>
+            <div class="slider-item">
+              <img src="img/top/keyvisual_img.jpg" alt="VESTIBULUM">
             </div>
             <div class="slider-item">
               <img src="img/top/keyvisual_img.jpg" alt="VESTIBULUM">
@@ -244,112 +242,115 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="company-summary">
-          <div class="company-info">
-            <a href="/" class="footer-logo">
-              <img src="img/footer_logo.png" alt="MODUSversus">
-            </a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.</p>
-            <ul class="company-contacts">
-              <li>Phone:&ensp;<a href="tel:18225695896" class="phone-number">
-                <em><strong>182 2569 5896</strong></em></a>
-              </li>
-              <li>e-mail:&ensp;<a href="mailto:info@modu.versus" class="email-info"><em><strong>info@modu.versus</strong></em></a>
-              </li>
-            </ul>
-          </div>
-          <div class="company-links">
-            <p>Company</p>
-            <ul>
-              <li>
-                <a href="#" class="footer-link">About</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">FAQ</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Contact</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Terms</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Privacy</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Testimonials</a>
-              </li>
-            </ul>
-          </div>
-          <div class="company-community">
-            <p>Community</p>
-            <ul>
-              <li>
-                <a href="#" class="footer-link">Blog</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Forum</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Support</a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">Newsletter</a>
-              </li>
-            </ul>
-          </div>
-          <div class="blog-highlights">
-            <p><em>from the</em> <strong>BLOG</strong></p>
-            <ul>
-              <li class="blog-highlights-item">
-                <a href="#">
-                  <figure>
-                    <img src="img/top/blog_highlights_icn.png" alt="">
-                  </figure>
-                  <div class="blog-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <time datetime="2013-05-26">26 May, 2013</time>
-                  </div>
-                </a>
-              </li>
-              <li class="blog-highlights-item">
-                <a href="#">
-                  <figure>
-                    <img src="img/top/blog_highlights_icn.png" alt="">
-                  </figure>
-                  <div class="blog-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <time datetime="2013-05-26">26 May, 2013</time>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="company-networks">
+    <footer>
+      <div class="footer-wrapper">
         <div class="wrapper">
-          <small>
-            <time class="copyright-time">2013</time>ModusVersus
-          </small>
-          <ul class="company-sites">
-            <li>
-              <a href="#" class="facebook-site"></a>
-            </li>
-            <li>
-              <a href="#" class="googleplus-site"></a>
-            </li>
-            <li>
-              <a href="#" class="twitter-site"></a>
-            </li>
-            <li>
-              <a href="#" class="rss-site"></a>
-            </li>
-          </ul>
+          <div class="company-summary">
+            <div class="company-info">
+              <a href="/" class="footer-logo">
+                <img src="img/footer_logo.png" alt="MODUSversus">
+              </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.</p>
+              <ul class="company-contacts">
+                <li>Phone:<a href="tel:18225695896" class="phone-number">
+                  <em><strong>182 2569 5896</strong></em></a>
+                </li>
+                <li>e-mail:<a href="mailto:info@modu.versus" class="email-info"><em><strong>info@modu.versus</strong></em></a>
+                </li>
+              </ul>
+            </div>
+            <div class="company-links">
+              <p>Company</p>
+              <ul>
+                <li>
+                  <a href="#" class="footer-link">About</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">FAQ</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Contact</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Terms</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Privacy</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+            <div class="company-community">
+              <p>Community</p>
+              <ul>
+                <li>
+                  <a href="#" class="footer-link">Blog</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Forum</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Support</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Newsletter</a>
+                </li>
+              </ul>
+            </div>
+            <div class="blog-highlights">
+              <p><em>from the</em> <strong>BLOG</strong></p>
+              <ul>
+                <li class="blog-highlights-item">
+                  <a href="#">
+                    <figure>
+                      <img src="img/top/blog_highlights_icn.png" alt="">
+                    </figure>
+                    <div class="blog-description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                      <time datetime="2013-05-26">26 May, 2013</time>
+                    </div>
+                  </a>
+                </li>
+                <li class="blog-highlights-item">
+                  <a href="#">
+                    <figure>
+                      <img src="img/top/blog_highlights_icn.png" alt="">
+                    </figure>
+                    <div class="blog-description">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                      <time datetime="2013-05-26">26 May, 2013</time>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="company-networks">
+          <div class="wrapper">
+            <small>
+              <time class="copyright-time">2013</time>ModusVersus
+            </small>
+            <ul class="company-sites">
+              <li>
+                <a href="#" class="facebook-site"></a>
+              </li>
+              <li>
+                <a href="#" class="googleplus-site"></a>
+              </li>
+              <li>
+                <a href="#" class="twitter-site"></a>
+              </li>
+              <li>
+                <a href="#" class="rss-site"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      
 
       <!-- IMPORTING JQUERY FROM CDN LINK -->
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
