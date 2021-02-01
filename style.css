@@ -142,6 +142,10 @@ em {
   font-style: italic;
 }
 
+.trans {
+  transition: opacity .25s ease;
+}
+
 button {
   outline: none;
 }
@@ -152,12 +156,11 @@ button:hover {
 
 /******* HEADER *******/
 
-.header-wrapper {
-  background: #76c7c0 url(img/common/up_divider_bg.png) no-repeat center
-    bottom/100% auto;
+header {
+  background: #76c7c0 url(img/common/up_divider_bg.png) no-repeat center bottom;
 }
 
-.header-wrapper .wrapper {
+header .wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -173,8 +176,8 @@ button:hover {
   margin: 0 auto;
 }
 
-.header-wrapper .header-logo .header-logo-picture:hover {
-  opacity: 0.8;
+header .header-logo .header-logo:hover {
+  opacity: .8;
 }
 
 .keyvisual-section-top {
@@ -211,11 +214,11 @@ button:hover {
 .header-navigation .portfolio-navigation-section .header-navigation-portfolio {
   display: none;
   background-color: #e2534b;
-  transition: ease .25s;
+  transition: .25s ease;
   position: absolute;
 }
 
-.header-wrapper .header-navigation-portfolio li {
+header .header-navigation-portfolio li {
   position: relative;
 }
 
@@ -229,8 +232,8 @@ button:hover {
 }
 
 .slider-description {
-  color: rgba(255, 255, 255, 0.8);
-  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255,255,255,.8);
+  background: rgba(0,0,0,.5);
   line-height: 1.65;
 }
 
@@ -247,6 +250,17 @@ button:hover {
 .category-section .category-picture {
   margin-bottom: 12px;
   margin-right: 7px;
+}
+
+.product-summary {
+  position: relative;
+  background: #f3f3f3 url(img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
+}
+
+.product-summary::before {
+  position: absolute;
+  content: "";
+  background: #ecebec url(img/common/down_divider_bg.png) no-repeat top center;
 }
 
 .category-picture .hover-category {
@@ -314,12 +328,12 @@ button:hover {
   padding: 18px 65px;
   transform: translate(-2px, 231px);
   font-size: 14px;
-  box-shadow: 0 4px 0 0 rgb(98, 184, 175);
+  box-shadow: 0 4px 0 0 rgb(98,184,175);
 }
 
 .product-summary .modus-versus-slider .product-description {
   text-align: center;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0,0,0,.5);
   letter-spacing: -.01em;
 }
 
@@ -349,7 +363,6 @@ button:hover {
 
 .product-sub-section {
   font-weight: 800;
-  font-size: 16px;
   color: #7f8c8c;
 }
 
@@ -360,12 +373,6 @@ button:hover {
 
 .product-summary .product-efficiency .clients-feedback {
   width: 300px;
-}
-
-.product-summary .clients-feedback .client-comment {
-  margin-bottom: 25px;
-  letter-spacing: -.01em;
-  margin-left: -3px;
 }
 
 .product-summary .clients-feedback .client-opinion {
@@ -427,7 +434,7 @@ button:hover {
   margin-left: -1px;
 }
 
-.product-efficiency .product-goals ul li {
+.product-efficiency .product-goals .product-goals-list {
   color: #7f8c8c;
   line-height: 2;
   position: relative;
@@ -517,10 +524,9 @@ button:hover {
 
 /******* FOOTER *******/
 
-.footer-wrapper {
-  background: #76c7c0 url(img/common/down_divider_bg.png) no-repeat top
-    center/100% auto;
-  color: rgba(255, 255, 255, 0.8);
+footer {
+  background: #76c7c0 url(img/common/down_divider_bg.png) no-repeat top center;
+  color: rgba(255,255,255,.8);
 }
 
 .footer-logo {
@@ -545,11 +551,11 @@ button:hover {
 }
 
 .company-info .company-contacts {
-  line-height: 0.8;
+  line-height: .8;
 }
 
 .company-info .company-contacts li {
-  line-height: 0.8;
+  line-height: .8;
 }
 
 .company-info .company-contacts strong {
@@ -566,13 +572,13 @@ button:hover {
   position: relative;
 }
 
-.company-links .footer-link {
+.footer-link {
   line-height: 1.8;
   position: relative;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255,255,255,.8);
 }
 
-.company-links .footer-link::before {
+.footer-link::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -588,24 +594,6 @@ button:hover {
   color: #497e79;
   font-weight: 700;
   position: relative;
-}
-
-.company-community .footer-link {
-  line-height: 1.8;
-  position: relative;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.company-community .footer-link::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  padding: 2px;
-  border: 1px solid;
-  border-color: transparent #fff #fff transparent;
-  transform: rotate(-45deg);
-  top: 12px;
-  left: 9px;
 }
 
 .footer-navigation {
@@ -630,7 +618,7 @@ button:hover {
 }
 
 .blog-highlights .blog-description time {
-  color: rgba(0, 0, 0, 0.28);
+  color: rgba(0,0,0,.28);
 }
 
 .facebook-site {
@@ -741,9 +729,14 @@ button:hover {
 /*********************************  PC  /*********************************/
 
 @media print, (min-width: 768px) {
-  /* .keyvisual-section-top {
-    height: 551px;  
-  } */
+
+  header {
+    background-size: 100% auto;
+  }
+
+  .product-sub-section {
+    font-size: 16px;
+  }
 
   .company-sites a::after {
     width: 22px;
@@ -821,18 +814,17 @@ button:hover {
     display: none;
   }
 
-  .header-wrapper .link-search {
+  header .link-search {
     transform: translate(-1px, 6px);
     margin-left: 26px;
     position: relative;
-    transition: opacity .28s ease;
   }
 
-  .header-wrapper .link-search:hover {
-    opacity: 0.8;
+  header .link-search:hover {
+    opacity: .8;
   }
 
-  .header-wrapper .link-search::before {
+  header .link-search::before {
     content: "";
     height: 40px;
     width: 40px;
@@ -853,12 +845,11 @@ button:hover {
   }
 
   .header-logo {
-    transition: opacity .25s ease;
     margin-left: 7px;
   }
 
   .header-logo:hover {
-    opacity: 0.8;
+    opacity: .8;
   }
 
   .keyvisual-slider-wrapper .keyvisual-slider .slick-dots {
@@ -889,7 +880,7 @@ button:hover {
     height: 55px;
     background-color: #e76459;
     box-shadow: 0 3px 0 0 #e1534b;
-    transition: 0.26s ease;
+    transition: .26s ease;
   }
 
   .keyvisual-slider .slick-arrow:hover {
@@ -955,7 +946,7 @@ button:hover {
     opacity: 0;
   }
 
-  .header-wrapper .header-navigation-portfolio li {
+  header .header-navigation-portfolio li {
     padding: 3px 1px;
   }
 
@@ -986,8 +977,8 @@ button:hover {
     font-size: 16px;
   }
 
-  .header-wrapper {
-    padding: 27px 0 23px;
+  header {
+    padding: 27px 0 22px;
     position: relative;
     z-index: 9;
   }
@@ -1111,8 +1102,8 @@ button:hover {
 
   .services-view a:hover {
     background: #76c7c0;
-    box-shadow: 0 4px 0 0 rgb(98 184 175);
-    opacity: 0.8;
+    box-shadow: 0 4px 0 0 rgb(98,184,175);
+    opacity: .8;
   }
 
   .services-intro .services-description {
@@ -1211,10 +1202,16 @@ button:hover {
     justify-content: space-between;
   }
 
-  .product-summary .product-efficiency .product-testing p {
+  .product-efficiency .product-testing p {
     margin: 0 0 55px 11px;
     line-height: 2;
     width: 540px;
+  }
+
+  .product-summary .clients-feedback .client-comment {
+    margin-bottom: 25px;
+    letter-spacing: -.01em;
+    margin-left: -3px;
   }
 
   .product-summary .clients-satisfaction .client-section {
@@ -1226,29 +1223,23 @@ button:hover {
   }
 
   .product-summary {
-    position: relative;
-    background: #f3f3f3 url(img/common/footer_icn_bg_path.png) no-repeat top
-      center/100% auto;
     padding-top: 1px;
     padding-bottom: 51px;
   }
 
   .product-summary::before {
-    position: absolute;
-    content: "";
-    background: #ecebec url(/img/common/down_divider_bg.png) no-repeat top
-      center/100% auto;
     width: 100%;
     height: 400px;
   }
 
   /********* FOOTER *********/
 
-  .footer-wrapper {
+  footer {
     padding-top: 49px;
+    background-size: 100% auto;
   }
 
-  .footer-wrapper ul {
+  footer ul {
     font-size: 13px;
     letter-spacing: -.01em;
     margin-left: -3px;
@@ -1256,11 +1247,10 @@ button:hover {
 
   .footer-logo {
     margin-bottom: 25px;
-    transition: opacity .28s ease;
   }
 
   .footer-logo:hover {
-    opacity: 0.8;
+    opacity: .8;
   }
 
   .company-summary {
@@ -1269,7 +1259,7 @@ button:hover {
   }
 
   .company-networks {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0,0,0,.1);
   }
 
   .company-networks .wrapper {
@@ -1296,12 +1286,8 @@ button:hover {
     margin-top: -8px;
   }
 
-  .company-sites li a {
-    transition: opacity .25s ease;
-  }
-
   .company-sites li a:hover {
-    opacity: 0.8;
+    opacity: .8;
   }
 
   .company-summary .company-community ul {
@@ -1314,11 +1300,7 @@ button:hover {
   }
 
   .company-summary .footer-link:hover {
-    opacity: 0.8;
-  }
-
-  .company-summary .footer-link {
-    transition: opacity .25s ease;
+    opacity: .8;
   }
 
   .company-summary .company-links ul {
@@ -1356,7 +1338,6 @@ button:hover {
   .company-info .company-contacts a {
     margin-left: 9px;
     transform: translateY(2px);
-    transition: opacity .28s ease;
     cursor: pointer;
   }
 
@@ -1366,12 +1347,11 @@ button:hover {
   }
 
   .company-info .company-contacts a:hover {
-    opacity: 0.8;
+    opacity: .8;
   }
 
   .company-info .company-contacts .email-info {
     margin-left: 20px;
-    transition: opacity .28s ease;
   }
 
   .company-info .company-contacts em {
@@ -1414,11 +1394,10 @@ button:hover {
 
   .blog-highlights .blog-highlights-item {
     margin-bottom: 18px;
-    transition: opacity .25s ease;
   }
 
   .blog-highlights ul a:hover {
-    opacity: 0.8;
+    opacity: .8;
   }
 
   .blog-highlights .blog-description {
@@ -1443,11 +1422,13 @@ button:hover {
 /****** SP ******/
 
 @media only screen and (max-width: 767px) {
+
+
   /******************************** SLICK *********************************/
 
   .keyvisual-slider .slick-arrow {
-    width: 0.3rem;
-    height: 0.4rem;
+    width: .3rem;
+    height: .4rem;
     box-shadow: 0 3px 0 0 #e1534b;
   }
 
@@ -1468,11 +1449,23 @@ button:hover {
   }
 
   .top-services {
-    padding-top: 0.7rem;
+    padding: .3rem 0 .4rem;
   }
 
   .product-summary {
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem;
+  }
+
+  .product-summary::before {
+    width: 100%;
+    height: 4rem;
+    background-size: auto 0.19rem;
+  }
+
+  .modus-versus-slider {
+    position: relative;
+    padding-top: .5rem;
+    z-index: 9;
   }
 
   .keyvisual-section-top .header-slider {
@@ -1488,8 +1481,12 @@ button:hover {
     font-size: calc(100vw / 3.75);
   }
 
+  header {
+    background-size: auto 0.09rem;
+  }
+
   body {
-    font-size: 0.24rem;
+    font-size: .24rem;
     overflow-x: hidden;
   }
 
@@ -1503,54 +1500,53 @@ button:hover {
 
   main p {
     color: #777;
-    font-size: 0.16rem;
-    line-height: 0.3rem;
+    font-size: .16rem;
+    line-height: .2rem;
   }
 
   .wrapper {
     margin: 0 auto;
-    padding: 0 0.2rem;
+    padding: 0 .2rem;
   }
 
   /**************** HEADER ****************/
 
-  .header-wrapper .header-navigation {
+  header .header-navigation {
     display: none;
   }
 
-  .header-wrapper {
-    padding: 0.27rem 0.4rem 0.29rem;
+  header {
+    padding: .2rem .1rem;
   }
 
-  .header-wrapper .header-logo .header-logo-picture {
-    width: 1.8rem;
+  header .header-logo .header-logo-picture {
+    width: 1.5rem;
     transition: .25s ease;
   }
 
   /**************** START OF HAMBURGER SIDEBAR ****************/
 
   .button-menu span {
-    height: 0.03rem;
-    right: 0.23rem;
+    height: .01rem;
+    right: .23rem;
     left: 3.2rem;
-    top: 0.45rem;
+    top: .45rem;
     background: #fff;
-    box-shadow: 0 0 0.07rem rgb(5 5 73 / 50%);
     display: block;
     position: absolute;
   }
 
   .button-menu span:nth-child(2) {
-    top: 0.25rem;
+    top: .25rem;
   }
 
   .button-menu span:nth-child(3) {
-    top: 0.35rem;
+    top: .35rem;
   }
 
   /**************** END OF HAMBURGER SIDEBAR ****************/
 
-  .header-wrapper .header-logo-picture img {
+  header .header-logo-picture img {
     width: 100%;
   }
 
@@ -1559,41 +1555,40 @@ button:hover {
   }
 
   .keyvisual-section-top .header-slider .slider-description {
-    font-size: 0.14rem;
-    padding: 0.07rem 0.1rem 0.12rem;
-    border-radius: 0.04rem;
-    margin: 0 0.6rem;
+    font-size: .14rem;
+    padding: .07rem .07rem .12rem;
+    border-radius: .04rem;
+    margin: 0 .5rem;
   }
 
   .header-slider .slider-title {
-    padding: 0 0.04rem 0;
-    font-size: 0.26rem;
-    margin-bottom: 0.3rem;
-    border-radius: 0.02rem;
+    padding: .01rem .1rem;
+    font-size: .32rem;
+    margin-bottom: .1rem;
+    border-radius: .05rem;
   }
 
   /******** SECTION ********/
 
   .top-services .services-view {
-    border-radius: 0.1rem;
-    margin: 0 auto 0.8rem;
-    padding: 0.2rem 0.1rem;
+    border-radius: .1rem;
+    margin: 0 auto .4rem;
+    padding: .2rem .1rem .35rem;
   }
 
   .top-services .services-view .services-intro {
-    margin-bottom: 0.2rem;
-    width: 80%;
+    margin-bottom: .2rem;
   }
 
   .top-services .services-intro .services-description {
-    font-size: 0.3rem;
-    margin-bottom: 0.3rem;
+    font-size: .25rem;
+    margin-bottom: .2rem;
   }
 
   .services-view a {
-    border-radius: 0.06rem;
-    padding: 0.06rem 0.3rem;
-    font-size: 0.2rem;
+    border-radius: .06rem;
+    padding: .06rem .3rem;
+    font-size: .2rem;
   }
 
   .product-summary .modus-versus-slider .product-slider {
@@ -1602,14 +1597,14 @@ button:hover {
   }
 
   .product-summary .modus-versus-slider .product-summary-title {
-    font-size: 0.4rem;
-    margin-bottom: 0.08rem;
-    margin-left: -0.02rem;
+    font-size: .3rem;
+    margin-bottom: .08rem;
+    margin-left: -.02rem;
   }
 
   .product-summary .product-slider li {
     display: block;
-    margin: 0 auto 0.2rem;
+    margin: 0 auto .2rem;
     transform: translate(0, 0) !important;
   }
 
@@ -1619,23 +1614,23 @@ button:hover {
 
   .top-services .services-categories .category-section {
     position: relative;
-    padding: 0.4rem 0.2rem;
-    margin-bottom: 0.8rem;
-    border-radius: 0.06rem;
+    padding: .4rem .1rem;
+    margin-bottom: .4rem;
+    border-radius: .06rem;
   }
 
   .services-categories .category-section .category-box {
-    font-size: 0.14rem;
-    padding: 0.1rem;
-    bottom: -0.14rem;
+    font-size: .14rem;
+    padding: .1rem;
+    bottom: -.14rem;
     left: 50%;
     transform: translateX(-50%);
     width: 1rem;
   }
 
   .category-section .category-picture {
-    margin: 0 auto 0.08rem;
-    width: 0.7rem;
+    margin: 0 auto .08rem;
+    width: .7rem;
   }
 
   .category-section .category-picture img {
@@ -1643,13 +1638,13 @@ button:hover {
   }
 
   .category-section .category-title {
-    font-size: 0.16rem;
-    margin-bottom: 0.2rem;
+    font-size: .16rem;
+    margin-bottom: .2rem;
   }
 
   .category-section .category-box .category-picture {
-    margin: 0 auto 0.3rem;
-    width: 0.6rem;
+    margin: 0 auto .3rem;
+    width: .6rem;
   }
 
   .top-services .services-categories {
@@ -1662,24 +1657,28 @@ button:hover {
   }
 
   .product-summary .product-efficiency .product-goals {
-    margin-bottom: 0.1rem;
+    margin-bottom: .1rem;
     width: 100%;
   }
 
-  .product-summary .product-goals .product-sub-section {
-    font-size: 0.16rem;
+  .product-efficiency .product-goals .product-goals-title {
+    margin-bottom: .2rem;
+  }
+
+  .product-sub-section {
+    font-size: .18rem;
   }
 
   .product-efficiency .product-goals .product-goals-list::before {
-    width: 0.15rem;
-    height: 0.52rem;
-    top: 0.06rem;
-    left: -0.2rem;
+    width: .15rem;
+    height: .52rem;
+    top: .06rem;
+    left: -.2rem;
   }
 
   .product-efficiency .product-goals .product-goals-list {
-    left: 0.3rem;
-    font-size: 0.15rem;
+    left: .3rem;
+    font-size: .15rem;
     width: 3rem;
   }
 
@@ -1689,8 +1688,8 @@ button:hover {
   }
 
   .product-efficiency .product-testing p {
-    line-height: 0.3rem;
-    margin-bottom: 0.2rem;
+    line-height: .3rem;
+    margin-bottom: .2rem;
   }
 
   .product-efficiency .product-testing .testing-result {
@@ -1698,47 +1697,43 @@ button:hover {
   }
 
   .product-summary .modus-versus-slider .product-description {
-    line-height: 0.3rem;
+    line-height: .2rem;
   }
 
   .product-testing .testing-result span {
-    font-size: 0.3rem;
-    padding-top: 0.36rem;
+    font-size: .3rem;
+    padding-top: .36rem;
   }
 
   .product-testing .testing-result .result-percentage {
     width: 1.3rem;
     height: auto;
-    margin-bottom: 0.1rem;
+    margin-bottom: .1rem;
   }
 
   .product-efficiency .product-testing .testing-title {
-    font-size: 0.17rem;
+    font-size: .17rem;
   }
 
   .product-efficiency .product-testing li {
-    margin-bottom: 0.4rem;
+    margin-bottom: .4rem;
   }
 
   .product-efficiency .clients-feedback .client-comment {
-    font-size: 0.16rem;
-  }
-
-  .product-efficiency .clients-feedback .client-opinion {
-    font-size: 0.13rem;
+    margin-bottom: .3rem;
   }
 
   .product-efficiency .clients-feedback .client-name {
-    font-size: 0.16rem;
+    font-size: .16rem;
   }
 
   .product-summary .modus-versus-slider .modus-versus-heading {
-    margin-bottom: 0.4rem;
+    margin-bottom: .25rem;
   }
 
   .product-summary .product-efficiency .clients-feedback {
     width: 100%;
-    margin-bottom: 0.4rem;
+    margin-bottom: .4rem;
   }
 
   .product-summary .clients-satisfaction {
@@ -1747,8 +1742,8 @@ button:hover {
   }
 
   .product-summary .clients-satisfaction .client-section {
-    margin-bottom: 0.2rem;
-    font-size: 0.16rem;
+    margin-bottom: .5rem;
+    font-size: .16rem;
   }
 
   .product-summary .clients-satisfaction .client-list {
@@ -1759,14 +1754,14 @@ button:hover {
   /********************** START OF SLICK SLIDER ************************/
 
   .client-list button {
-    top: -0.42rem;
-    border-radius: 0.06rem;
-    width: 0.3rem;
-    height: 0.3rem;
+    top: -.72rem;
+    border-radius: .06rem;
+    width: .3rem;
+    height: .3rem;
   }
 
   .client-list .slick-prev {
-    right: 0.4rem;
+    right: .4rem;
   }
 
   .client-list .slick-next::after {
@@ -1782,42 +1777,47 @@ button:hover {
 
   /******************** FOOTER *********************/
 
-  .footer-wrapper {
-    padding-top: 0.2rem;
+  footer {
+    padding-top: .4rem;
+    background-size: auto .2rem;
   }
 
-  .footer-wrapper .company-info p {
-    margin-bottom: 0.2rem;
-    font-size: 0.13rem;
+  footer .company-info p {
+    margin-bottom: .2rem;
+    font-size: .13rem;
   }
 
-  .footer-wrapper .company-summary .company-info {
-    margin-bottom: 0.3rem;
+  footer .company-summary .company-info {
+    margin-bottom: .3rem;
   }
 
-  .footer-wrapper .company-info .footer-logo {
+  footer .company-info .footer-logo {
     width: 2rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: .2rem;
   }
 
-  .footer-wrapper .footer-logo img {
+  footer .footer-logo img {
     width: 100%;
   }
 
   .company-info .company-contacts li {
     line-height: 1.4;
-    font-size: 0.13rem;
+    font-size: .13rem;
   }
 
-  .footer-wrapper .company-links {
-    margin-bottom: 0.2rem;
+  footer .company-info-list {
+    margin-left: .2rem;
   }
 
-  .footer-wrapper .company-community {
-    margin-bottom: 0.2rem;
+  footer .company-links {
+    margin-bottom: .2rem;
   }
 
-  .footer-wrapper .blog-highlights {
+  footer .company-community {
+    margin-bottom: .2rem;
+  }
+
+  footer .blog-highlights {
     margin-bottom: 40px;
   }
 
@@ -1825,103 +1825,83 @@ button:hover {
     cursor: pointer;
   }
 
-  .company-links .footer-link::before {
-    left: -0.18rem;
-    top: 0.067rem;
-    padding: 0.02rem;
+  .footer-link::before {
+    left: -.18rem;
+    top: .07rem;
+    padding: .03rem;
   }
 
-  .company-links .footer-link {
-    left: 0.2rem;
-    font-size: 0.13rem;
+  .footer-link {
+    left: .2rem;
+    font-size: .15rem;
   }
 
-  .company-community .footer-link::before {
-    left: -0.18rem;
-    top: 0.067rem;
-    padding: 0.02rem;
-  }
-
-  .company-community .footer-link {
-    left: 0.2rem;
-    font-size: 0.13rem;
-  }
-
-  .footer-wrapper .blog-highlights figure {
+  footer .blog-highlights figure {
     width: 1.2rem;
   }
 
   .blog-highlights .blog-highlights-item .blog-description {
-    margin-left: 0.1rem;
-    padding-top: 0.02rem;
+    margin-left: .1rem;
+    padding-top: .02rem;
   }
 
   .blog-highlights .blog-highlights-item {
-    margin-bottom: 0.1rem;
+    margin-bottom: .1rem;
   }
 
   .blog-highlights p {
-    margin-bottom: 0.2rem;
+    margin-bottom: .2rem;
   }
 
   .blog-highlights .blog-description p {
-    font-size: 0.13rem;
-    margin-bottom: 0.02rem;
+    font-size: .16rem;
+    margin-bottom: .02rem;
   }
 
   .blog-highlights .blog-description time {
-    font-size: 0.13rem;
+    font-size: .15rem;
   }
 
   .company-links p {
-    font-size: 0.2rem;
+    font-size: .2rem;
+    margin-bottom: .05rem;
   }
 
   .company-community p {
-    font-size: 0.2rem;
+    font-size: .2rem;
+    margin-bottom: .05rem;
   }
 
   .company-info .company-contacts strong {
-    font-size: 0.2rem;
+    font-size: .2rem;
   }
 
   .blog-highlights img {
     width: 100%;
   }
 
-  .footer-wrapper .company-networks {
-    padding: 0.1rem 0 0.4rem;
-    background: rgba(0, 0, 0, 0.1);
+  footer .company-networks {
+    padding: .1rem 0 .4rem;
+    background: rgba(0,0,0,.1);
   }
 
-  .footer-wrapper .company-networks .company-sites {
+  footer .company-networks .company-sites {
     display: flex;
     justify-content: space-around;
   }
 
   .company-networks small {
     display: block;
-    font-size: 0.12rem;
-    margin-bottom: 0.2rem;
+    font-size: .12rem;
+    margin-bottom: .2rem;
+  }
+
+  .company-networks .copyright-time {
+    margin-right: .02rem;
   }
 
   .company-sites a::after {
-    width: 0.25rem;
-    height: 0.3rem;
+    width: .25rem;
+    height: .3rem;
   }
 }
-
-/* .slick-slide {
-  float: none;
-  display: block;
-  height: auto;
-}
-.slick-slide img {
-  width: 170px;
-  display: block;
-  height: auto;
-}
-
-.slick-list {
-  display: flex;
-} */
