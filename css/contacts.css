@@ -158,11 +158,13 @@ button:hover, a:hover {
 
 .page-title {
   color: #7f8c8c;
+  font-weight: 600;
 }
 
 .breadcrumb .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .breadcrumb-directory {
@@ -175,6 +177,11 @@ button:hover, a:hover {
 
 .geographic-location .location-description {
   background: #ececec;
+}
+
+.request-form-title {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .request-form .client-name {
@@ -244,7 +251,7 @@ input {
   background: #ececec;
   border: none;
   border-radius: 2px;
-  box-shadow: -4px -2px 0px 2px #d4d4d4;
+  box-shadow: -3px -2px 1px 0px #d4d4d4;
 }
 
 @media print, (min-width: 768px) {
@@ -265,8 +272,8 @@ input {
   }
 
   .breadcrumb {
-    padding: 35px 0;
     margin-bottom: 50px;
+    padding: 33px 0px 28px;
   }
 
   .breadcrumb::after {
@@ -277,14 +284,16 @@ input {
 
   .breadcrumb-directory {
     font-size: 12px;
+    margin-right: 4px;
   }
 
   .page-title {
     font-size: 20px;
+    margin-left: 9px;
   }
 
   .geographic-location {
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   .geographic-location .location-map {
@@ -294,8 +303,13 @@ input {
   }
 
   .geographic-location .location-description {
-    padding: 15px 12px;
+    padding: 22px 17px 25px;
     border-radius: 6px;
+  }
+
+  .geographic-location .location-description p {
+    line-height: 1.65;
+    letter-spacing: -.01em;
   }
 
   .contact-form .wrapper {
@@ -309,10 +323,15 @@ input {
 
   .request-form .form-title {
     margin-bottom: 64px;
+    margin-left: 7px;
   }
 
   .request-form form {
     margin-bottom: 34px;
+  }
+
+  .request-location {
+    margin-right: 43px;
   }
 
   .request-location .location-info .location-marker {
@@ -358,9 +377,9 @@ input {
     color: #e8645a;
   }
 
-  .contact-form .request-form {
+  /* .contact-form .request-form {
     width: 80%;
-  }
+  } */
 
   .contact-form form input {
     width: 467px;
@@ -389,8 +408,7 @@ input {
     box-shadow: 0 3px 0 0 #e1534b;
     font-size: 20px;
     color: #fff;
-    /* height: 20px; */
-    padding: 15px 46px;
+    padding: 15px 72px;
     transition: .25s ease;
   }
 
