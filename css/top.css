@@ -157,7 +157,7 @@ button:hover {
 /******* HEADER *******/
 
 header {
-  background: #76c7c0 url(img/common/up_divider_bg.png) no-repeat center bottom;
+  background: #76c7c0 url(/img/common/up_divider_bg.png) no-repeat center bottom;
 }
 
 header .wrapper {
@@ -190,7 +190,7 @@ header .header-logo .header-logo:hover {
   display: inline-block;
   width: 100%;
   height: 100%;
-  background: url(img/top/icn_double_arrow.png) center center/auto no-repeat;
+  background: url(/img/top/icn_double_arrow.png) center center/auto no-repeat;
   position: absolute;
   top: 4px;
   left: 0;
@@ -254,13 +254,13 @@ header .header-navigation-portfolio li {
 
 .product-summary {
   position: relative;
-  background: #f3f3f3 url(img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
+  background: #f3f3f3 url(/img/common/footer_icn_bg_path.png) no-repeat top center/100% auto;
 }
 
 .product-summary::before {
   position: absolute;
   content: "";
-  background: #ecebec url(img/common/down_divider_bg.png) no-repeat top center;
+  background: #ecebec url(/img/common/down_divider_bg.png) no-repeat top center;
 }
 
 .category-picture .hover-category {
@@ -442,7 +442,7 @@ header .header-navigation-portfolio li {
 
 .product-efficiency .product-goals .product-goals-list::before {
   content: "";
-  background: url(img/common/section_arrow_right_icn.png) no-repeat top
+  background: url(/img/common/section_arrow_right_icn.png) no-repeat top
     center/100% auto;
   width: 10px;
   height: 12px;
@@ -452,7 +452,7 @@ header .header-navigation-portfolio li {
 }
 
 .product-testing .testing-result .fifty-percent {
-  background: url(img/top/percent_img_01.png) no-repeat top center/100% auto;
+  background: url(/img/top/percent_img_01.png) no-repeat top center/100% auto;
   display: inline-block;
   width: 120px;
   height: 29px;
@@ -460,7 +460,7 @@ header .header-navigation-portfolio li {
 }
 
 .product-testing .testing-result .seventy-percent {
-  background: url(img/top/percent_img_02.png) no-repeat top center/100% auto;
+  background: url(/img/top/percent_img_02.png) no-repeat top center/100% auto;
   display: inline-block;
   width: 120px;
   height: 29px;
@@ -468,7 +468,7 @@ header .header-navigation-portfolio li {
 }
 
 .product-testing .testing-result .eighty-percent {
-  background: url(img/top/percent_img_03.png) no-repeat top center/100% auto;
+  background: url(/img/top/percent_img_03.png) no-repeat top center/100% auto;
   display: inline-block;
   width: 120px;
   height: 29px;
@@ -476,7 +476,7 @@ header .header-navigation-portfolio li {
 }
 
 .product-testing .testing-result .hundred-percent {
-  background: url(img/top/percent_img_04.png) no-repeat top center/100% auto;
+  background: url(/img/top/percent_img_04.png) no-repeat top center/100% auto;
   display: inline-block;
   width: 120px;
   height: 29px;
@@ -523,7 +523,7 @@ header .header-navigation-portfolio li {
 /******* FOOTER *******/
 
 footer {
-  background: #76c7c0 url(img/common/down_divider_bg.png) no-repeat top center;
+  background: #76c7c0 url(/img/common/down_divider_bg.png) no-repeat top center;
   color: rgba(255,255,255,.8);
 }
 
@@ -624,7 +624,7 @@ footer {
 }
 
 .facebook-site::after {
-  background: url(img/common/footer_facebook_icon.png) no-repeat center/100%
+  background: url(/img/common/footer_facebook_icon.png) no-repeat center/100%
     auto;
   content: "";
   position: absolute;
@@ -635,7 +635,7 @@ footer {
 }
 
 .googleplus-site::after {
-  background: url(img/common/footer_googleplus_icn.png) no-repeat center/100%
+  background: url(/img/common/footer_googleplus_icn.png) no-repeat center/100%
     auto;
   content: "";
   position: absolute;
@@ -646,7 +646,7 @@ footer {
 }
 
 .twitter-site::after {
-  background: url(img/common/footer_twitter_icn.png) no-repeat center/100% auto;
+  background: url(/img/common/footer_twitter_icn.png) no-repeat center/100% auto;
   content: "";
   position: absolute;
 }
@@ -656,7 +656,7 @@ footer {
 }
 
 .rss-site::after {
-  background: url(img/common/footer_rss_icn.png) no-repeat center/100% auto;
+  background: url(/img/common/footer_rss_icn.png) no-repeat center/100% auto;
   content: "";
   position: absolute;
 }
@@ -715,7 +715,7 @@ footer {
   content: "";
   top: 0;
   right: 0;
-  background: #999 url(img/top/icn_single_arrow.png) no-repeat center;
+  background: #999 url(/img/top/icn_single_arrow.png) no-repeat center;
   width: 100%;
   height: 100%;
 }
@@ -909,7 +909,7 @@ footer {
     top: 1px;
     right: -1px;
     transform: rotate(180deg);
-    background: url(img/top/icn_single_arrow.png) no-repeat center;
+    background: url(/img/top/icn_single_arrow.png) no-repeat center;
     width: 100%;
     height: 100%;
   }
@@ -924,7 +924,7 @@ footer {
     content: "";
     top: 0;
     right: 2px;
-    background: url(img/top/icn_single_arrow.png) no-repeat center;
+    background: url(/img/top/icn_single_arrow.png) no-repeat center;
     width: 100%;
     height: 100%;
   }
@@ -976,7 +976,7 @@ footer {
   }
 
   header {
-    padding: 27px 0 22px;
+    padding: 27px 0 22px; 
     position: relative;
     z-index: 9;
   }
@@ -1776,7 +1776,7 @@ footer {
   }
 
   .client-list .slick-next::after {
-    background: url(img/top/icn_single_arrow.png) no-repeat center;
+    background: url(/img/top/icn_single_arrow.png) no-repeat center;
   }
 
   .client-list img {
