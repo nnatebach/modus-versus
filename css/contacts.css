@@ -131,6 +131,7 @@ table {
 
 main {
   color: #7f8c8c;
+  background: #f3f3f3;
 }
 
 button, a {
@@ -171,6 +172,16 @@ button:hover, a:hover {
   display: flex;
 }
 
+.breadcrumb-directory span {
+  position: relative;
+  left: 1px;
+}
+
+.breadcrumb-directory .contact-path {
+  position: relative;
+  left: 3px;
+}
+
 .breadcrumb-directory li a {
   color: #7f8c8c;
 }
@@ -179,24 +190,9 @@ button:hover, a:hover {
   background: #ececec;
 }
 
-.request-form-title {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.request-form .client-name {
-  margin-bottom: 20px;
-}
-
-.request-form .client-email {
-  margin-bottom: 20px;
-}
-
-.request-form .client-website {
-  margin-bottom: 20px;
-}
-
 .request-form .client-request {
+  background: #e5e6e6;
+  box-shadow: -2px -1px 0px 1px #d4d4d4;
 }
 
 .request-location .location-info a {
@@ -243,16 +239,14 @@ button:hover, a:hover {
   height: 100%;
 }
 
-.request-location .request-address {
-  margin-bottom: 50px;
+input {
+  background: #e5e6e6;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -2px -1px 0px 1px #d4d4d4;
 }
 
-input {
-  background: #ececec;
-  border: none;
-  border-radius: 2px;
-  box-shadow: -3px -2px 1px 0px #d4d4d4;
-}
+/********************** PC **********************/
 
 @media print, (min-width: 768px) {
 
@@ -277,9 +271,9 @@ input {
   }
 
   .breadcrumb::after {
-    border-width: 14px;
-    bottom: -14px;
-    left: 170px;
+    border-width: 9px;
+    bottom: -8px;
+    left: 166px;
   }
 
   .breadcrumb-directory {
@@ -298,13 +292,15 @@ input {
 
   .geographic-location .location-map {
     margin-bottom: 60px;
-    border-radius: 6px;
-    box-shadow: 0 3px 0 0 #e0e2e3;
+    box-shadow: 0 3px 0 0 #e5e6e6;
+    border-radius: 8px;
   }
 
   .geographic-location .location-description {
-    padding: 22px 17px 25px;
+    padding: 22px 19px 25px;
     border-radius: 6px;
+    margin-left: -3px;
+    width: 1132px;
   }
 
   .geographic-location .location-description p {
@@ -318,7 +314,7 @@ input {
   }
 
   .contact-form {
-    margin-bottom: 240px;
+    padding-bottom: 240px;
   }
 
   .request-form .form-title {
@@ -330,41 +326,49 @@ input {
     margin-bottom: 34px;
   }
 
+  .request-form form label {
+    font-size: 18px;
+    margin-left: 28px;
+  }
+
   .request-location {
     margin-right: 43px;
   }
 
   .request-location .location-info .location-marker {
     font-size: 14px;
-    margin-bottom: 34px;
-    left: 24px;
+    margin-bottom: 39px;
+    left: 32px;
     width: 230px;
     height: 32px;
+    line-height: 1.5;
+    letter-spacing: .02em;
   }
 
   .request-location .location-info .phone-number {
-    margin-bottom: 20px;
-    left: 26px;
+    margin-bottom: 14px;
+    left: 32px;
     pointer-events: none;
   }
 
   .request-location .location-info .location-marker::before {
-    top: 0;
-    left: -28px;
+    top: 3px;
+    left: -31px;
   }
 
   .request-location .location-info .phone-number::before {
-    top: 0;
-    left: -26px;
+    top: -2px;
+    left: -25px;
   }
 
   .request-location .location-info .email-info {
-    left: 28px;
+    left: 32px;
+    letter-spacing: .01em;
   }
 
   .request-location .location-info .email-info::before {
     top: 0;
-    left: -28px;
+    left: -25px;
   }
 
   .request-location .email-info a {
@@ -377,43 +381,84 @@ input {
     color: #e8645a;
   }
 
-  /* .contact-form .request-form {
-    width: 80%;
-  } */
-
   .contact-form form input {
-    width: 467px;
-    height: 40px;
+    width: 463px;
+    height: 37px;
   }
 
-  .contact-form .client-request input {
+  .contact-form .client-request {
     width: 767px;
-    height: 165px;
+    height: 238px;
+    background: #e5e6e6;
+    border: none;
+    border-radius: 4px;
+    box-shadow: -2px -1px 1px 1px #d4d4d4;
   }
 
-  .request-form .client-name {
-    
+  .request-form-title {
+    font-size: 20px;
+    font-weight: 600;
   }
   
-  .request-form .client-email {}
-
-  .request-form .client-website {}
-
-  .request-form .client-request {}
+  .request-form .client-name {
+    margin-bottom: 20px;
+  }
+  
+  .request-form .client-email {
+    margin-bottom: 20px;
+  }
+  
+  .request-form .client-website {
+    margin-bottom: 20px;
+  }
 
   .request-button {
+    color: #fff;
+    font-size: 20px;
     border: none;
     border-radius: 6px;
     background: #e8645a;
     box-shadow: 0 3px 0 0 #e1534b;
-    font-size: 20px;
-    color: #fff;
-    padding: 15px 72px;
+    padding: 11px 74px 13px;
     transition: .25s ease;
+    margin-left: -3px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .request-button:hover {
+    background: #76c7c0;
+    box-shadow: 0 3px 0 0 rgb(98,184,175);
+  }
+
+  .request-location .request-address {
+    margin-bottom: 44px;
   }
 
   footer {
     padding-top: 49px;
     background-size: 100% auto;
   } 
+}
+
+/********************** SP **********************/
+
+@media only screen and (max-width: 767px) {
+
+  html {
+    font-size: calc(100vw / 3.75);
+  }
+  
+  main p {
+    color: #777;
+    font-size: .16rem;
+    line-height: .2rem;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    padding: 0 .2rem;
+  }
+
+
 }
