@@ -154,12 +154,12 @@ button:hover, a:hover {
   display: inline-block;
   border-style: solid;
   border-color: transparent #ecebec #ecebec transparent;
-  transform: rotate(45deg);
+  left: 11%;
+  transform: translateX(-11%) rotate(45deg);
 }
 
 .page-title {
   color: #7f8c8c;
-  font-weight: 600;
 }
 
 .breadcrumb .wrapper {
@@ -186,13 +186,26 @@ button:hover, a:hover {
   color: #7f8c8c;
 }
 
+.heading-title {
+  font-weight: 600;
+}
+
 .geographic-location .location-description {
   background: #ececec;
 }
 
 .request-form .client-request {
+  border: none;
+  outline: none;
   background: #e5e6e6;
-  box-shadow: -2px -1px 0px 1px #d4d4d4;
+}
+
+.request-button {
+  color: #fff;
+  border: none;
+  background: #e8645a;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
 }
 
 .request-location .location-info a {
@@ -242,8 +255,7 @@ button:hover, a:hover {
 input {
   background: #e5e6e6;
   border: none;
-  border-radius: 5px;
-  box-shadow: -2px -1px 0px 1px #d4d4d4;
+  outline: none;
 }
 
 /********************** PC **********************/
@@ -265,6 +277,15 @@ input {
     margin-right: auto;
   }
 
+  input {
+    border-radius: 5px;
+    box-shadow: -2px -1px 0px 1px #d4d4d4;
+  }
+
+  .heading-title {
+    font-size: 20px;
+  }
+
   .breadcrumb {
     margin-bottom: 50px;
     padding: 33px 0px 28px;
@@ -273,7 +294,6 @@ input {
   .breadcrumb::after {
     border-width: 9px;
     bottom: -8px;
-    left: 166px;
   }
 
   .breadcrumb-directory {
@@ -390,14 +410,12 @@ input {
     width: 767px;
     height: 238px;
     background: #e5e6e6;
-    border: none;
     border-radius: 4px;
     box-shadow: -2px -1px 1px 1px #d4d4d4;
   }
 
-  .request-form-title {
-    font-size: 20px;
-    font-weight: 600;
+  .request-form .client-request {
+    box-shadow: -2px -1px 0px 1px #d4d4d4;
   }
   
   .request-form .client-name {
@@ -413,17 +431,12 @@ input {
   }
 
   .request-button {
-    color: #fff;
     font-size: 20px;
-    border: none;
     border-radius: 6px;
-    background: #e8645a;
     box-shadow: 0 3px 0 0 #e1534b;
     padding: 11px 74px 13px;
     transition: .25s ease;
     margin-left: -3px;
-    font-weight: 600;
-    font-family: "Open Sans", sans-serif;
   }
 
   .request-button:hover {
@@ -448,11 +461,15 @@ input {
   html {
     font-size: calc(100vw / 3.75);
   }
-  
-  main p {
-    color: #777;
-    font-size: .16rem;
-    line-height: .2rem;
+
+  body {
+    font-size: .24rem;
+    overflow-x: hidden;
+  }
+
+  input {
+    border-radius: .05rem;
+    box-shadow: -.02rem -.01rem 0 .01rem #d4d4d4;
   }
 
   .wrapper {
@@ -460,5 +477,122 @@ input {
     padding: 0 .2rem;
   }
 
+  header {
+    padding: .2rem .1rem;
+  }
+
+  .heading-title {
+    font-size: .16rem;
+  }
+
+  .breadcrumb {
+    padding: .1rem 0;
+    margin-bottom: .4rem;
+  }
+
+  .breadcrumb-directory {
+    font-size: .08rem;
+  }
+
+  .contact-form {
+    padding-bottom: .5rem;
+  }
+
+  .location-map {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+
+  .location-map img {
+    width: 100%;
+  }
+
+  .location-description {
+    padding: .25rem .1rem;
+    border-radius: .05rem;
+    margin-bottom: .5rem;
+  }
+
+  .request-form .form-title {
+    margin-bottom: .5rem;
+  }
+
+  .request-form form label {
+    font-size: .14rem;
+  }
+
+  .request-form form input {
+    width: 2.7rem;
+    height: .3rem;
+    font-size: .14rem;
+  }
+
+  .request-form form .client-website {
+    margin-bottom: .04rem;
+  }
+
+  .request-form .client-request {
+    width: 100%;
+    border-radius: .04rem;
+    box-shadow: -.02rem -.01rem 0 .01rem #d4d4d4;
+    margin-bottom: .3rem;
+    font-size: .14rem;
+  }
+
+  .request-button {
+    font-size: .16rem;
+    border-radius: .06rem;
+    background: #e8645a;
+    box-shadow: 0 0.03rem 0 0 #e1534b;
+    padding: .03rem .15rem;
+  }
+
+  .contact-form .request-form {
+    margin-bottom: .5rem;
+  }
+
+  .request-location .location-info ul {
+    width: 3rem;
+    margin: 0 auto;
+  }
+
+  .request-location .location-info li {
+    font-size: .13rem;
+    left: .2rem;
+    margin-bottom: .15rem;
+    padding: 0.01rem 0;
+  }
+
+  .request-location .location-info li::before {
+    left: -.2rem;
+  }
+
+  .request-location .location-info .phone-number::before {
+    top: .035rem;
+  }
+
+  .request-location .location-info .email-info::before {
+    top: .04rem;
+  }
+
+  .contact-form .request-location .request-address {
+    margin-bottom: .35rem;
+  }
+
+  .request-form form .client-name {
+    margin-bottom: .1rem;
+  }
+
+  .request-form form .client-email {
+    margin-bottom: .1rem;
+  }
+
+  .request-form form .client-website {
+    margin-bottom: .1rem;
+  }
+
+  footer {
+    padding-top: .4rem;
+  }
 
 }
