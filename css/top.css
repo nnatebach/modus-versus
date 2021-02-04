@@ -367,23 +367,23 @@ header .header-navigation-portfolio li {
   color: #7f8c8c;
 }
 
-.product-summary .product-efficiency .product-goals {
+.product-efficiency .product-goals {
   width: 240px;
   margin-right: 80px;
 }
 
-.product-summary .product-efficiency .clients-feedback {
+.product-efficiency .clients-feedback {
   width: 300px;
 }
 
-.product-summary .clients-feedback .client-opinion {
+.clients-feedback .client-opinion {
   color: #7f8c8c;
   line-height: 1.98;
   position: relative;
   background: #f8f8f8;
 }
 
-.product-summary .clients-feedback .client-opinion::after {
+.clients-feedback .client-opinion::after {
   content: "";
   display: inline-block;
   border-style: solid;
@@ -395,24 +395,24 @@ header .header-navigation-portfolio li {
   left: 14px;
 }
 
-.product-summary .clients-feedback .client-name {
+.clients-feedback .client-name {
   color: #7f8c8c;
   font-size: 16px;
   margin-left: 60px;
   font-weight: 600;
 }
 
-.product-summary .product-efficiency .product-testing {
+.product-efficiency .product-testing {
   width: 610px;
   margin: -8px 40px 0 11px;
 }
 
-.product-summary .product-efficiency .testing-highlight {
+.product-efficiency .testing-highlight {
   text-decoration: underline;
   color: #e1524b;
 }
 
-.product-summary .product-efficiency .testing-highlight:hover {
+.product-efficiency .testing-highlight:hover {
   text-decoration: none;
 }
 
@@ -491,7 +491,7 @@ header .header-navigation-portfolio li {
   color: #7f8c8c;
 }
 
-.product-summary .clients-satisfaction .client-section::before {
+.clients-satisfaction .client-section::before {
   content: "";
   background-color: #e1e1e1;
   border-radius: 50%;
@@ -502,7 +502,7 @@ header .header-navigation-portfolio li {
   margin-top: 3px;
 }
 
-.product-summary .clients-satisfaction .client-section::after {
+.clients-satisfaction .client-section::after {
   content: "";
   flex: 1;
   border-bottom: 1px solid #e1e1e1;
@@ -510,13 +510,13 @@ header .header-navigation-portfolio li {
   transform: translateY(1px);
 }
 
-.product-summary .clients-satisfaction .client-list {
+.clients-satisfaction .client-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.product-summary .clients-satisfaction {
+.clients-satisfaction {
   position: relative;
 }
 
@@ -1189,7 +1189,7 @@ footer {
     align-items: center;
   }
 
-  .product-summary .product-efficiency {
+  .product-efficiency {
     font-size: 13px;
     display: flex;
     margin-bottom: 58px;
@@ -1205,19 +1205,19 @@ footer {
     width: 540px;
   }
 
-  .product-summary .clients-feedback .client-comment {
+  .product-efficiency .clients-feedback .client-comment {
     margin-bottom: 25px;
     letter-spacing: -.01em;
     margin-left: -3px;
   }
 
-  .product-summary .clients-feedback .client-opinion {
+  .clients-feedback .client-opinion {
     border-radius: 6px;
     padding: 9px 16px 11px;
     margin-bottom: 9px;
   }
 
-  .product-summary .clients-satisfaction .client-section {
+  .clients-satisfaction .client-section {
     margin-bottom: 52px;
     position: relative;
     align-items: center;
@@ -1656,11 +1656,11 @@ footer {
     margin: 0 auto;
   }
 
-  .product-summary .product-efficiency {
+  .product-efficiency {
     margin: 0 auto;
   }
 
-  .product-summary .product-efficiency .product-goals {
+  .product-efficiency .product-goals {
     margin-bottom: .1rem;
     width: 100%;
   }
@@ -1686,7 +1686,7 @@ footer {
     width: 3rem;
   }
 
-  .product-summary .product-efficiency .product-testing {
+  .product-efficiency .product-testing {
     width: 100%;
     margin: 0;
   }
@@ -1741,7 +1741,7 @@ footer {
     margin-bottom: .25rem;
   }
 
-  .product-summary .product-efficiency .clients-feedback {
+  .product-efficiency .clients-feedback {
     width: 100%;
     margin-bottom: .4rem;
   }
