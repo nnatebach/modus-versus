@@ -202,6 +202,7 @@ button:hover, a:hover {
   border: none;
   outline: none;
   background: #e5e6e6;
+  resize: none;
 }
 
 .request-button {
@@ -367,18 +368,16 @@ input {
   .contact-form form input {
     width: 463px;
     height: 37px;
+    padding: 0 5px;
   }
 
   .contact-form .client-request {
     width: 767px;
     height: 238px;
     background: #e5e6e6;
-    border-radius: 4px;
+    border-radius: 6px;
     box-shadow: -2px -1px 1px 1px #d4d4d4;
-  }
-
-  .request-form .client-request {
-    box-shadow: -2px -1px 0px 1px #d4d4d4;
+    padding: 5px;
   }
   
   .request-form .client-name {
@@ -496,9 +495,10 @@ input {
   }
 
   .request-form form input {
-    width: 2.7rem;
+    width: 2.5rem;
     height: .3rem;
     font-size: .14rem;
+    padding: 0 .05rem;
   }
 
   .request-form form .client-website {
@@ -506,11 +506,13 @@ input {
   }
 
   .request-form .client-request {
-    width: 100%;
+    width: 98%;
     border-radius: .04rem;
-    box-shadow: -.02rem -.01rem 0 .01rem #d4d4d4;
+    box-shadow: -0.02rem -0.01rem 0 0.01rem #d4d4d4;
     margin-bottom: .3rem;
     font-size: .14rem;
+    line-height: 1.4;
+    padding: .05rem;
   }
 
   .request-button {
