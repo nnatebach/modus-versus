@@ -148,14 +148,13 @@ button:hover, a:hover {
   background: #ecebec;
 }
 
-.breadcrumb::after {
+.breadcrumb .wrapper::after {
   content: "";
   position: absolute;
   display: inline-block;
   border-style: solid;
   border-color: transparent #ecebec #ecebec transparent;
-  left: 11%;
-  transform: translateX(-11%) rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .page-title {
@@ -186,6 +185,11 @@ button:hover, a:hover {
   color: #7f8c8c;
 }
 
+.location-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
 .heading-title {
   font-weight: 600;
 }
@@ -212,44 +216,9 @@ button:hover, a:hover {
   color: #7f8c8c;
 }
 
-.request-location .location-info .location-marker {
-  position: relative;
-  color: #7f8c8c;
-  cursor: pointer;
-}
-
-.request-location .location-info .location-marker::before {
-  position: absolute;
-  content: "";
-  background: url("/img/contacts/location_marker_icn.png") no-repeat left;
-  width: 100%;
-  height: 100%;
-}
-
-.request-location .location-info .phone-number {
-  position: relative;
-  cursor: pointer;
-}
-
-.request-location .location-info .phone-number::before {
-  content: "";
-  position: absolute;
-  background: url(/img/contacts/phone_icn.png) no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-.request-location .location-info .email-info {
-  position: relative;
-  cursor: pointer;
-}
-
-.request-location .location-info .email-info::before {
-  content: "";
-  position: absolute;
-  background: url(/img/contacts/mail_icn.png) no-repeat;
-  width: 100%;
-  height: 100%;
+.request-location .location-info li {
+  display: flex;
+  align-items: center;
 }
 
 input {
@@ -291,7 +260,7 @@ input {
     padding: 33px 0px 28px;
   }
 
-  .breadcrumb::after {
+  .breadcrumb .wrapper::after {
     border-width: 9px;
     bottom: -8px;
   }
@@ -302,18 +271,18 @@ input {
   }
 
   .page-title {
-    font-size: 20px;
     margin-left: 9px;
   }
 
   .geographic-location {
-    margin-bottom: 60px;
+    margin-bottom: 61px;
   }
 
   .geographic-location .location-map {
-    margin-bottom: 60px;
+    height: 402px;
     box-shadow: 0 3px 0 0 #e5e6e6;
     border-radius: 8px;
+    margin-bottom: 60px;
   }
 
   .geographic-location .location-description {
@@ -352,48 +321,42 @@ input {
   }
 
   .request-location {
-    margin-right: 43px;
+    width: 273px;
+  }
+
+  .request-location .location-info a {
+    margin-left: 10px;
   }
 
   .request-location .location-info .location-marker {
     font-size: 14px;
-    margin-bottom: 39px;
-    left: 32px;
-    width: 230px;
-    height: 32px;
+    margin-bottom: 27px;
     line-height: 1.5;
     letter-spacing: .02em;
   }
 
   .request-location .location-info .phone-number {
-    margin-bottom: 14px;
-    left: 32px;
     pointer-events: none;
+    margin: 0 0 15px 6px;
   }
 
-  .request-location .location-info .location-marker::before {
-    top: 3px;
-    left: -31px;
+  .request-location .location-info ul {
+    margin-left: 1px;
   }
 
-  .request-location .location-info .phone-number::before {
-    top: -2px;
-    left: -25px;
+  .location-info .email-info .email-icon {
+    margin-left: 7px;
   }
 
   .request-location .location-info .email-info {
-    left: 32px;
     letter-spacing: .01em;
-  }
-
-  .request-location .location-info .email-info::before {
-    top: 0;
-    left: -25px;
+    margin-left: -1px;
   }
 
   .request-location .email-info a {
     text-decoration: underline;
     color: #e8645a;
+    margin: 1px 0 0 7px;
   }
 
   .request-location .email-info a:hover {
@@ -490,6 +453,11 @@ input {
     margin-bottom: .4rem;
   }
 
+  .breadcrumb .wrapper::after {
+    bottom: -.09rem;
+    border-width: .09rem;
+  }
+
   .breadcrumb-directory {
     font-size: .08rem;
   }
@@ -498,8 +466,14 @@ input {
     padding-bottom: .5rem;
   }
 
+  .contact-form .request-location .location-info {
+    width: 2.5rem;
+    margin: 0 auto;
+  }
+
   .location-map {
     width: 100%;
+    height: 3rem;
     margin-bottom: .5rem;
   }
 
@@ -559,20 +533,12 @@ input {
   .request-location .location-info li {
     font-size: .13rem;
     left: .2rem;
-    margin-bottom: .15rem;
-    padding: 0.01rem 0;
+    width: auto;
+    height: .4rem;
   }
 
-  .request-location .location-info li::before {
-    left: -.2rem;
-  }
-
-  .request-location .location-info .phone-number::before {
-    top: .035rem;
-  }
-
-  .request-location .location-info .email-info::before {
-    top: .04rem;
+  .request-location .location-info a {
+    margin-left: .05rem;
   }
 
   .contact-form .request-location .request-address {
