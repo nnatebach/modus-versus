@@ -319,7 +319,7 @@ header .header-navigation-portfolio li {
   line-height: 1.6;
 }
 
-.category-section a {
+.category-section .category-box {
   display: block;
   font-weight: 600;
   text-align: center;

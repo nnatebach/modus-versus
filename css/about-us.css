@@ -179,6 +179,10 @@ a:hover {
   justify-content: space-between;
 }
 
+.team-description .team-networks .team-sites {
+  display: inline-block;
+}
+
 .category-section .team-profile {
   height: 100%;
 }
@@ -203,6 +207,14 @@ header {
 
 footer {
   background-size: 100% auto;
+}
+
+.portfolio-is-active {
+  background: #62a29e;
+  box-shadow: 0 3px 0 0 #528b86;
+  border-radius: 5px;
+  padding: 8px 16px 8px 12px;
+  margin-right: 3px;
 }
 
 @media print, (min-width: 768px) {
