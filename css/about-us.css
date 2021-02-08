@@ -181,6 +181,29 @@ a:hover {
 
 .team-description .team-networks .team-sites {
   display: inline-block;
+  padding: 0;
+  transform: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  box-shadow: none;
+}
+
+.team-description li:nth-child(1) .team-sites {
+  background: url(../img/about-us/facebook_icn.png) no-repeat;
+}
+
+.team-description li:nth-child(2) .team-sites {
+  background: url(../img/about-us/twitter_icn.png) no-repeat;
+}
+
+.team-description li:nth-child(3) .team-sites {
+  background: url(../img/about-us/googleplus_icn.png) no-repeat;
+
+}
+
+.team-description li:nth-child(4) .team-sites {
+  background: url(../img/about-us/linkedin_icn.png) no-repeat;
 }
 
 .category-section .team-profile {
@@ -267,8 +290,11 @@ footer {
     position: absolute;
   }
 
-  .services-categories .category-section:hover {
+  .services-categories .team-category:hover {
     background: #76c7c0;
+  }
+
+  .services-categories .team-category {
     transition: .28s ease;
   }
 
@@ -277,8 +303,17 @@ footer {
     margin-bottom: 70px;
   }
   
-  .category-section .category-box {
+  .team-category .category-box {
     box-shadow: 0 3px 0 0 #7e8c8c;
+    transition: .28s ease;
+  }
+
+  .team-category .category-box:hover {
+    opacity: 1;
+  }
+
+  .team-category .team-networks li {
+    transition: none;
   }
 
   .category-section:hover .team-profile .team-description {

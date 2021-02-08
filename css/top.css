@@ -1135,7 +1135,7 @@ footer {
   .category-section:hover {
     background-color: #fff;
   }
-
+  
   .category-section:hover .category-box {
     background: #e8645a;
     box-shadow: 0 4px 0 0 #e1534b;
