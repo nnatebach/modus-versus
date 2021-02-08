@@ -106,8 +106,8 @@ section {
   display: block;
 }
 body {
-  font-family: "Open Sans", sans-serif;
   line-height: 1;
+  font-family: "Open Sans", sans-serif;
 }
 ol,
 ul {
@@ -166,7 +166,7 @@ a:hover {
   position: relative;
 }
 
-.category-section .category-box {
+.team-category .category-box {
   background: #98a3a3;
 }
 
@@ -179,6 +179,10 @@ a:hover {
   justify-content: space-around;
 }
 
+.team-category .team-profile .team-picture {
+  display: none;
+}
+
 .team-description .team-networks .team-sites {
   display: inline-block;
   padding: 0;
@@ -187,23 +191,27 @@ a:hover {
 }
 
 .team-description li:nth-child(1) .team-sites {
-  background: url(../img/about-us/facebook_icn.png) no-repeat;
+  background: url(../img/about-us/facebook_icn.png) no-repeat center / 100% auto;
 }
 
 .team-description li:nth-child(2) .team-sites {
-  background: url(../img/about-us/twitter_icn.png) no-repeat;
+  background: url(../img/about-us/twitter_icn.png) no-repeat center / 100% auto;
 }
 
 .team-description li:nth-child(3) .team-sites {
-  background: url(../img/about-us/googleplus_icn.png) no-repeat;
+  background: url(../img/about-us/googleplus_icn.png) no-repeat center / 100% auto;
 
 }
 
 .team-description li:nth-child(4) .team-sites {
-  background: url(../img/about-us/linkedin_icn.png) no-repeat;
+  background: url(../img/about-us/linkedin_icn.png) no-repeat center / 100% auto;
 }
 
-.category-section .team-profile {
+.team-category .team-description {
+  visibility: visible;
+}
+
+.team-category .team-profile {
   height: 100%;
 }
 
@@ -212,6 +220,9 @@ a:hover {
   color: #e1524b;
 }
 
+.portfolio-is-active {
+  background: #62a29e;
+}
 
 .bottom-quote .quote-description {
   text-align: center;
@@ -226,14 +237,6 @@ footer {
   background-size: 100% auto;
 }
 
-.portfolio-is-active {
-  background: #62a29e;
-  box-shadow: 0 3px 0 0 #528b86;
-  border-radius: 5px;
-  padding: 8px 16px 8px 12px;
-  margin-right: 3px;
-}
-
 /************************ PC *************************/
 
 @media print, (min-width: 768px) {
@@ -244,6 +247,14 @@ footer {
 
   .about-us-breadcrumb {
     margin-bottom: 52px;
+  }
+
+  .portfolio-is-active {
+    background: #62a29e;
+    box-shadow: 0 3px 0 0 #528b86;
+    border-radius: 5px;
+    padding: 8px 16px 8px 12px;
+    margin-right: 3px;
   }
 
   .page-intro .heading-intro {
@@ -283,16 +294,18 @@ footer {
     padding-top: 66px;
   }
 
-  .category-section .team-profile {
+  .team-category .team-profile {
     width: 201px;
-    /* padding-left: 35px;
-    padding-right: 35px; */
   }
 
-  .category-section .team-picture img {
+  .team-category .team-picture img {
     top: 32%;
     left: 37%;
     position: absolute;
+  }
+
+  .team-category .team-profile .team-picture {
+    display: block;
   }
 
   .services-categories .team-category:hover {
@@ -336,12 +349,12 @@ footer {
     visibility: visible;
   }
 
-  .category-section .team-description {
+  .team-category .team-description {
     visibility: hidden;
   }
 
   .category-section:hover .team-profile .team-picture {
-    visibility: hidden;
+    display: none;
   }
 
   .bottom-quote .quote-section {
@@ -378,5 +391,106 @@ footer {
 /************************ SP *************************/
 
 @media only screen and (max-width: 767px) {
+  html {
+    font-size: calc(100vw / 3.75);
+  }
 
+  body {
+    font-size: .24rem;
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    padding: 0 .2rem;
+  }
+
+  header {
+    padding: .2rem .1rem;
+  }
+
+  .heading-title {
+    font-size: .16rem;
+  }
+
+  .breadcrumb {
+    padding: .1rem 0;
+    margin-bottom: .4rem;
+  }
+
+  .breadcrumb .wrapper::after {
+    bottom: -.09rem;
+    border-width: .09rem;
+  }
+
+  .breadcrumb-directory {
+    font-size: .08rem;
+  }
+
+  .page-intro .heading-intro {
+    margin-bottom: .2rem;
+    font-size: .2rem;
+  }
+
+  .page-intro .page-description {
+    line-height: 1.4;
+    margin-bottom: .6rem;
+  }
+
+  .team-description .team-networks .team-sites {
+    border-radius: .05rem;
+    width: .4rem;
+    height: .4rem;
+  }
+
+  .team-category .category-box {
+    box-shadow: 0 .02rem 0 0 #7e8c8c;
+  }
+
+  .team-section .services-categories .team-category {
+    background:#90d0cb;
+  }
+
+  .team-section .team-showcase .section-title {
+    margin-bottom: .5rem;
+  }
+
+  .services-categories .team-category .team-profile {
+    padding: 0 .3rem;
+  }
+
+  .team-profile .team-description .team-networks {
+    justify-content: space-between;
+  }
+
+  .services-categories .team-description p {
+    margin-bottom: .5rem;
+  }
+
+  .about-us-product .clients-feedback {
+    margin-bottom: .5rem;
+  }
+
+  .bottom-quote .quote-section .team-quote {
+    font-size: .2rem;
+    margin-bottom: .2rem;
+  }
+
+  .bottom-quote .quote-description {
+    margin-bottom: .4rem;
+  }
+
+  .clients-satisfaction .client-section {
+    margin-bottom: .5rem;
+    font-size: .16rem;
+  }
+
+  .bottom-quote {
+    padding-bottom: .5rem;
+  }
+
+  footer {
+    padding-top: .4rem;
+    background-size: auto .2rem;
+  }
 }

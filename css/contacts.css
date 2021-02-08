@@ -171,11 +171,6 @@ button:hover, a:hover {
   display: flex;
 }
 
-.breadcrumb-directory span {
-  position: relative;
-  left: 1px;
-}
-
 .breadcrumb-directory .contact-path {
   position: relative;
   left: 3px;
@@ -562,5 +557,4 @@ input {
   footer {
     padding-top: .4rem;
   }
-
 }
