@@ -180,41 +180,8 @@ button:hover, a:hover {
   color: #7f8c8c;
 }
 
-.location-map iframe {
-  width: 100%;
-  height: 100%;
-}
-
 .heading-title {
   font-weight: 600;
-}
-
-.geographic-location .location-description {
-  background: #ececec;
-}
-
-.request-form .client-request {
-  border: none;
-  outline: none;
-  background: #e5e6e6;
-  resize: none;
-}
-
-.request-button {
-  color: #fff;
-  border: none;
-  background: #e8645a;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-}
-
-.request-location .location-info a {
-  color: #7f8c8c;
-}
-
-.request-location .location-info li {
-  display: flex;
-  align-items: center;
 }
 
 .team-section .team-category a {
@@ -247,11 +214,6 @@ input {
     margin-right: auto;
   }
 
-  input {
-    border-radius: 5px;
-    box-shadow: -2px -1px 0px 1px #d4d4d4;
-  }
-
   .heading-title {
     font-size: 20px;
   }
@@ -271,155 +233,75 @@ input {
     margin-right: 4px;
   }
 
+  .services-breadcrumb {
+    margin-bottom: 52px;
+  }
+
+  .page-intro .heading-intro {
+    margin-left: 1px;
+    letter-spacing: .022em;
+  }
+
   .page-title {
     margin-left: 9px;
   }
 
-  .geographic-location {
-    margin-bottom: 61px;
+  .services-categories .team-category {
+    padding: 55px 0 50px;
   }
 
-  .geographic-location .location-map {
-    height: 402px;
-    box-shadow: 0 3px 0 0 #e5e6e6;
-    border-radius: 8px;
-    margin-bottom: 60px;
-  }
-
-  .geographic-location .location-description {
-    padding: 22px 19px 25px;
-    border-radius: 6px;
-    margin-left: -3px;
-    width: 1132px;
-  }
-
-  .geographic-location .location-description p {
-    line-height: 1.65;
-    letter-spacing: -.01em;
-  }
-
-  .contact-form .wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .contact-form {
-    padding-bottom: 240px;
-  }
-
-  .request-form .form-title {
-    margin-bottom: 64px;
-    margin-left: 7px;
-  }
-
-  .request-form form {
-    margin-bottom: 34px;
-  }
-
-  .request-form form label {
-    font-size: 18px;
-    margin-left: 28px;
-  }
-
-  .request-location {
-    width: 273px;
-  }
-
-  .request-location .location-info a {
-    margin-left: 10px;
-  }
-
-  .request-location .location-info .location-marker {
+  .team-category .package-description li {
+    padding: 17px 0 22px;
+    line-height: .8;
     font-size: 14px;
-    margin-bottom: 27px;
-    line-height: 1.5;
-    letter-spacing: .02em;
   }
 
-  .request-location .location-info .phone-number {
-    pointer-events: none;
-    margin: 0 0 15px 6px;
+  .team-category .package-description li:nth-child(2) {
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
   }
 
-  .request-location .location-info ul {
-    margin-left: 1px;
+  .team-category .package-description li:nth-child(3) {
+    border-bottom: 1px solid #ececec;
   }
 
-  .location-info .email-info .email-icon {
-    margin-left: 7px;
-  }
-
-  .request-location .location-info .email-info {
-    letter-spacing: .01em;
-    margin-left: -1px;
-  }
-
-  .request-location .email-info a {
-    text-decoration: underline;
-    color: #e8645a;
-    margin: 1px 0 0 7px;
-  }
-
-  .request-location .email-info a:hover {
-    text-decoration: none;
-    color: #e8645a;
-  }
-
-  .contact-form form input {
-    width: 463px;
-    height: 37px;
-    padding: 0 5px;
-  }
-
-  .contact-form .client-request {
-    width: 767px;
-    height: 238px;
-    background: #e5e6e6;
-    border-radius: 6px;
-    box-shadow: -2px -1px 1px 1px #d4d4d4;
-    padding: 5px;
-  }
-  
-  .request-form .client-name {
-    margin-bottom: 20px;
-  }
-  
-  .request-form .client-email {
-    margin-bottom: 20px;
-  }
-  
-  .request-form .client-website {
-    margin-bottom: 20px;
-  }
-
-  .request-button {
-    font-size: 20px;
-    border-radius: 6px;
-    box-shadow: 0 3px 0 0 #e1534b;
-    padding: 11px 74px 13px;
-    transition: .25s ease;
-    margin-left: -3px;
-  }
-
-  .request-button:hover {
-    background: #76c7c0;
-    box-shadow: 0 3px 0 0 rgb(98,184,175);
-  }
-
-  .request-location .request-address {
-    margin-bottom: 44px;
-  }
-
-  .category-section .category-section-box {
+  .team-category .category-section-box {
     position: absolute;
+    opacity: 1;
     transition: .25s ease;
     left: 50%;
     transform: translateX(-51%);
-    width: 73px;
-    z-index: 9999;
-    display: block;
-    background: green;
+    width: auto;
     top: -30px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .team-category:hover .category-section-box {
+    background: #e8645a;
+    box-shadow: none;
+  }
+
+  .team-category:hover .category-box {
+    box-shadow: none;
+  }
+
+  .team-category:hover .package-description li {
+    color: #fff;
+  }
+
+  .service-packages {
+    margin-bottom: 16px;
+  }
+
+  .service-packages .product-goals {
+    width: 264px;
+    margin-right: 62px;
+  }
+
+  .service-packages .product-testing {
+    width: 610px;
+    margin: -8px 13px 0 11px;
   }
 
   footer {
@@ -439,11 +321,6 @@ input {
   body {
     font-size: .24rem;
     overflow-x: hidden;
-  }
-
-  input {
-    border-radius: .05rem;
-    box-shadow: -.02rem -.01rem 0 .01rem #d4d4d4;
   }
 
   .wrapper {
@@ -471,104 +348,6 @@ input {
 
   .breadcrumb-directory {
     font-size: .08rem;
-  }
-
-  .contact-form {
-    padding-bottom: .5rem;
-  }
-
-  .contact-form .request-location .location-info {
-    width: 2.5rem;
-    margin: 0 auto;
-  }
-
-  .location-map {
-    width: 100%;
-    height: 3rem;
-    margin-bottom: .5rem;
-  }
-
-  .location-map img {
-    width: 100%;
-  }
-
-  .location-description {
-    padding: .25rem .1rem;
-    border-radius: .05rem;
-    margin-bottom: .5rem;
-  }
-
-  .request-form .form-title {
-    margin-bottom: .5rem;
-  }
-
-  .request-form form label {
-    font-size: .14rem;
-  }
-
-  .request-form form input {
-    width: 2.5rem;
-    height: .3rem;
-    font-size: .14rem;
-    padding: 0 .05rem;
-  }
-
-  .request-form form .client-website {
-    margin-bottom: .04rem;
-  }
-
-  .request-form .client-request {
-    width: 98%;
-    border-radius: .04rem;
-    box-shadow: -0.02rem -0.01rem 0 0.01rem #d4d4d4;
-    margin-bottom: .3rem;
-    font-size: .14rem;
-    line-height: 1.4;
-    padding: .05rem;
-  }
-
-  .request-button {
-    font-size: .16rem;
-    border-radius: .06rem;
-    background: #e8645a;
-    box-shadow: 0 0.03rem 0 0 #e1534b;
-    padding: .03rem .15rem;
-  }
-
-  .contact-form .request-form {
-    margin-bottom: .5rem;
-  }
-
-  .request-location .location-info ul {
-    width: 3rem;
-    margin: 0 auto;
-  }
-
-  .request-location .location-info li {
-    font-size: .13rem;
-    left: .2rem;
-    width: auto;
-    height: .4rem;
-  }
-
-  .request-location .location-info a {
-    margin-left: .05rem;
-  }
-
-  .contact-form .request-location .request-address {
-    margin-bottom: .35rem;
-  }
-
-  .request-form form .client-name {
-    margin-bottom: .1rem;
-  }
-
-  .request-form form .client-email {
-    margin-bottom: .1rem;
-  }
-
-  .request-form form .client-website {
-    margin-bottom: .1rem;
   }
 
   footer {
