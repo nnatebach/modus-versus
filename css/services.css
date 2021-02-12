@@ -233,6 +233,10 @@ input {
     margin-right: 4px;
   }
 
+  .header-navigation ul .services-is-active {
+    padding: 8px 32px 8px 22px;
+  }
+
   .services-breadcrumb {
     margin-bottom: 52px;
   }
@@ -275,6 +279,16 @@ input {
     top: -30px;
     font-size: 16px;
     font-weight: 700;
+  }
+
+  .team-section {
+    padding-bottom: 25px;
+  }
+
+  .team-section .team-category .category-box {
+    bottom: -29px;
+    padding-top: 18px;
+    padding-bottom: 22px;
   }
 
   .team-category:hover .category-section-box {
