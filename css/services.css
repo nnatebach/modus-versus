@@ -187,6 +187,11 @@ button:hover, a:hover {
 .team-section .team-category a {
   box-shadow: none;
   background: #98a3a3;
+  text-align: center;
+}
+
+.team-category .category-section-box {
+  position: absolute;
 }
 
 input {
@@ -235,6 +240,8 @@ input {
 
   .header-navigation ul .services-is-active {
     padding: 8px 32px 8px 22px;
+    width: 46px;
+    margin-right: 9px;
   }
 
   .services-breadcrumb {
@@ -254,10 +261,15 @@ input {
     padding: 55px 0 50px;
   }
 
+  .team-category .package-description {
+    width: 200px;
+  }
+
   .team-category .package-description li {
-    padding: 17px 0 22px;
+    padding: 17px 10px 22px;
     line-height: .8;
     font-size: 14px;
+    letter-spacing: .02em;
   }
 
   .team-category .package-description li:nth-child(2) {
@@ -270,13 +282,12 @@ input {
   }
 
   .team-category .category-section-box {
-    position: absolute;
     opacity: 1;
     transition: .25s ease;
     left: 50%;
     transform: translateX(-51%);
-    width: auto;
-    top: -30px;
+    width: 70px;
+    top: -26px;
     font-size: 16px;
     font-weight: 700;
   }
@@ -362,6 +373,45 @@ input {
 
   .breadcrumb-directory {
     font-size: .08rem;
+  }
+
+  .top-page-section {
+    margin-bottom: .5rem;
+  }
+
+  .team-section {
+    padding: 0;
+  }
+
+  .team-section .team-category a {
+    border-radius: .04rem;
+  }
+
+  .team-section .services-categories .team-category {
+    display: flex;
+    margin-bottom: 1.2rem;
+  }
+
+  .team-category .category-section-box {
+    font-size: .14rem;
+    padding: .1rem;
+    top: -.18rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1rem;
+  }
+
+  .team-category .package-description li {
+    padding: .1rem 0;
+  }
+
+  .team-category .package-description li:nth-child(2){
+    border-top: .01rem solid #ececec;
+    border-bottom: .01rem solid #ececec;
+  }
+
+  .team-category .package-description li:nth-child(3){
+    border-bottom: .01rem solid #ececec;
   }
 
   footer {
