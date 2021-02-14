@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+.trans {
+  transition: opacity .28s ease;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.portfolio-is-active {
+  background: #62a29e;
+}
+
+button {
+  border: none;
+}
+
+header {
+  position: relative;
+  z-index: 9;
+}
+
+.portfolio-navigation-tab ul {
+  display: flex;
+}
+
+footer {
+  background-size: 100% auto;
+}
+
+/************************ PC *************************/
+
+@media print, (min-width: 768px) {
+
+  header {
+    padding: 27px 0 22px; 
+  }
+
+  .about-us-breadcrumb .page-title {
+    margin-left: 7px;
+  }
+
+  .portfolio-navigation-section::before {
+    left: 16px;
+  }
+
+  .header-navigation .portfolio-navigation-section {
+    margin-left: -7px;
+  }
+
+  .header-navigation ul .portfolio-is-active {
+    background: #62a29e;
+    box-shadow: 0 3px 0 0 #528b86;
+    border-radius: 5px;
+    padding: 8px 19px 8px 30px;
+    margin-right: 6px;
+  }
+
+  .portfolio-navigation-tab ul button {
+    padding: 8px 26px;
+    font-size: 14px;
+    margin-right: 1px;
+    transition: .25s ease;
+    background: #98a3a3;
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 3px 0 0 #808c8c;
+  }
+
+  .portfolio-navigation-tab {
+    margin-bottom: 35px;
+  }
+  
+  .portfolio-navigation-tab ul button:hover {
+    background-color: #63a19d;
+    box-shadow: 0 3px 0 0 #528a86;
+  }
+
+  .portfolio-container {
+    display: flex;
+  }
+
+  .portfolio-container .portfolio-picture {
+    border-radius: 6px;
+  }
+
+  .portfolio-container .portfolio-description .portfolio-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 26px;
+  }
+
+  .portfolio-container .portfolio-description > p {
+    line-height: 1.6;
+    margin-bottom: 66px;
+  }
+
+  .portfolio-details a {
+    display: flex;
+    align-items: center;
+  }
+
+  footer {
+    padding-top: 49px;
+  }
+}
+
+/************************ SP *************************/
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: calc(100vw / 3.75);
+  }
+
+  body {
+    font-size: .24rem;
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    padding: 0 .2rem;
+  }
+
+  header {
+    padding: .2rem .1rem;
+  }
+
+  .heading-title {
+    font-size: .16rem;
+  }
+
+  .breadcrumb {
+    padding: .1rem 0;
+    margin-bottom: .4rem;
+  }
+
+  .breadcrumb .wrapper::after {
+    bottom: -.09rem;
+    border-width: .09rem;
+  }
+
+  .breadcrumb-directory {
+    font-size: .08rem;
+  }
+
+  footer {
+    padding-top: .4rem;
+    background-size: auto .2rem;
+  }
+}
