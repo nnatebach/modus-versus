@@ -219,8 +219,13 @@ footer {
     box-shadow: 0 3px 0 0 #528a86;
   }
 
+  .portfolio-column-list {
+    padding-bottom: 5px;
+  }
+
   .portfolio-container {
     display: flex;
+    margin-bottom: 40px;
   }
 
   .portfolio-container .portfolio-picture {
@@ -246,6 +251,10 @@ footer {
   .portfolio-details {
     display: flex;
     justify-content: space-between;
+  }
+
+  .portfolio-details-link img {
+    border-radius: 6px;
   }
 
   .portfolio-description .portfolio-details p {
