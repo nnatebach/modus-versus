@@ -190,7 +190,7 @@ header .header-logo .header-logo:hover {
   display: inline-block;
   width: 100%;
   height: 100%;
-  background: url(../img/top/icn_double_arrow.png) center center/auto no-repeat;
+  background: url(../img/common/icn_double_arrow.png) center center/auto no-repeat;
   position: absolute;
   top: 4px;
   left: 0;
@@ -719,7 +719,7 @@ footer {
   content: "";
   top: 0;
   right: 0;
-  background: #999 url(../img/top/icn_single_arrow.png) no-repeat center;
+  background: #999 url(../img/common/icn_single_arrow.png) no-repeat center;
   width: 100%;
   height: 100%;
 }
@@ -913,7 +913,7 @@ footer {
     top: 1px;
     right: -1px;
     transform: rotate(180deg);
-    background: url(../img/top/icn_single_arrow.png) no-repeat center;
+    background: url(../img/common/icn_single_arrow.png) no-repeat center;
     width: 100%;
     height: 100%;
   }
@@ -928,7 +928,7 @@ footer {
     content: "";
     top: 0;
     right: 2px;
-    background: url(../img/top/icn_single_arrow.png) no-repeat center;
+    background: url(../img/common/icn_single_arrow.png) no-repeat center;
     width: 100%;
     height: 100%;
   }
@@ -1779,7 +1779,7 @@ footer {
   }
 
   .client-list .slick-next::after {
-    background: url(../img/top/icn_single_arrow.png) no-repeat center;
+    background: url(../img/common/icn_single_arrow.png) no-repeat center;
   }
 
   .client-list img {
